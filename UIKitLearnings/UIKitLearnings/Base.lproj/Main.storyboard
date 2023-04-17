@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,13 +25,16 @@
                                 <color key="sectionIndexBackgroundColor" name="paletteDarkYellow"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="viewControllerTableViewCell" id="wCK-8B-BKW">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="38" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wCK-8B-BKW" id="xM4-JZ-pHr">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="1rh-Sz-N3Q" kind="show" identifier="segueShowToDoItems" id="uEx-JX-FMd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -54,13 +58,91 @@
             </objects>
             <point key="canvasLocation" x="1002.2900763358779" y="3.5211267605633805"/>
         </scene>
+        <!--To Do Items View Controller-->
+        <scene sceneID="uNs-g9-fv5">
+            <objects>
+                <viewController id="1rh-Sz-N3Q" customClass="ToDoItemsViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qo6-vd-JmS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vRm-TN-9gC">
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" name="paletteYellow"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="US6-Eh-VjI"/>
+                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="vRm-TN-9gC" firstAttribute="trailing" secondItem="US6-Eh-VjI" secondAttribute="trailing" id="7Hl-rM-9kv"/>
+                            <constraint firstItem="vRm-TN-9gC" firstAttribute="bottom" secondItem="US6-Eh-VjI" secondAttribute="bottom" id="PGu-Yo-48b"/>
+                            <constraint firstItem="vRm-TN-9gC" firstAttribute="leading" secondItem="US6-Eh-VjI" secondAttribute="leading" id="wPH-3J-xbX"/>
+                            <constraint firstItem="vRm-TN-9gC" firstAttribute="top" secondItem="US6-Eh-VjI" secondAttribute="top" id="yRN-pk-DzE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bml-XP-ZxX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HZm-z2-vZp">
+                            <connections>
+                                <segue destination="v5v-gy-hq4" kind="showDetail" id="ji0-hM-PnW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="vRm-TN-9gC" id="Zf5-O9-UYj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udm-M6-cC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904.5801526717557" y="3.5211267605633805"/>
+        </scene>
+        <!--New To Do List Item View Controller-->
+        <scene sceneID="th7-gW-3v9">
+            <objects>
+                <viewController id="v5v-gy-hq4" customClass="NewToDoListItemViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZO-bW-YBl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="Add a new ToDo item." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-4q-8uv">
+                                <rect key="frame" x="16" y="75" width="361" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-jj-zNt">
+                                <rect key="frame" x="16" y="700" width="361" height="35"/>
+                                <color key="backgroundColor" name="paletteRed"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZaE-CT-Koz"/>
+                        <color key="backgroundColor" name="paletteDarkYellow"/>
+                        <constraints>
+                            <constraint firstItem="ZaE-CT-Koz" firstAttribute="bottom" secondItem="6A5-jj-zNt" secondAttribute="bottom" constant="48" id="4Wl-7D-S6P"/>
+                            <constraint firstItem="6A5-jj-zNt" firstAttribute="leading" secondItem="ZaE-CT-Koz" secondAttribute="leading" constant="16" id="A5V-a2-CNr"/>
+                            <constraint firstItem="ZaE-CT-Koz" firstAttribute="trailing" secondItem="6A5-jj-zNt" secondAttribute="trailing" constant="16" id="wdK-7T-J9D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Ooz-4q-8uv" id="mjB-m0-nBc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eM-s6-rBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.9465648854962" y="3.5211267605633805"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hbH-bX-hrp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Mc-ZN-yzO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ihN-DT-kOO">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ihN-DT-kOO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
                         <textAttributes key="titleTextAttributes">
@@ -82,16 +164,22 @@
     </scenes>
     <resources>
         <namedColor name="paletteDarkRed">
-            <color red="0.45490196078431372" green="0.0" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteDarkYellow">
-            <color red="0.82745098039215681" green="0.65098039215686276" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.82700002193450928" green="0.65100002288818359" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteRed">
-            <color red="0.68235294117647061" green="0.0" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteYellow">
-            <color red="0.93333333333333335" green="0.72941176470588232" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
