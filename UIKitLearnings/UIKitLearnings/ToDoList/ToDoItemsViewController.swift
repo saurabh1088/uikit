@@ -27,7 +27,8 @@ class ToDoItemsViewController: UIViewController {
 extension ToDoItemsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toDoListItemCellIdentifier") as! ToDoListItemTableViewCell
-        if let todoItem = viewModel?.todos?[indexPath.row] {
+        if let todoItem = viewModel?.todos[indexPath.row] {
+            cell.id = todoItem.id
             cell.toDoItem.text = todoItem.name
             cell.createdOn.text = DateFormatter().string(from: todoItem.createdOn ?? Date())
             cell.currentStatus.text = "Pending"
@@ -36,16 +37,37 @@ extension ToDoItemsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.todos?.count ?? 0
+        return viewModel?.todos.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel?.deleteToDoItem(indexPath)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
 
 extension ToDoItemsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tableView didSelectRowAt :: \(indexPath)")
+    }
+}
+
+extension ToDoItemsViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueShowAddUpdateToDoItem",
+           let destinationViewController = segue.destination as? NewToDoListItemViewController {
+            destinationViewController.viewModel = self.viewModel
+        }
+    }
+    
+    @IBAction func unwindToToDoItemsViewController(segue: UIStoryboardSegue) {
+        print("Unwind to Root View Controller")
+        tableView.reloadData()
     }
 }

@@ -10,10 +10,16 @@
 import UIKit
 
 class NewToDoListItemViewController: UIViewController {
+    var viewModel: ToDoItemsViewModel?
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    @IBAction func addUpdateToDoItem(_ sender: Any) {
+        if let text = textView.text {
+            viewModel?.addNewToDo(text)
+        }
+    }
 }

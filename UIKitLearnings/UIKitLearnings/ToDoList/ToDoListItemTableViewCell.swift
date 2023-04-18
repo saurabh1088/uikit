@@ -16,6 +16,8 @@ class ToDoListItemTableViewCell: UITableViewCell {
     @IBOutlet weak var createdOn: UILabel!
     @IBOutlet weak var toDoItem: UILabel!
     
+    var id: UUID?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

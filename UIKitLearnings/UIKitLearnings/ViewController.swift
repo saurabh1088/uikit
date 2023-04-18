@@ -51,7 +51,9 @@ extension ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueShowToDoItems",
            let destinationViewController = segue.destination as? ToDoItemsViewController {
-            destinationViewController.viewModel = ToDoItemsViewModel()
+            let viewModel = ToDoItemsViewModel()
+            viewModel.fetchData()
+            destinationViewController.viewModel = viewModel
         }
     }
 }

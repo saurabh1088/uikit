@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-ZC-Jwt">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-ZC-Jwt">
+                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
                                 <color key="backgroundColor" name="paletteYellow"/>
-                                <color key="separatorColor" name="paletteDarkRed"/>
+                                <color key="separatorColor" name="paletteDarkYellow"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" name="paletteDarkYellow"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="viewControllerTableViewCell" id="wCK-8B-BKW">
-                                        <rect key="frame" x="20" y="38" width="353" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wCK-8B-BKW" id="xM4-JZ-pHr">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="paletteRed"/>
@@ -43,10 +43,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
                         <constraints>
-                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="19J-Ch-e1B"/>
-                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iZD-II-opD"/>
-                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ji9-GJ-UKK"/>
-                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xm9-Nx-GSN"/>
+                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="97K-Wc-Ona"/>
+                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W2t-97-R3U"/>
+                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Wba-84-dQB"/>
+                            <constraint firstItem="tgf-ZC-Jwt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oKh-sb-pcu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l9W-gy-Wto"/>
@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" id="bml-XP-ZxX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HZm-z2-vZp">
                             <connections>
-                                <segue destination="v5v-gy-hq4" kind="showDetail" id="ji0-hM-PnW"/>
+                                <segue destination="v5v-gy-hq4" kind="showDetail" identifier="segueShowAddUpdateToDoItem" id="ji0-hM-PnW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -118,6 +118,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Done">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addUpdateToDoItem:" destination="v5v-gy-hq4" eventType="touchUpInside" id="Bnq-Dk-LvK"/>
+                                    <segue destination="x9h-5P-lov" kind="unwind" unwindAction="unwindToToDoItemsViewControllerWithSegue:" id="cEF-BC-Ces"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZaE-CT-Koz"/>
@@ -133,6 +137,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eM-s6-rBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="x9h-5P-lov" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2696.9465648854962" y="3.5211267605633805"/>
         </scene>
