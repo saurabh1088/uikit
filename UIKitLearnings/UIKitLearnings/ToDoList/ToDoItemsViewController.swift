@@ -18,6 +18,7 @@ class ToDoItemsViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        // If using a custom cell by subclassing UITableViewCell, the nib needs to be registered.
         self.tableView.register(UINib(nibName: "ToDoListItemTableViewCell",
                                       bundle: Bundle.main),
                                 forCellReuseIdentifier: "toDoListItemCellIdentifier")
