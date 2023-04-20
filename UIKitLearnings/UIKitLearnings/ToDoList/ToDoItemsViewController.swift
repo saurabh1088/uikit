@@ -30,7 +30,7 @@ extension ToDoItemsViewController: UITableViewDataSource {
         if let todoItem = viewModel?.todos[indexPath.row] {
             cell.id = todoItem.id
             cell.toDoItem.text = todoItem.name
-            cell.createdOn.text = DateFormatter().string(from: todoItem.createdOn ?? Date())
+            cell.createdOn.text = viewModel?.dateFormatter.string(from: todoItem.createdOn ?? Date())
             cell.currentStatus.text = "Pending"
         }
         return cell

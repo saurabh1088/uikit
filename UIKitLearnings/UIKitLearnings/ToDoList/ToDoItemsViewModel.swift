@@ -57,3 +57,11 @@ class ToDoItemsViewModel {
         }
     }
 }
+
+extension ToDoItemsViewModel {
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd-yyyy HH:mm"
+        return formatter
+    }
+}
