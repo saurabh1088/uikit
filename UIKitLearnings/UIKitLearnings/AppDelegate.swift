@@ -10,6 +10,46 @@
 import UIKit
 import CoreData
 
+/**
+ `@main`
+ Any program in any language needs an entry point. The entry point from where any program logically will start
+ execution. Different lanugages have different ways. For eg.
+ 
+ In Java we have `main()` function defines as :
+ ```public static void main(String args[])```
+ 
+ In Python we have `__main__`
+ 
+ In Objective C there used to be concept of a main.m file which used to define an entry point method as
+ ```int main(int argc, char *argv[])```
+ This actually used to call function `UIApplicationMain(_:_:_:_:)`
+ 
+ `UIApplicationMain(_:_:_:_:)`
+ `UIApplicationMain(_:_:_:_:)` creates the application object, application delegate and sets up the event
+ cycle.
+ 
+ `Return type of UIApplicationMain(_:_:_:_:) is defined as Int32, what are the values it returns?`
+ `UIApplicationMain(_:_:_:_:)` never returns. When user exits application, the application moves to background.
+ 
+ `Responsibilities of UIApplicationMain(_:_:_:_:)`
+ 1. Instantiates application object from principal class (UIApplication or it's subclass)
+ 2. Instantiates a delegate object and sets delegate object for the application object
+ 3. Sets up the main event loop, including application's run loop and starts processing events.
+ 4. If a main nib file is specified in application's Info.plist file then it will load that nib.
+ 5. Even though there is return type, this function NEVER returns.
+ 
+ Now so usually all main.m used to need was what's the application's principal class and the delegate class.
+ There is hardly any rare reasons for subclassing UIApplication so even most of the time it's only delegate class
+ which is required to be setup. So main.m qualifies to ba a boilerplate code which is mostly the same and can be used
+ without much customisation in most of the cases.
+ So to do away with implementing main.m always some attributes were introduced :
+ `@UIApplicationMain`
+ `@NSApplicationMain`
+ These used to mark the entry point for iOS or macOS applications.
+ Later on with Swift 5.3 a new attribute `@main` was introduced which became a general purpose way of adding
+ attribute and marking entry point.
+ 
+ */
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
