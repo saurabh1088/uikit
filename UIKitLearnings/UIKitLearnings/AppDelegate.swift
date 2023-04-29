@@ -48,8 +48,50 @@ import CoreData
  These used to mark the entry point for iOS or macOS applications.
  Later on with Swift 5.3 a new attribute `@main` was introduced which became a general purpose way of adding
  attribute and marking entry point.
+ When @main attribute is used on a struct, class or enum then that struct, class or enum is expected to provide
+ a maintype function having no arguments and returning void.
+ No usually application delegate is marked with @main attribute as we can see in class declaration for `AppDelegate`
+ but there is no `main()` method defined anywhere. This is because a default implementation of `main()`
+ method is provided in an extension to protocol `UIApplicationDelegate` causing any aaplication delegate
+ we define for our application to receive this default implementation and mostly it's what all is required.
+ ```
+ extension UIApplicationDelegate {
+     @MainActor public static func main()
+ }
+ ```
+ 
+ So now with an AppDelegate marked with `@main` tells system to call `AppDelegate.main()` function at
+ launch, which is equivalent to having a main.m file.
+ 
+ Now suppose there is a swift command line program so there can be two approaches to provide entry point
+ 
+ `Option 1 : main.m`
+ 
+ ```
+ // This is defined in main.m file
+ struct MySwiftCommandLineProgram {
+   static func main() {
+     print("This is command line program")
+   }
+ }
+ 
+ MySwiftCommandLineProgram.main()
+ ```
+ 
+ `Option 2 : @main`
+ 
+ ```
+ @main
+ struct MySwiftCommandLineProgram {
+   static func main() {
+     print("This is command line program")
+   }
+ }
+ ```
+ 
  
  */
+// TODO: https://useyourloaf.com/blog/what-does-@main-do-in-swift-5.3/
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
