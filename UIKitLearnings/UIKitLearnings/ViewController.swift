@@ -30,13 +30,24 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "viewControllerTableViewCell")!
-        cell.textLabel?.text = indexPath.row == 1 ? "Alarms" : "Notes"
-        cell.textLabel?.textColor = UIColor.white
-        // By default selected cell will be highlighted with a color greyish. To turn
-        // this behaviour OFF, set selectionStyle as none
-        cell.selectionStyle = .none
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell")!
+            cell.textLabel?.text = "Alarms"
+            cell.textLabel?.textColor = UIColor.white
+            // By default selected cell will be highlighted with a color greyish. To turn
+            // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "responderTableViewCell")!
+            cell.textLabel?.text = "Responder"
+            cell.textLabel?.textColor = UIColor.white
+            // By default selected cell will be highlighted with a color greyish. To turn
+            // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
+            return cell
+        }
+        return UITableViewCell()
     }
 }
 
