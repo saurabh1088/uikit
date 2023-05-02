@@ -15,6 +15,8 @@
 		B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730386529EC06BA0057A099 /* UIColor+Extension.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */; };
+		B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819732A002A110046E39E /* ResponderExamplesViewController.swift */; };
+		B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819752A0031610046E39E /* ManipulateResponderViewController.swift */; };
 		B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */; };
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
@@ -57,6 +59,8 @@
 		B730386529EC06BA0057A099 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
 		B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		B78819732A002A110046E39E /* ResponderExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderExamplesViewController.swift; sourceTree = "<group>"; };
+		B78819752A0031610046E39E /* ManipulateResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulateResponderViewController.swift; sourceTree = "<group>"; };
 		B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsViewModel.swift; sourceTree = "<group>"; };
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */,
 				B7D501D929FED9F000DFA063 /* ResponderViewController.swift */,
 				B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */,
+				B78819732A002A110046E39E /* ResponderExamplesViewController.swift */,
+				B78819752A0031610046E39E /* ManipulateResponderViewController.swift */,
 			);
 			path = Responder;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */,
 				B7BB2BE829EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld in Sources */,
 				B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */,
 				B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */,
@@ -345,6 +352,7 @@
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
+				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,11 @@ class CustomUIView: UIView {
     }
     */
 
+    /// `touches` here is a `Set` (defined as `Set<UITouch>`). Even though this is a `Set`, `touches`
+    /// only contains ONE touch by default.
+    /// To receive multiple touches in this `Set`, the view's `isMultipleTouchEnabled` must be set to `true`
+    ///
+    /// This method gets called whenever a new touch is detected in a responder.
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("Received touchesBegan from CustomUIView")
         super.touchesBegan(touches, with: event)

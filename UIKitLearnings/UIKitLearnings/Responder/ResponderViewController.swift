@@ -35,3 +35,38 @@ class ResponderViewController: UIViewController {
     */
 
 }
+
+/// Below are some custom views declared each subclassing `UIView` and adding a property `nextViewToRespond`
+/// Also each of these custom views override `next` property which returns a `UIResponder`. By default this
+/// property returns nil as `UIResponder` which defines this property doesn't stores or set the next responder
+/// automatically. Instead subclasses must override and return appropriate next responder.
+class GoogleChromeColorView: UIView {
+    var nextViewToRespond: UIView?
+    override var next: UIResponder? {
+        return nextViewToRespond
+    }
+}
+
+class GoogleBlueColorView: UIView {
+    var nextViewToRespond: UIView?
+    override var next: UIResponder? {
+        return nextViewToRespond
+    }
+}
+
+class GoogleGreenColorView: UIView {
+    var nextViewToRespond: UIView?
+    override var next: UIResponder? {
+        return nextViewToRespond
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("Received touchesBegan from GoogleGreenColorView")
+    }
+}
+
+class GoogleRedColorView: UIView {
+    var nextViewToRespond: UIView?
+    override var next: UIResponder? {
+        return nextViewToRespond
+    }
+}

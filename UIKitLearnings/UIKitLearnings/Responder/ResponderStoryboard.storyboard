@@ -1,28 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="whl-xC-LNh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Responder Examples View Controller-->
+        <scene sceneID="dhv-Au-Rqb">
+            <objects>
+                <viewController id="whl-xC-LNh" customClass="ResponderExamplesViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0I-1w-GH0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Dg-Bc-6Xk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" name="paletteYellow"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="responderChainTableViewCell" id="DCj-oI-1GZ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DCj-oI-1GZ" id="fyQ-25-LGN">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="Y6W-OH-hqX" kind="show" identifier="showResponderViewController" id="rny-fN-NXg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="manipulateResponderChainTableViewCell" id="iFF-VB-DI0">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFF-VB-DI0" id="WYE-IA-gva">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="9fk-aR-dqF" kind="show" identifier="showManipulateResponderViewController" id="Ck5-BW-8tj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nS6-6R-8dp"/>
+                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="3Dg-Bc-6Xk" firstAttribute="bottom" secondItem="nS6-6R-8dp" secondAttribute="bottom" id="CNb-87-Luy"/>
+                            <constraint firstItem="3Dg-Bc-6Xk" firstAttribute="trailing" secondItem="nS6-6R-8dp" secondAttribute="trailing" id="KDI-86-ay5"/>
+                            <constraint firstItem="3Dg-Bc-6Xk" firstAttribute="top" secondItem="nS6-6R-8dp" secondAttribute="top" id="OSH-Jk-yh7"/>
+                            <constraint firstItem="3Dg-Bc-6Xk" firstAttribute="leading" secondItem="nS6-6R-8dp" secondAttribute="leading" id="zr5-3S-fPS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3Dg-Bc-6Xk" id="zhh-a8-voH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZM-gl-yo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-816.03053435114498" y="-2.1126760563380285"/>
+        </scene>
         <!--Responder View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="ResponderViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaO-Yf-NMl" customClass="CustomUIView" customModule="UIKitLearnings" customModuleProvider="target">
-                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaO-Yf-NMl" customClass="GoogleChromeColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="46.666666666666657" y="241.66666666666663" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDQ-4e-7sk" customClass="GoogleBlueColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="50.000000000000028" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FF-vF-7yF" customClass="GoogleGreenColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                                <rect key="frame" x="49.999999999999986" y="50" width="100.00000000000001" height="100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVY-VR-w1E" customClass="GoogleRedColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="25" width="50" height="50"/>
+                                                        <color key="backgroundColor" name="googleRed"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="bbq-7w-bxY"/>
+                                                            <constraint firstAttribute="height" constant="50" id="lya-Zk-xSF"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" name="googleGreen"/>
+                                                <constraints>
+                                                    <constraint firstItem="YVY-VR-w1E" firstAttribute="centerY" secondItem="6FF-vF-7yF" secondAttribute="centerY" id="SCt-NX-luU"/>
+                                                    <constraint firstAttribute="height" constant="100" id="gdT-01-O80"/>
+                                                    <constraint firstItem="YVY-VR-w1E" firstAttribute="centerX" secondItem="6FF-vF-7yF" secondAttribute="centerX" id="kr3-vh-mPz"/>
+                                                    <constraint firstAttribute="width" constant="100" id="up4-Cz-Mor"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="googleBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="4Rf-fc-cXE"/>
+                                            <constraint firstItem="6FF-vF-7yF" firstAttribute="centerY" secondItem="wDQ-4e-7sk" secondAttribute="centerY" id="YFd-e2-AIL"/>
+                                            <constraint firstItem="6FF-vF-7yF" firstAttribute="centerX" secondItem="wDQ-4e-7sk" secondAttribute="centerX" id="Ym3-NJ-8p8"/>
+                                            <constraint firstAttribute="height" constant="200" id="h0m-Nt-N4X"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="googleChrome"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="20Z-1U-bUJ"/>
+                                    <constraint firstItem="wDQ-4e-7sk" firstAttribute="centerX" secondItem="XaO-Yf-NMl" secondAttribute="centerX" id="EV2-kO-wA4"/>
                                     <constraint firstAttribute="height" constant="300" id="e1P-H5-0Vw"/>
+                                    <constraint firstItem="wDQ-4e-7sk" firstAttribute="centerY" secondItem="XaO-Yf-NMl" secondAttribute="centerY" id="uH7-ef-OEs"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -33,18 +124,100 @@
                             <constraint firstItem="XaO-Yf-NMl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yVA-04-yGb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nAh-g6-ACI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="-2"/>
+            <point key="canvasLocation" x="147" y="-305"/>
+        </scene>
+        <!--Manipulate Responder View Controller-->
+        <scene sceneID="hoc-jT-S56">
+            <objects>
+                <viewController id="9fk-aR-dqF" customClass="ManipulateResponderViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSl-p7-c4A">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-lw-1KT" customClass="GoogleChromeColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="79" width="393" height="120"/>
+                                <color key="backgroundColor" name="googleChrome"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="9Jo-Zc-AKp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jG-DT-W1m" customClass="GoogleBlueColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="219" width="393" height="120"/>
+                                <color key="backgroundColor" name="googleBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="fXG-UM-Cde"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-LO-IFp" customClass="GoogleRedColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="499" width="393" height="120"/>
+                                <color key="backgroundColor" name="googleRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Lgc-VZ-2UR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HE-Qc-3ID" customClass="GoogleGreenColorView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="359" width="393" height="120"/>
+                                <color key="backgroundColor" name="googleGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="tJd-8y-iay"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xux-Wx-k8l"/>
+                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="5HE-Qc-3ID" firstAttribute="trailing" secondItem="Xux-Wx-k8l" secondAttribute="trailing" id="8PH-0j-hkH"/>
+                            <constraint firstItem="Zfa-LO-IFp" firstAttribute="leading" secondItem="Xux-Wx-k8l" secondAttribute="leading" id="BCK-Ex-nb8"/>
+                            <constraint firstItem="jwt-lw-1KT" firstAttribute="leading" secondItem="Xux-Wx-k8l" secondAttribute="leading" id="Log-s4-WQd"/>
+                            <constraint firstItem="1jG-DT-W1m" firstAttribute="leading" secondItem="Xux-Wx-k8l" secondAttribute="leading" id="OOO-kY-PEE"/>
+                            <constraint firstItem="jwt-lw-1KT" firstAttribute="trailing" secondItem="Xux-Wx-k8l" secondAttribute="trailing" id="UY0-9x-Z64"/>
+                            <constraint firstItem="Zfa-LO-IFp" firstAttribute="trailing" secondItem="Xux-Wx-k8l" secondAttribute="trailing" id="UfR-n7-qac"/>
+                            <constraint firstItem="5HE-Qc-3ID" firstAttribute="leading" secondItem="Xux-Wx-k8l" secondAttribute="leading" id="cB6-hX-EOh"/>
+                            <constraint firstItem="1jG-DT-W1m" firstAttribute="top" secondItem="jwt-lw-1KT" secondAttribute="bottom" constant="20" id="eSk-cF-rbA"/>
+                            <constraint firstItem="Zfa-LO-IFp" firstAttribute="top" secondItem="5HE-Qc-3ID" secondAttribute="bottom" constant="20" id="pM9-wQ-9ri"/>
+                            <constraint firstItem="jwt-lw-1KT" firstAttribute="top" secondItem="Xux-Wx-k8l" secondAttribute="top" constant="20" id="tHE-TD-MLD"/>
+                            <constraint firstItem="1jG-DT-W1m" firstAttribute="trailing" secondItem="Xux-Wx-k8l" secondAttribute="trailing" id="wIO-8O-2Ga"/>
+                            <constraint firstItem="5HE-Qc-3ID" firstAttribute="top" secondItem="1jG-DT-W1m" secondAttribute="bottom" constant="20" id="ym5-RW-eCJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vhy-qi-G5p"/>
+                    <connections>
+                        <outlet property="googleBlueView" destination="1jG-DT-W1m" id="oWM-fH-ORL"/>
+                        <outlet property="googleChromeView" destination="jwt-lw-1KT" id="aiX-aW-fgy"/>
+                        <outlet property="googleGreenView" destination="5HE-Qc-3ID" id="zT0-S8-wEW"/>
+                        <outlet property="googleRedView" destination="Zfa-LO-IFp" id="1oT-kY-8XQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9R7-vO-HeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145.80152671755724" y="450.7042253521127"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="googleBlue">
+            <color red="0.0" green="0.34099999070167542" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="googleChrome">
+            <color red="1" green="0.65499997138977051" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="googleGreen">
+            <color red="0.0" green="0.52899998426437378" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="googleRed">
+            <color red="0.83899998664855957" green="0.17599999904632568" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="paletteDarkRed">
             <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="paletteRed">
+            <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paletteYellow">
+            <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
