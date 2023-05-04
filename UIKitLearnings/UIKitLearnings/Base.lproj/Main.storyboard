@@ -61,7 +61,7 @@
                             <constraint firstItem="tgf-ZC-Jwt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oKh-sb-pcu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="l9W-gy-Wto"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="l9W-gy-Wto"/>
                     <connections>
                         <outlet property="tableView" destination="tgf-ZC-Jwt" id="mTZ-Yn-VoU"/>
                     </connections>
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vRm-TN-9gC">
-                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" name="paletteYellow"/>
                             </tableView>
                         </subviews>
@@ -168,8 +168,8 @@
             <objects>
                 <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="9Mc-ZN-yzO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ihN-DT-kOO">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ihN-DT-kOO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
                         <textAttributes key="titleTextAttributes">
