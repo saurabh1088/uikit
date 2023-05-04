@@ -30,4 +30,9 @@ class ManipulateResponderViewController: UIViewController {
         /// then next responder should be `googleGreenView`
         googleChromeView.nextViewToRespond = googleGreenView
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Default next responder for ManipulateResponderViewController in viewWillAppear : \(String(describing: self.next))")
+    }
 }
