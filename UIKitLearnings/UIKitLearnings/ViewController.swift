@@ -26,13 +26,13 @@ class ViewController: UIViewController {
 // Table View data source methods implementation
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell")!
-            cell.textLabel?.text = "Alarms"
+            cell.textLabel?.text = "Notes"
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
             // this behaviour OFF, set selectionStyle as none
@@ -44,6 +44,12 @@ extension ViewController: UITableViewDataSource {
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
             // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "webViewTableViewCell")!
+            cell.textLabel?.text = "Web View"
+            cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         }
@@ -65,6 +71,12 @@ extension ViewController {
             let viewModel = ToDoItemsViewModel()
             viewModel.fetchData()
             destinationViewController.viewModel = viewModel
+        } else if segue.identifier == "showWebViewController",
+            let destinationViewController = segue.destination as? WebViewController {
+            destinationViewController.url = URL(string: "https://www.swift.org/documentation/")
+            destinationViewController.onSuccess = {
+                print("Successfully loaded URL in WKWebView")
+            }
         }
     }
 }

@@ -14,6 +14,9 @@
 		B730386329EC05860057A099 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B730386229EC05860057A099 /* Colors.xcassets */; };
 		B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730386529EC06BA0057A099 /* UIColor+Extension.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
+		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
+		B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77BB88B2A096394002BE62B /* WebViewController.swift */; };
+		B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77BB88E2A096703002BE62B /* WebKit.framework */; };
 		B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */; };
 		B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819732A002A110046E39E /* ResponderExamplesViewController.swift */; };
 		B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819752A0031610046E39E /* ManipulateResponderViewController.swift */; };
@@ -58,6 +61,9 @@
 		B730386229EC05860057A099 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		B730386529EC06BA0057A099 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
+		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
+		B77BB88B2A096394002BE62B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B77BB88E2A096703002BE62B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		B78819732A002A110046E39E /* ResponderExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderExamplesViewController.swift; sourceTree = "<group>"; };
 		B78819752A0031610046E39E /* ManipulateResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulateResponderViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,23 @@
 			path = Responder;
 			sourceTree = "<group>";
 		};
+		B77BB8882A0960D0002BE62B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */,
+				B77BB88B2A096394002BE62B /* WebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		B77BB88D2A096702002BE62B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77BB88E2A096703002BE62B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7AFDCD229EC6FFE00A52695 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +179,7 @@
 				B7BB2BF629EB13FC005D8FE9 /* UIKitLearningsTests */,
 				B7BB2C0029EB13FC005D8FE9 /* UIKitLearningsUITests */,
 				B7BB2BDB29EB13F7005D8FE9 /* Products */,
+				B77BB88D2A096702002BE62B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +196,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B77BB8882A0960D0002BE62B /* WebView */,
 				B7433A8B29FE9F3100CEF78F /* Responder */,
 				B726A86729ED7FF80054767C /* ToDoList */,
 				B7AFDCD229EC6FFE00A52695 /* CoreData */,
@@ -310,6 +336,7 @@
 			files = (
 				B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
+				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
 				B7BB2BEA29EB13FB005D8FE9 /* Assets.xcassets in Resources */,
 				B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */,
@@ -353,6 +380,7 @@
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
+				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

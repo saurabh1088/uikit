@@ -48,6 +48,18 @@
                                             <segue destination="KwE-gc-XQX" kind="show" identifier="showResponderViewController" id="41G-GG-yVz"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="webViewTableViewCell" id="GQw-3P-VaA">
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQw-3P-VaA" id="ODN-i5-xnT">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="KFx-82-TK4" kind="show" identifier="showWebViewController" id="BHi-Pe-f0d"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
@@ -115,7 +127,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq1-Gn-Buh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="436"/>
+            <point key="canvasLocation" x="537" y="436"/>
+        </scene>
+        <!--WebViewStoryboard-->
+        <scene sceneID="afy-4e-mcL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WebViewStoryboard" id="KFx-82-TK4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gEu-FX-Wcd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmv-pI-stX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="436"/>
         </scene>
         <!--New To Do List Item View Controller-->
         <scene sceneID="th7-gW-3v9">
