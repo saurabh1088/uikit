@@ -14,6 +14,7 @@
 		B730386329EC05860057A099 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B730386229EC05860057A099 /* Colors.xcassets */; };
 		B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730386529EC06BA0057A099 /* UIColor+Extension.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
+		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
 		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
 		B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77BB88B2A096394002BE62B /* WebViewController.swift */; };
 		B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77BB88E2A096703002BE62B /* WebKit.framework */; };
@@ -61,6 +62,7 @@
 		B730386229EC05860057A099 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		B730386529EC06BA0057A099 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
+		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
 		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
 		B77BB88B2A096394002BE62B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B77BB88E2A096703002BE62B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -145,6 +147,14 @@
 			path = Responder;
 			sourceTree = "<group>";
 		};
+		B7438FA92A8E905200EE6B6A /* AugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */,
+			);
+			path = AugmentedReality;
+			sourceTree = "<group>";
+		};
 		B77BB8882A0960D0002BE62B /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +206,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B7438FA92A8E905200EE6B6A /* AugmentedReality */,
 				B77BB8882A0960D0002BE62B /* WebView */,
 				B7433A8B29FE9F3100CEF78F /* Responder */,
 				B726A86729ED7FF80054767C /* ToDoList */,
@@ -335,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */,
+				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,

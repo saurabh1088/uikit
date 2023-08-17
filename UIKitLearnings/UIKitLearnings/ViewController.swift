@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 // Table View data source methods implementation
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,6 +49,12 @@ extension ViewController: UITableViewDataSource {
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "webViewTableViewCell")!
             cell.textLabel?.text = "Web View"
+            cell.textLabel?.textColor = UIColor.white
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "augmentedRealityTableViewCell")!
+            cell.textLabel?.text = "Augmented Reality"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
