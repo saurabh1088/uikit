@@ -34,6 +34,7 @@
 		B7BB2BF829EB13FC005D8FE9 /* UIKitLearningsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BF729EB13FC005D8FE9 /* UIKitLearningsTests.swift */; };
 		B7BB2C0229EB13FC005D8FE9 /* UIKitLearningsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2C0129EB13FC005D8FE9 /* UIKitLearningsUITests.swift */; };
 		B7BB2C0429EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */; };
+		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		B7BB2BFD29EB13FC005D8FE9 /* UIKitLearningsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitLearningsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB2C0129EB13FC005D8FE9 /* UIKitLearningsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLearningsUITests.swift; sourceTree = "<group>"; };
 		B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLearningsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */,
+				B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */,
 			);
 			path = AugmentedReality;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
+				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
 			);
@@ -569,9 +573,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7LWH9PU9H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitLearnings/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Learn UIKit";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -597,9 +603,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7LWH9PU9H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitLearnings/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Learn UIKit";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
