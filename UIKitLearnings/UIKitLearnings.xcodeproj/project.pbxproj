@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70FCA982A90DC1900492A75 /* ARKit.framework */; };
 		B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86529ED62B60054767C /* ToDoItemsViewController.swift */; };
 		B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86829ED80320054767C /* ToDoListItemTableViewCell.swift */; };
 		B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B726A86929ED80320054767C /* ToDoListItemTableViewCell.xib */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B70FCA982A90DC1900492A75 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		B726A86529ED62B60054767C /* ToDoItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsViewController.swift; sourceTree = "<group>"; };
 		B726A86829ED80320054767C /* ToDoListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemTableViewCell.swift; sourceTree = "<group>"; };
 		B726A86929ED80320054767C /* ToDoListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListItemTableViewCell.xib; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */,
 				B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +173,7 @@
 		B77BB88D2A096702002BE62B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B70FCA982A90DC1900492A75 /* ARKit.framework */,
 				B77BB88E2A096703002BE62B /* WebKit.framework */,
 			);
 			name = Frameworks;
