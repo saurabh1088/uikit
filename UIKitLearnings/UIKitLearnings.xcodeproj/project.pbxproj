@@ -37,6 +37,8 @@
 		B7BB2C0429EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */; };
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
+		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
+		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLearningsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
+		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
+		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B7F931EC2ABF42D70049CC0B /* Animations */,
 				B7438FA92A8E905200EE6B6A /* AugmentedReality */,
 				B77BB8882A0960D0002BE62B /* WebView */,
 				B7433A8B29FE9F3100CEF78F /* Responder */,
@@ -246,6 +251,15 @@
 				B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */,
 			);
 			path = UIKitLearningsUITests;
+			sourceTree = "<group>";
+		};
+		B7F931EC2ABF42D70049CC0B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */,
+				B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
 				B7BB2BEA29EB13FB005D8FE9 /* Assets.xcassets in Resources */,
 				B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */,
+				B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */,
 				B7BB2BE529EB13F7005D8FE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +402,7 @@
 				B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */,
 				B7BB2BE829EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld in Sources */,
 				B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */,
+				B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */,
 				B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,

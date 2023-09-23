@@ -73,6 +73,18 @@
                                             <segue destination="h7q-y4-jNY" kind="show" id="gUK-qG-88u"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animationsTableViewCell" rowHeight="106" id="SR2-8I-gKW">
+                                        <rect key="frame" x="0.0" y="287.00000381469727" width="393" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SR2-8I-gKW" id="IOx-Be-wtu">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="lNQ-ex-8hq" kind="show" id="Mjb-CW-k5Q"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
@@ -140,7 +152,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq1-Gn-Buh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="420"/>
+            <point key="canvasLocation" x="889" y="438"/>
         </scene>
         <!--AugmentedRealityStoryboard-->
         <scene sceneID="Hor-TW-iZP">
@@ -150,7 +162,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R40-U6-e7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075" y="558"/>
+            <point key="canvasLocation" x="1044" y="566"/>
+        </scene>
+        <!--AnimationsStoryboard-->
+        <scene sceneID="FX7-TT-m6g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnimationsStoryboard" id="lNQ-ex-8hq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hLG-pH-uoy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0D-PZ-n56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="645"/>
         </scene>
         <!--WebViewStoryboard-->
         <scene sceneID="afy-4e-mcL">
@@ -160,7 +182,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmv-pI-stX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="486"/>
+            <point key="canvasLocation" x="965" y="497"/>
         </scene>
         <!--New To Do List Item View Controller-->
         <scene sceneID="th7-gW-3v9">
