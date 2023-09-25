@@ -22,6 +22,8 @@
 		B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */; };
 		B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819732A002A110046E39E /* ResponderExamplesViewController.swift */; };
 		B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78819752A0031610046E39E /* ManipulateResponderViewController.swift */; };
+		B79340D72AC0307800F527CB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79340D62AC0307800F527CB /* CircularProgressView.swift */; };
+		B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79340D82AC1F4A500F527CB /* CircularProgressViewModel.swift */; };
 		B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */; };
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
@@ -74,6 +76,8 @@
 		B77F1C5929FF9B5F00DFED91 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		B78819732A002A110046E39E /* ResponderExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderExamplesViewController.swift; sourceTree = "<group>"; };
 		B78819752A0031610046E39E /* ManipulateResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulateResponderViewController.swift; sourceTree = "<group>"; };
+		B79340D62AC0307800F527CB /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		B79340D82AC1F4A500F527CB /* CircularProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewModel.swift; sourceTree = "<group>"; };
 		B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsViewModel.swift; sourceTree = "<group>"; };
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 			children = (
 				B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */,
 				B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */,
+				B79340D62AC0307800F527CB /* CircularProgressView.swift */,
+				B79340D82AC1F4A500F527CB /* CircularProgressViewModel.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -401,11 +407,13 @@
 			files = (
 				B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */,
 				B7BB2BE829EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld in Sources */,
+				B79340D72AC0307800F527CB /* CircularProgressView.swift in Sources */,
 				B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */,
 				B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */,
 				B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
+				B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */,
 				B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */,
 				B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
