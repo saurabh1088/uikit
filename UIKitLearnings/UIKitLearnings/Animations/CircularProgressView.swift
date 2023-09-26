@@ -29,7 +29,7 @@ class CircularProgressView: UIView {
         viewModel.circlePathLayer.path = uiBezierPath.cgPath
         viewModel.circlePathLayer.fillColor = UIColor.clear.cgColor
         viewModel.circlePathLayer.lineCap = .round
-        viewModel.circlePathLayer.lineWidth = 20.0
+        viewModel.circlePathLayer.lineWidth = 12.0
         viewModel.circlePathLayer.strokeEnd = 1.0
         viewModel.circlePathLayer.strokeColor = UIColor.black.cgColor
         
@@ -40,7 +40,7 @@ class CircularProgressView: UIView {
         viewModel.progressViewLayer.lineCap = .round
         viewModel.progressViewLayer.lineWidth = 10.0
         viewModel.progressViewLayer.strokeEnd = 0
-        viewModel.progressViewLayer.strokeColor = UIColor.green.cgColor
+        viewModel.progressViewLayer.strokeColor = UIColor.yellow.cgColor
 
         layer.addSublayer(viewModel.progressViewLayer)
     }
