@@ -18,6 +18,9 @@ class AnimationsViewController: UIViewController {
         super.viewDidLoad()
         setUpCircularProgressView()
         setUpAnimatingImageView()
+        // TODO: Remove and handle properly
+        let rectangleView = RectangularView(frame: CGRect(x: 100, y: 600, width: 200, height: 200))
+        view.addSubview(rectangleView)
     }
 }
 
