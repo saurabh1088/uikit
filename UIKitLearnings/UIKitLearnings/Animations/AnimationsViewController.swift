@@ -9,7 +9,9 @@ import UIKit
 
 class AnimationsViewController: UIViewController {
     
-    var circularProgressView: CircularProgressView!
+    @IBOutlet weak var circularProgressAnimationView: CircularProgressView!
+    @IBOutlet weak var imageAnimationView: UIImageView!
+    
     var animatingImageView: UIImageView!
 
     override func viewDidLoad() {
@@ -23,13 +25,11 @@ extension AnimationsViewController {
     
     func setUpCircularProgressView() {
         let viewModel = createCircularProgressViewModel()
-        let frame = CGRect(x: 0, y: 0, width: viewModel.radius, height: viewModel.radius)
-        circularProgressView = CircularProgressView(viewModel: viewModel,
-                                                    frame: frame)
-        circularProgressView.createCircularBezierPath()
-        circularProgressView.center = view.center
-        circularProgressView.progressAnimation(duration: 2)
-        view.addSubview(circularProgressView)
+        circularProgressAnimationView.viewModel = viewModel
+        circularProgressAnimationView.createCircularBezierPath()
+        circularProgressAnimationView.center = view.center
+        circularProgressAnimationView.progressAnimation(duration: 2)
+        view.addSubview(circularProgressAnimationView)
     }
     
     func createCircularProgressViewModel() -> CircularProgressViewModel {
@@ -45,19 +45,12 @@ extension AnimationsViewController {
 extension AnimationsViewController {
     
     func setUpAnimatingImageView() {
-        animatingImageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.size.width / 2,
-                                                       y: UIScreen.main.bounds.size.height - 200,
-                                                       width: 50,
-                                                       height: 50))
         /// NOTE: Tint color for image works with renderingMode set to alwaysOriginal, if renderingMode is
         /// set to alwaysTemplate then there is no effect of the tint color passed here.
-        animatingImageView.image = UIImage(systemName: "smiley")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
-        view.addSubview(animatingImageView)
+        imageAnimationView.image = UIImage(systemName: "smiley")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
+        view.addSubview(imageAnimationView)
         UIView.animate(withDuration: 2) {
-            self.animatingImageView.frame = CGRect(x: UIScreen.main.bounds.size.width / 2,
-                                                   y: UIScreen.main.bounds.size.height - 200,
-                                                   width: 150,
-                                                   height: 150)
+            self.imageAnimationView.transform = self.imageAnimationView.transform.rotated(by: CGFloat(Double.pi))
         }
     }
 }

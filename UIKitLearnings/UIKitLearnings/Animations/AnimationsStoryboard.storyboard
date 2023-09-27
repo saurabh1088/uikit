@@ -16,16 +16,46 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-TV-cmy" customClass="CircularProgressView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="75" width="200" height="200"/>
+                                <color key="backgroundColor" name="googleRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="py1-Cy-7xw"/>
+                                    <constraint firstAttribute="height" constant="200" id="y5V-bq-mwH"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SMl-jB-9GI">
+                                <rect key="frame" x="96.666666666666686" y="291" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CFr-3O-Xsl"/>
+                                    <constraint firstAttribute="height" constant="200" id="Or5-gn-obs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="SMl-jB-9GI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2YL-zL-cZv"/>
+                            <constraint firstItem="HJ5-TV-cmy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BRL-fe-O0b"/>
+                            <constraint firstItem="HJ5-TV-cmy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="h9t-Va-fSX"/>
+                            <constraint firstItem="SMl-jB-9GI" firstAttribute="top" secondItem="HJ5-TV-cmy" secondAttribute="bottom" constant="16" id="mcJ-WQ-D3A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circularProgressAnimationView" destination="HJ5-TV-cmy" id="hUk-Ts-XZd"/>
+                        <outlet property="imageAnimationView" destination="SMl-jB-9GI" id="gqb-Tw-0AN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="googleRed">
+            <color red="0.83899998664855957" green="0.17599999904632568" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="paletteDarkRed">
             <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -9,10 +9,11 @@ import UIKit
 
 class CircularProgressView: UIView {
     
-    private var viewModel: CircularProgressViewModel
+    var viewModel: CircularProgressViewModel?
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    init?(viewModel: CircularProgressViewModel, coder: NSCoder) {
+        self.viewModel = viewModel
+        super.init(coder: coder)
     }
     
     init(viewModel: CircularProgressViewModel, frame: CGRect) {
@@ -20,37 +21,45 @@ class CircularProgressView: UIView {
         super.init(frame: frame)
     }
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     func createCircularBezierPath() {
-        let uiBezierPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2, y: frame.size.height / 2),
-                                        radius: viewModel.radius,
-                                        startAngle: viewModel.startAngle,
-                                        endAngle: viewModel.endAngle,
-                                        clockwise: true)
-        viewModel.circlePathLayer.path = uiBezierPath.cgPath
-        viewModel.circlePathLayer.fillColor = UIColor.clear.cgColor
-        viewModel.circlePathLayer.lineCap = .round
-        viewModel.circlePathLayer.lineWidth = 12.0
-        viewModel.circlePathLayer.strokeEnd = 1.0
-        viewModel.circlePathLayer.strokeColor = UIColor.black.cgColor
-        
-        layer.addSublayer(viewModel.circlePathLayer)
+        if let viewModel = viewModel {
+            let uiBezierPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2, y: frame.size.height / 2),
+                                            radius: viewModel.radius,
+                                            startAngle: viewModel.startAngle,
+                                            endAngle: viewModel.endAngle,
+                                            clockwise: true)
+            viewModel.circlePathLayer.path = uiBezierPath.cgPath
+            viewModel.circlePathLayer.fillColor = UIColor.clear.cgColor
+            viewModel.circlePathLayer.lineCap = .round
+            viewModel.circlePathLayer.lineWidth = 12.0
+            viewModel.circlePathLayer.strokeEnd = 1.0
+            viewModel.circlePathLayer.strokeColor = UIColor.black.cgColor
+            
+            layer.addSublayer(viewModel.circlePathLayer)
 
-        viewModel.progressViewLayer.path = uiBezierPath.cgPath
-        viewModel.progressViewLayer.fillColor = UIColor.clear.cgColor
-        viewModel.progressViewLayer.lineCap = .round
-        viewModel.progressViewLayer.lineWidth = 10.0
-        viewModel.progressViewLayer.strokeEnd = 0
-        viewModel.progressViewLayer.strokeColor = UIColor.yellow.cgColor
+            viewModel.progressViewLayer.path = uiBezierPath.cgPath
+            viewModel.progressViewLayer.fillColor = UIColor.clear.cgColor
+            viewModel.progressViewLayer.lineCap = .round
+            viewModel.progressViewLayer.lineWidth = 10.0
+            viewModel.progressViewLayer.strokeEnd = 0
+            viewModel.progressViewLayer.strokeColor = UIColor.yellow.cgColor
 
-        layer.addSublayer(viewModel.progressViewLayer)
+            layer.addSublayer(viewModel.progressViewLayer)
+        }
     }
     
     func progressAnimation(duration: TimeInterval) {
-        let circularProgressAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        circularProgressAnimation.duration = duration
-        circularProgressAnimation.toValue = 1.0
-        circularProgressAnimation.fillMode = .forwards
-        circularProgressAnimation.isRemovedOnCompletion = false
-        viewModel.progressViewLayer.add(circularProgressAnimation, forKey: "progressAnim")
+        if let viewModel = viewModel {
+            let circularProgressAnimation = CABasicAnimation(keyPath: "strokeEnd")
+            circularProgressAnimation.duration = duration
+            circularProgressAnimation.toValue = 1.0
+            circularProgressAnimation.fillMode = .forwards
+            circularProgressAnimation.isRemovedOnCompletion = false
+            viewModel.progressViewLayer.add(circularProgressAnimation, forKey: "progressAnim")
+        }
     }
 }
