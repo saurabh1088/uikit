@@ -34,4 +34,12 @@ class RectangularView: UIView {
         path.close()
         self.path = path
     }
+    
+    // TODO: ISSUE, this is not working
+    func animateRectangleView() {
+        let animation = CABasicAnimation(keyPath: "path")
+        animation.fromValue = UIBezierPath().cgPath
+        animation.toValue = self.path.cgPath
+        animation.duration = 2
+    }
 }

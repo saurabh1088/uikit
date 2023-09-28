@@ -21,6 +21,12 @@ class AnimationsViewController: UIViewController {
         setUpAnimatingImageView()
         setUpRectangularAnimatingView()
     }
+    
+    // TODO: ISSUE, this is not working
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        rectangularAnimationView.animateRectangleView()
+    }
 }
 
 extension AnimationsViewController {
