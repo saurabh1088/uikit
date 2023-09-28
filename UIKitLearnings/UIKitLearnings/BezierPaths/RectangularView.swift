@@ -28,11 +28,10 @@ class RectangularView: UIView {
     private func createRectangularShapeUsingBezierPath() {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: 0, y: 100))
-        path.addLine(to: CGPoint(x: 100, y: 100))
-        path.addLine(to: CGPoint(x: 100, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: frame.width))
+        path.addLine(to: CGPoint(x: frame.width, y: frame.width))
+        path.addLine(to: CGPoint(x: frame.width, y: 0))
         path.close()
         self.path = path
     }
-
 }

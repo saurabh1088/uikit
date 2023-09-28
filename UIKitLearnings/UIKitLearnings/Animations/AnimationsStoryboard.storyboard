@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,12 +33,22 @@
                                     <constraint firstAttribute="height" constant="200" id="Or5-gn-obs"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxT-co-za2" customClass="RectangularView" customModule="UIKitLearnings" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="507" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kTY-Dn-9Bt"/>
+                                    <constraint firstAttribute="width" constant="200" id="mhS-Ll-Vpd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
                         <constraints>
                             <constraint firstItem="SMl-jB-9GI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2YL-zL-cZv"/>
                             <constraint firstItem="HJ5-TV-cmy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BRL-fe-O0b"/>
+                            <constraint firstItem="jxT-co-za2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="L39-ug-Xos"/>
+                            <constraint firstItem="jxT-co-za2" firstAttribute="top" secondItem="SMl-jB-9GI" secondAttribute="bottom" constant="16" id="NQB-Wg-JfG"/>
                             <constraint firstItem="HJ5-TV-cmy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="h9t-Va-fSX"/>
                             <constraint firstItem="SMl-jB-9GI" firstAttribute="top" secondItem="HJ5-TV-cmy" secondAttribute="bottom" constant="16" id="mcJ-WQ-D3A"/>
                         </constraints>
@@ -45,6 +56,7 @@
                     <connections>
                         <outlet property="circularProgressAnimationView" destination="HJ5-TV-cmy" id="hUk-Ts-XZd"/>
                         <outlet property="imageAnimationView" destination="SMl-jB-9GI" id="gqb-Tw-0AN"/>
+                        <outlet property="rectangularAnimationView" destination="jxT-co-za2" id="czK-cx-Maz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -59,5 +71,8 @@
         <namedColor name="paletteDarkRed">
             <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
