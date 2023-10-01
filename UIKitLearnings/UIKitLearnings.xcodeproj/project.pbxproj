@@ -40,6 +40,7 @@
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
+		B7E00D062AC9BF2D0050C75D /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
+		B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +225,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B7E00D042AC9BF120050C75D /* Login */,
 				B7F931EC2ABF42D70049CC0B /* Animations */,
 				B7438FA92A8E905200EE6B6A /* AugmentedReality */,
 				B7DF87A42AC496C600601EDB /* BezierPaths */,
@@ -266,6 +269,14 @@
 				B7DF87A52AC4972000601EDB /* RectangularView.swift */,
 			);
 			path = BezierPaths;
+			sourceTree = "<group>";
+		};
+		B7E00D042AC9BF120050C75D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		B7F931EC2ABF42D70049CC0B /* Animations */ = {
@@ -384,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */,
+				B7E00D062AC9BF2D0050C75D /* LoginStoryboard.storyboard in Resources */,
 				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
