@@ -27,6 +27,10 @@
 		B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */; };
 		B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0BD2ACAF7DC00871C20 /* User+CoreDataClass.swift */; };
 		B79BB0C02ACAF7DC00871C20 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0BE2ACAF7DC00871C20 /* User+CoreDataProperties.swift */; };
+		B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C12ACB0B8A00871C20 /* LoginViewController.swift */; };
+		B79BB0C42ACB367B00871C20 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */; };
+		B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */; };
+		B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C72ACB36E000871C20 /* LoginRouter.swift */; };
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
 		B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BDD29EB13F7005D8FE9 /* AppDelegate.swift */; };
@@ -85,6 +89,10 @@
 		B79AFF1829EDBDFA00A947E6 /* ToDoItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsViewModel.swift; sourceTree = "<group>"; };
 		B79BB0BD2ACAF7DC00871C20 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B79BB0BE2ACAF7DC00871C20 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B79BB0C12ACB0B8A00871C20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B79BB0C72ACB36E000871C20 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7BB2BDA29EB13F7005D8FE9 /* UIKitLearnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitLearnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */,
+				B79BB0C12ACB0B8A00871C20 /* LoginViewController.swift */,
+				B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */,
+				B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */,
+				B79BB0C72ACB36E000871C20 /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -437,15 +449,19 @@
 				B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */,
 				B7BB2BE829EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld in Sources */,
 				B79340D72AC0307800F527CB /* CircularProgressView.swift in Sources */,
+				B79BB0C42ACB367B00871C20 /* LoginInteractor.swift in Sources */,
 				B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */,
 				B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */,
 				B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
+				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */,
 				B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */,
 				B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */,
 				B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */,
+				B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */,
+				B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
 				B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */,
