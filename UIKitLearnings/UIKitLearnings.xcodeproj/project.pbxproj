@@ -33,6 +33,7 @@
 		B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C72ACB36E000871C20 /* LoginRouter.swift */; };
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
+		B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */; };
 		B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BDD29EB13F7005D8FE9 /* AppDelegate.swift */; };
 		B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BDF29EB13F7005D8FE9 /* SceneDelegate.swift */; };
 		B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BE129EB13F7005D8FE9 /* ViewController.swift */; };
@@ -46,7 +47,7 @@
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
-		B7E00D062AC9BF2D0050C75D /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */; };
+		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		B79BB0C72ACB36E000871C20 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewUserViewController.swift; sourceTree = "<group>"; };
 		B7BB2BDA29EB13F7005D8FE9 /* UIKitLearnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitLearnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB2BDD29EB13F7005D8FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7BB2BDF29EB13F7005D8FE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +114,7 @@
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
-		B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +217,24 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		B7B1039F2ACC8D0F00A92296 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */,
+				B7B103A02ACC8D3A00A92296 /* Register */,
+				B7E00D042AC9BF120050C75D /* Login */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		B7B103A02ACC8D3A00A92296 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		B7BB2BD129EB13F6005D8FE9 = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +259,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
-				B7E00D042AC9BF120050C75D /* Login */,
+				B7B1039F2ACC8D0F00A92296 /* SignIn */,
 				B7F931EC2ABF42D70049CC0B /* Animations */,
 				B7438FA92A8E905200EE6B6A /* AugmentedReality */,
 				B7DF87A42AC496C600601EDB /* BezierPaths */,
@@ -288,7 +308,6 @@
 		B7E00D042AC9BF120050C75D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B7E00D052AC9BF2D0050C75D /* LoginStoryboard.storyboard */,
 				B79BB0C12ACB0B8A00871C20 /* LoginViewController.swift */,
 				B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */,
 				B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */,
@@ -413,7 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */,
-				B7E00D062AC9BF2D0050C75D /* LoginStoryboard.storyboard in Resources */,
+				B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */,
 				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
@@ -453,6 +472,7 @@
 				B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */,
 				B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */,
 				B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */,
+				B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
 				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,

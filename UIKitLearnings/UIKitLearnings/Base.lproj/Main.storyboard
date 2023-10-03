@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="1080" y="666"/>
         </scene>
-        <!--LoginStoryboard-->
+        <!--SignInStoryboard-->
         <scene sceneID="R3S-S5-ZnO">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginStoryboard" id="lgI-hv-K2i" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignInStoryboard" id="lgI-hv-K2i" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFW-5r-HAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178" y="739"/>
