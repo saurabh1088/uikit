@@ -17,4 +17,15 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        presenter?.openUserRegistration()
+    }
+    
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        if let username = usernameTextField.text,
+           let password = passwordTextField.text {
+            presenter?.signInUser(with: username, password: password)
+        }
+    }
 }

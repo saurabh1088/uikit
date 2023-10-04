@@ -7,6 +7,23 @@
 
 import Foundation
 
-protocol LoginPresenterProtocol {}
+protocol LoginPresenterProtocol {
+    var interactor: LoginInteractor? { get set }
+    var router: LoginRouter? { get set }
+    func openUserRegistration()
+    func signInUser(with username: String, password: String)
+}
 
-class LoginPresenter: LoginPresenterProtocol { }
+class LoginPresenter: LoginPresenterProtocol {
+    var interactor: LoginInteractor?
+    var router: LoginRouter?
+    
+    func openUserRegistration() {
+        router?.showRegistrationPage()
+    }
+    
+    func signInUser(with username: String, password: String) {
+        let result = interactor?.loginUser(with: username, password: password)
+        if result == .userNotFound { router?.showAlert() }
+    }
+}

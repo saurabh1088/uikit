@@ -94,7 +94,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="paletteRed"/>
                                         <connections>
-                                            <segue destination="lgI-hv-K2i" kind="presentation" id="rpL-It-RRH"/>
+                                            <segue destination="lgI-hv-K2i" kind="show" identifier="showSignInViewController" id="rpL-It-RRH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -189,7 +189,9 @@
         <!--SignInStoryboard-->
         <scene sceneID="R3S-S5-ZnO">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignInStoryboard" id="lgI-hv-K2i" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignInStoryboard" id="lgI-hv-K2i" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D4I-fW-fDd"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFW-5r-HAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178" y="739"/>

@@ -34,6 +34,9 @@
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
 		B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */; };
+		B7B103A42ACC8EFA00A92296 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B103A32ACC8EFA00A92296 /* RegisterInteractor.swift */; };
+		B7B103A62ACC8F0F00A92296 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B103A52ACC8F0F00A92296 /* RegisterPresenter.swift */; };
+		B7B103A82ACC8F2300A92296 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B103A72ACC8F2300A92296 /* RegisterRouter.swift */; };
 		B7BB2BDE29EB13F7005D8FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BDD29EB13F7005D8FE9 /* AppDelegate.swift */; };
 		B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BDF29EB13F7005D8FE9 /* SceneDelegate.swift */; };
 		B7BB2BE229EB13F7005D8FE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BE129EB13F7005D8FE9 /* ViewController.swift */; };
@@ -97,6 +100,9 @@
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewUserViewController.swift; sourceTree = "<group>"; };
+		B7B103A32ACC8EFA00A92296 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		B7B103A52ACC8F0F00A92296 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		B7B103A72ACC8F2300A92296 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		B7BB2BDA29EB13F7005D8FE9 /* UIKitLearnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitLearnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB2BDD29EB13F7005D8FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7BB2BDF29EB13F7005D8FE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */,
+				B7B103A32ACC8EFA00A92296 /* RegisterInteractor.swift */,
+				B7B103A52ACC8F0F00A92296 /* RegisterPresenter.swift */,
+				B7B103A72ACC8F2300A92296 /* RegisterRouter.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -477,7 +486,9 @@
 				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */,
+				B7B103A42ACC8EFA00A92296 /* RegisterInteractor.swift in Sources */,
 				B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */,
+				B7B103A82ACC8F2300A92296 /* RegisterRouter.swift in Sources */,
 				B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */,
 				B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */,
 				B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */,
@@ -489,6 +500,7 @@
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
+				B7B103A62ACC8F0F00A92296 /* RegisterPresenter.swift in Sources */,
 				B79BB0C02ACAF7DC00871C20 /* User+CoreDataProperties.swift in Sources */,
 				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,

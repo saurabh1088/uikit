@@ -95,6 +95,14 @@ extension ViewController {
             destinationViewController.onSuccess = {
                 print("Successfully loaded URL in WKWebView")
             }
+        } else if segue.identifier == "showSignInViewController",
+                  let destinationViewController = segue.destination as? LoginViewController {
+            let presenter = LoginPresenter()
+            let router = LoginRouter()
+            router.mainViewController = destinationViewController
+            presenter.router = router
+            presenter.interactor = LoginInteractor()
+            destinationViewController.presenter = presenter
         }
     }
 }
