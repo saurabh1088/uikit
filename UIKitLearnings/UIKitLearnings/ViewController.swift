@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 // Table View data source methods implementation
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,6 +67,12 @@ extension ViewController: UITableViewDataSource {
         } else if indexPath.row == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "coreDataLoginTableViewCell")!
             cell.textLabel?.text = "Login using CoreData"
+            cell.textLabel?.textColor = UIColor.white
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == 6 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentsTableViewCell")!
+            cell.textLabel?.text = "UI Components"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell

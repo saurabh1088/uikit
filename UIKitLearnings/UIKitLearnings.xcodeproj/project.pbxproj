@@ -47,6 +47,8 @@
 		B7BB2BF829EB13FC005D8FE9 /* UIKitLearningsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2BF729EB13FC005D8FE9 /* UIKitLearningsTests.swift */; };
 		B7BB2C0229EB13FC005D8FE9 /* UIKitLearningsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2C0129EB13FC005D8FE9 /* UIKitLearningsUITests.swift */; };
 		B7BB2C0429EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */; };
+		B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */; };
+		B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */; };
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
@@ -117,6 +119,8 @@
 		B7BB2BFD29EB13FC005D8FE9 /* UIKitLearningsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitLearningsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB2C0129EB13FC005D8FE9 /* UIKitLearningsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLearningsUITests.swift; sourceTree = "<group>"; };
 		B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLearningsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponentsStoryboard.storyboard; sourceTree = "<group>"; };
+		B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsViewController.swift; sourceTree = "<group>"; };
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
@@ -268,6 +272,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B7BEA1BE2AD0864700CBC92C /* UIComponents */,
 				B7B1039F2ACC8D0F00A92296 /* SignIn */,
 				B7F931EC2ABF42D70049CC0B /* Animations */,
 				B7438FA92A8E905200EE6B6A /* AugmentedReality */,
@@ -304,6 +309,15 @@
 				B7BB2C0329EB13FC005D8FE9 /* UIKitLearningsUITestsLaunchTests.swift */,
 			);
 			path = UIKitLearningsUITests;
+			sourceTree = "<group>";
+		};
+		B7BEA1BE2AD0864700CBC92C /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */,
+				B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		B7DF87A42AC496C600601EDB /* BezierPaths */ = {
@@ -445,6 +459,7 @@
 				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
+				B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
 				B7BB2BEA29EB13FB005D8FE9 /* Assets.xcassets in Resources */,
 				B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */,
@@ -502,6 +517,7 @@
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
 				B7B103A62ACC8F0F00A92296 /* RegisterPresenter.swift in Sources */,
 				B79BB0C02ACAF7DC00871C20 /* User+CoreDataProperties.swift in Sources */,
+				B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */,
 				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
