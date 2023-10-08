@@ -8,36 +8,41 @@
 import UIKit
 
 class UIComponentsViewController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var secondaryCollectionView: UICollectionView!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.tag = 0
-        secondaryCollectionView.tag = 1
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        secondaryCollectionView.delegate = self
-        secondaryCollectionView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
-extension UIComponentsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+
+
+// Table View data source methods implementation
+extension UIComponentsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView.tag == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath)
-            return cell
-        } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "secondaryCollectionViewCell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentCollectionViewCell")!
+            cell.textLabel?.text = "Notes"
+            cell.textLabel?.textColor = UIColor.white
+            // By default selected cell will be highlighted with a color greyish. To turn
+            // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
             return cell
         }
+        return UITableViewCell()
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+}
+
+// Table View delegate method implementation
+extension UIComponentsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tableView didDeselectRowAt :: \(indexPath)")
     }
 }

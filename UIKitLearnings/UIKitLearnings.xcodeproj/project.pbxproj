@@ -14,6 +14,7 @@
 		B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86C29ED9B210054767C /* NewToDoListItemViewController.swift */; };
 		B730386329EC05860057A099 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B730386229EC05860057A099 /* Colors.xcassets */; };
 		B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730386529EC06BA0057A099 /* UIColor+Extension.swift */; };
+		B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
 		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
@@ -82,6 +83,7 @@
 		B726A86C29ED9B210054767C /* NewToDoListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoListItemViewController.swift; sourceTree = "<group>"; };
 		B730386229EC05860057A099 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		B730386529EC06BA0057A099 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
 		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
 		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			children = (
 				B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */,
 				B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */,
+				B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
+				B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */,
 				B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */,
 				B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */,
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
