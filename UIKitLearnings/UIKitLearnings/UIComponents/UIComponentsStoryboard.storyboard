@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-579.38931297709917" y="-49.295774647887328"/>
         </scene>
-        <!--Components View Controller-->
+        <!--Collection View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="UIComponentsViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="CollectionViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +130,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Flj-WL-6gt"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cTG-YW-tK0" id="sBg-t0-A3L"/>
+                        <outlet property="secondaryCollectionView" destination="SGL-lx-efR" id="1FN-lE-Wjb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
