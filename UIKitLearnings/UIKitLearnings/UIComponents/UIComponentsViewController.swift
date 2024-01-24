@@ -29,7 +29,7 @@ extension UIComponentsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentCollectionViewCell")!
-            cell.textLabel?.text = "Notes"
+            cell.textLabel?.text = "Collection View"
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
             // this behaviour OFF, set selectionStyle as none
