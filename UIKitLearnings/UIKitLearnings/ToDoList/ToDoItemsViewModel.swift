@@ -45,10 +45,8 @@ class ToDoItemsViewModel {
     }
     
     func deleteToDoItem(_ indexPath: IndexPath) {
-        if let object = todos[indexPath.row] as? NSManagedObject {
-            managedContext?.delete(object)
-            todos.remove(at: indexPath.row)
-        }
+        managedContext?.delete(todos[indexPath.row])
+        todos.remove(at: indexPath.row)
         do {
             try managedContext?.save()
         } catch {

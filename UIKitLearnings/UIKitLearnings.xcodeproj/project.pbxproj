@@ -18,6 +18,8 @@
 		B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
+		B77632692B90494800DBB0F5 /* NetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */; };
+		B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */; };
 		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
 		B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77BB88B2A096394002BE62B /* WebViewController.swift */; };
 		B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77BB88E2A096703002BE62B /* WebKit.framework */; };
@@ -87,6 +89,8 @@
 		B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
 		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
+		B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NetworkingStoryboard.storyboard; sourceTree = "<group>"; };
+		B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
 		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
 		B77BB88B2A096394002BE62B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B77BB88E2A096703002BE62B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +205,15 @@
 			path = AugmentedReality;
 			sourceTree = "<group>";
 		};
+		B77632652B90490200DBB0F5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */,
+				B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B77BB8882A0960D0002BE62B /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +289,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B77632652B90490200DBB0F5 /* Networking */,
 				B7BEA1BE2AD0864700CBC92C /* UIComponents */,
 				B7B1039F2ACC8D0F00A92296 /* SignIn */,
 				B7F931EC2ABF42D70049CC0B /* Animations */,
@@ -476,6 +490,7 @@
 				B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */,
 				B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */,
 				B7BB2BE529EB13F7005D8FE9 /* Main.storyboard in Resources */,
+				B77632692B90494800DBB0F5 /* NetworkingStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +533,7 @@
 				B77F1C5A29FF9B5F00DFED91 /* CustomUIView.swift in Sources */,
 				B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */,
 				B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */,
+				B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */,
 				B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
