@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70FCA982A90DC1900492A75 /* ARKit.framework */; };
+		B71A21092B9010760060E361 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B71A21082B9010760060E361 /* Alamofire */; };
 		B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86529ED62B60054767C /* ToDoItemsViewController.swift */; };
 		B726A86A29ED80320054767C /* ToDoListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86829ED80320054767C /* ToDoListItemTableViewCell.swift */; };
 		B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B726A86929ED80320054767C /* ToDoListItemTableViewCell.xib */; };
@@ -136,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71A21092B9010760060E361 /* Alamofire in Frameworks */,
 				B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */,
 				B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */,
 			);
@@ -369,6 +371,9 @@
 			dependencies = (
 			);
 			name = UIKitLearnings;
+			packageProductDependencies = (
+				B71A21082B9010760060E361 /* Alamofire */,
+			);
 			productName = UIKitLearnings;
 			productReference = B7BB2BDA29EB13F7005D8FE9 /* UIKitLearnings.app */;
 			productType = "com.apple.product-type.application";
@@ -441,6 +446,9 @@
 				Base,
 			);
 			mainGroup = B7BB2BD129EB13F6005D8FE9;
+			packageReferences = (
+				B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B7BB2BDB29EB13F7005D8FE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -866,6 +874,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B71A21082B9010760060E361 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B7BB2BE629EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld */ = {
