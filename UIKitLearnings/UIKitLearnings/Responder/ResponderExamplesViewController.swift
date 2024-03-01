@@ -34,10 +34,12 @@ extension ResponderExamplesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "responderChainTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Responder Chain"
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "manipulateResponderChainTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Manipulate Responder Chain"
             return cell
         }

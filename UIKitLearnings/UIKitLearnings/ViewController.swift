@@ -32,6 +32,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Notes"
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
@@ -40,6 +41,7 @@ extension ViewController: UITableViewDataSource {
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "responderTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Responder"
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
@@ -48,36 +50,42 @@ extension ViewController: UITableViewDataSource {
             return cell
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "webViewTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Web View"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "augmentedRealityTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Augmented Reality"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "animationsTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Animations"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "coreDataLoginTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Login using CoreData"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 6 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentsTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "UI Components"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 7 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "networkingTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Networking"
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none

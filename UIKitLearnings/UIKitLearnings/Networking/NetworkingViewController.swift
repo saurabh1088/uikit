@@ -28,9 +28,13 @@ extension NetworkingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "networkingURLSessionTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
+            cell.textLabel?.text = "URL Loading System"
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "networkingAlamofireTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
+            cell.textLabel?.text = "Alamofire"
             return cell
         }
         return UITableViewCell()
