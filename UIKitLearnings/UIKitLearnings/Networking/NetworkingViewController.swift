@@ -30,11 +30,13 @@ extension NetworkingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "networkingURLSessionTableViewCell")!
             // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "URL Loading System"
+            cell.textLabel?.textColor = UIColor.white
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "networkingAlamofireTableViewCell")!
             // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Alamofire"
+            cell.textLabel?.textColor = UIColor.white
             return cell
         }
         return UITableViewCell()

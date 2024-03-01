@@ -38,6 +38,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="hhq-Y2-Ksq" kind="show" id="xSl-2E-cX9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -59,6 +62,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+        <!--AlamofireNetworkingStoryboard-->
+        <scene sceneID="86E-IN-dkg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlamofireNetworkingStoryboard" id="hhq-Y2-Ksq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FWd-DS-Hot"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zY7-Bt-wJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-121"/>
         </scene>
     </scenes>
     <resources>

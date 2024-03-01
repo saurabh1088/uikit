@@ -18,6 +18,8 @@
 		B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
+		B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */; };
+		B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */; };
 		B77632692B90494800DBB0F5 /* NetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */; };
 		B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */; };
 		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
@@ -89,6 +91,8 @@
 		B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
 		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
+		B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlamofireNetworkingStoryboard.storyboard; sourceTree = "<group>"; };
+		B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewController.swift; sourceTree = "<group>"; };
 		B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NetworkingStoryboard.storyboard; sourceTree = "<group>"; };
 		B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
 		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
@@ -205,9 +209,19 @@
 			path = AugmentedReality;
 			sourceTree = "<group>";
 		};
+		B74BB4752B9243DE00F0EEB3 /* AlamofireNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */,
+				B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */,
+			);
+			path = AlamofireNetworking;
+			sourceTree = "<group>";
+		};
 		B77632652B90490200DBB0F5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B74BB4752B9243DE00F0EEB3 /* AlamofireNetworking */,
 				B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */,
 				B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */,
 			);
@@ -484,6 +498,7 @@
 				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
+				B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */,
 				B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
 				B7BB2BEA29EB13FB005D8FE9 /* Assets.xcassets in Resources */,
@@ -539,6 +554,7 @@
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
 				B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */,
 				B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */,
+				B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */,
 				B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */,
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
