@@ -28,18 +28,25 @@
                                     <action selector="fetchDataButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yjs-tb-nZd"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LYn-Lj-3iL">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="G5Z-ZK-vy8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2qd-Xv-dON"/>
+                            <constraint firstItem="LYn-Lj-3iL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Nbl-OI-ZsO"/>
                             <constraint firstItem="G5Z-ZK-vy8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="YJt-05-92E"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G5Z-ZK-vy8" secondAttribute="trailing" constant="16" id="icY-yi-C1u"/>
+                            <constraint firstItem="LYn-Lj-3iL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ikD-u9-7zw"/>
                             <constraint firstItem="G5Z-ZK-vy8" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="qbY-sp-Gac"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fetchDataButton" destination="G5Z-ZK-vy8" id="e3A-43-iQo"/>
+                        <outlet property="fetchDataButtonActivityIndicator" destination="LYn-Lj-3iL" id="2K5-X9-Mib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
