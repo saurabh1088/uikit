@@ -19,14 +19,16 @@ class AlamofireNetworkingViewController: UIViewController {
     
     @IBAction func fetchDataButtonAction(_ sender: Any) {
         // TODO: Format keeping in mind following MVVM approach
-        fetchDataButton.titleLabel?.isHidden = true
-        fetchDataButtonActivityIndicator.isHidden = false
-        fetchDataButtonActivityIndicator.startAnimating()
+        fetchDataButtonActivityIndicatorAnimate(true)
         AlamofireViewModel.getAuthors {
-            self.fetchDataButton.titleLabel?.isHidden = false
-            self.fetchDataButtonActivityIndicator.isHidden = true
-            self.fetchDataButtonActivityIndicator.stopAnimating()
+            self.fetchDataButtonActivityIndicatorAnimate(false)
         }
+    }
+    
+    func fetchDataButtonActivityIndicatorAnimate(_ shouldAnimate: Bool) {
+        fetchDataButton.titleLabel?.isHidden = shouldAnimate
+        fetchDataButtonActivityIndicator.isHidden = !shouldAnimate
+        shouldAnimate ? fetchDataButtonActivityIndicator.startAnimating() : fetchDataButtonActivityIndicator.stopAnimating()
     }
 }
 
