@@ -53,8 +53,8 @@ class AlamofireViewModel {
         }
     }
     
-    static func getAuthorsList(completion: @escaping (Authors) -> ()) {
-        AF.request("https://openlibrary.org/authors/OL1A.json").responseDecodable(of: Authors.self) { response in
+    static func getAuthorsList(completion: @escaping (OpenLibraryAuthors) -> ()) {
+        AF.request("https://openlibrary.org/authors/OL1A.json").responseDecodable(of: OpenLibraryAuthors.self) { response in
             print("Received Response ::")
             switch response.result {
             case .success(let success):
@@ -64,47 +64,4 @@ class AlamofireViewModel {
             }
         }
     }
-}
-
-// TODO: These needs refactoring, some repititions can be abstracted and proper naming conventions need to follow.
-struct Authors: Codable {
-    var name: String
-    var personal_name: String
-    var death_date: String
-    var alternate_names: [String]
-    var key: String
-    var birth_date: String
-    var type: AuthorType
-    var remote_ids: AuthorRemoteIDs
-    var photos: [Int]
-    var bio: AuthorBio
-    var latest_revision: Int
-    var revision: Int
-    var created: AuthorCreated
-    var last_modified: AuthorLastModified
-}
-
-struct AuthorType: Codable {
-    var key: String
-}
-
-struct AuthorRemoteIDs: Codable {
-    var wikidata: String
-    var isni: String
-    var viaf: String
-}
-
-struct AuthorBio: Codable {
-    var type: String
-    var value: String
-}
-
-struct AuthorCreated: Codable {
-    var type: String
-    var value: String
-}
-
-struct AuthorLastModified: Codable {
-    var type: String
-    var value: String
 }
