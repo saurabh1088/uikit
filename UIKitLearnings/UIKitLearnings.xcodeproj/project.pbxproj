@@ -21,6 +21,10 @@
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
 		B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */; };
 		B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */; };
+		B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E89852BFCC916001545BD /* PresentedViewController.swift */; };
+		B74E89882BFCC916001545BD /* PresentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74E89862BFCC916001545BD /* PresentedViewController.xib */; };
+		B74E898B2BFCD85A001545BD /* NavigationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E89892BFCD85A001545BD /* NavigationTestViewController.swift */; };
+		B74E898C2BFCD85A001545BD /* NavigationTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74E898A2BFCD85A001545BD /* NavigationTestViewController.xib */; };
 		B77632692B90494800DBB0F5 /* NetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */; };
 		B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */; };
 		B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */; };
@@ -60,6 +64,7 @@
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
+		B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +100,10 @@
 		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
 		B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlamofireNetworkingStoryboard.storyboard; sourceTree = "<group>"; };
 		B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewController.swift; sourceTree = "<group>"; };
+		B74E89852BFCC916001545BD /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		B74E89862BFCC916001545BD /* PresentedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentedViewController.xib; sourceTree = "<group>"; };
+		B74E89892BFCD85A001545BD /* NavigationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestViewController.swift; sourceTree = "<group>"; };
+		B74E898A2BFCD85A001545BD /* NavigationTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationTestViewController.xib; sourceTree = "<group>"; };
 		B77632682B90494800DBB0F5 /* NetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NetworkingStoryboard.storyboard; sourceTree = "<group>"; };
 		B776326A2B9050A000DBB0F5 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
 		B77BB8892A096151002BE62B /* WebViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryboard.storyboard; sourceTree = "<group>"; };
@@ -138,6 +147,7 @@
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPresenterViewController.swift; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +247,17 @@
 			path = AlamofireNetworking;
 			sourceTree = "<group>";
 		};
+		B74E89802BFCC69B001545BD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B74E89852BFCC916001545BD /* PresentedViewController.swift */,
+				B74E89862BFCC916001545BD /* PresentedViewController.xib */,
+				B74E89892BFCD85A001545BD /* NavigationTestViewController.swift */,
+				B74E898A2BFCD85A001545BD /* NavigationTestViewController.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		B77632652B90490200DBB0F5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +343,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B74E89802BFCC69B001545BD /* Navigation */,
 				B77632652B90490200DBB0F5 /* Networking */,
 				B7BEA1BE2AD0864700CBC92C /* UIComponents */,
 				B7B1039F2ACC8D0F00A92296 /* SignIn */,
@@ -398,6 +420,7 @@
 				B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */,
 				B79340D62AC0307800F527CB /* CircularProgressView.swift */,
 				B79340D82AC1F4A500F527CB /* CircularProgressViewModel.swift */,
+				B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -513,8 +536,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */,
+				B74E89882BFCC916001545BD /* PresentedViewController.xib in Resources */,
 				B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */,
 				B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */,
+				B74E898C2BFCD85A001545BD /* NavigationTestViewController.xib in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
 				B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */,
@@ -559,6 +584,7 @@
 				B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
 				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
+				B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */,
 				B7B103A42ACC8EFA00A92296 /* RegisterInteractor.swift in Sources */,
@@ -572,6 +598,7 @@
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
 				B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */,
+				B74E898B2BFCD85A001545BD /* NavigationTestViewController.swift in Sources */,
 				B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */,
 				B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */,
 				B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */,
@@ -583,6 +610,7 @@
 				B7405E742B948F8E00BFCAED /* OpenLibraryAuthors.swift in Sources */,
 				B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */,
 				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,
+				B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
 			);

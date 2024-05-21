@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 // Table View data source methods implementation
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        8
+        9
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -90,6 +90,12 @@ extension ViewController: UITableViewDataSource {
             cell.textLabel?.textColor = UIColor.white
             cell.selectionStyle = .none
             return cell
+        } else if indexPath.row == 8 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "presentTableViewCell")!
+            cell.textLabel?.text = "Present"
+            cell.textLabel?.textColor = UIColor.white
+            cell.selectionStyle = .none
+            return cell
         }
         return UITableViewCell()
     }
@@ -99,6 +105,11 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tableView didDeselectRowAt :: \(indexPath)")
+        if indexPath.row == 8 {
+            let viewController = PresentedViewController(nibName: "PresentedViewController", bundle: nil)
+            viewController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(viewController, animated: true)
+        }
     }
 }
 
