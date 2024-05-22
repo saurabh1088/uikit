@@ -137,3 +137,10 @@ extension ViewController {
         }
     }
 }
+
+@available(iOS 17.0, *)
+#Preview {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let viewcontroller = storyboard.instantiateViewController(withIdentifier: "rootViewController")
+    return viewcontroller
+}

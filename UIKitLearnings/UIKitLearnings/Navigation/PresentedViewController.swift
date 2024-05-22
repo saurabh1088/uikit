@@ -28,3 +28,9 @@ class PresentedViewController: UIViewController {
         self.dismiss(animated: true)
     }
 }
+
+@available(iOS 17.0, *)
+#Preview {
+    let viewcontroller = PresentedViewController(nibName: "PresentedViewController", bundle: nil)
+    return viewcontroller
+}
