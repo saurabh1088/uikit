@@ -64,6 +64,7 @@
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
+		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
 		B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
@@ -147,6 +148,7 @@
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
 		B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPresenterViewController.swift; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 		B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B7E4994C2BFF118200FA97CF /* Common */,
 				B74E89802BFCC69B001545BD /* Navigation */,
 				B77632652B90490200DBB0F5 /* Networking */,
 				B7BEA1BE2AD0864700CBC92C /* UIComponents */,
@@ -411,6 +414,14 @@
 				B79BB0C72ACB36E000871C20 /* LoginRouter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B7E4994C2BFF118200FA97CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		B7F931EC2ABF42D70049CC0B /* Animations */ = {
@@ -586,6 +597,7 @@
 				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
 				B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
+				B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */,
 				B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */,
 				B7B103A42ACC8EFA00A92296 /* RegisterInteractor.swift in Sources */,
 				B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */,
