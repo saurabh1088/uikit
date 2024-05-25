@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70304A42C0225FA00F4A483 /* LearningOptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70304A32C0225FA00F4A483 /* LearningOptionTests.swift */; };
 		B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70FCA982A90DC1900492A75 /* ARKit.framework */; };
 		B71A21092B9010760060E361 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B71A21082B9010760060E361 /* Alamofire */; };
 		B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726A86529ED62B60054767C /* ToDoItemsViewController.swift */; };
@@ -88,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B70304A32C0225FA00F4A483 /* LearningOptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptionTests.swift; sourceTree = "<group>"; };
 		B70FCA982A90DC1900492A75 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		B726A86529ED62B60054767C /* ToDoItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsViewController.swift; sourceTree = "<group>"; };
 		B726A86829ED80320054767C /* ToDoListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		B7BB2BF629EB13FC005D8FE9 /* UIKitLearningsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B70304A32C0225FA00F4A483 /* LearningOptionTests.swift */,
 				B7BB2BF729EB13FC005D8FE9 /* UIKitLearningsTests.swift */,
 			);
 			path = UIKitLearningsTests;
@@ -632,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70304A42C0225FA00F4A483 /* LearningOptionTests.swift in Sources */,
 				B7BB2BF829EB13FC005D8FE9 /* UIKitLearningsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
