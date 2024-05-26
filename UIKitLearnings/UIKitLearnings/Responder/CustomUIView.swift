@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class CustomUIView: UIView {
 
@@ -26,7 +27,7 @@ class CustomUIView: UIView {
     ///
     /// This method gets called whenever a new touch is detected in a responder.
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("Received touchesBegan from CustomUIView")
+        Logger.uiViewEvents.info("Received touchesBegan from CustomUIView")
         super.touchesBegan(touches, with: event)
         next?.touchesBegan(touches, with: event)
     }

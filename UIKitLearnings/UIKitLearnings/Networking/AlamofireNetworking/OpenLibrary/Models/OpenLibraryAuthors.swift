@@ -49,3 +49,25 @@ struct TypeValuePair: Codable {
     var type: String
     var value: String
 }
+
+extension OpenLibraryAuthors: CustomStringConvertible {
+    var description: String {
+        var descriptionString = """
+        Name: \(name)
+        Personal Name: \(personalName)
+        Birth Date: \(birthDate)
+        Death Date: \(deathDate)
+        Alternate Names: \(alternateNames.joined(separator: ", "))
+        Key: \(key)
+        Type: \(type.key)
+        Remote IDs: [Wikidata: \(remoteIds.wikidata), ISNI: \(remoteIds.isni), VIAF: \(remoteIds.viaf)]
+        Photos: \(photos.map { String($0) }.joined(separator: ", "))
+        Bio: \(bio.value)
+        Latest Revision: \(latestRevision)
+        Revision: \(revision)
+        Created: \(created.value)
+        Last Modified: \(lastModified.value)
+        """
+        return descriptionString
+    }
+}

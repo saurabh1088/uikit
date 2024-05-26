@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class ResponderViewController: UIViewController {
 
@@ -20,7 +21,7 @@ class ResponderViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        print("Received touchesBegan in ResponderViewController")
+        Logger.uiViewControllerEvents.info("Received touchesBegan in ResponderViewController")
     }
     
 
@@ -60,7 +61,7 @@ class GoogleGreenColorView: UIView {
         return nextViewToRespond
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("Received touchesBegan from GoogleGreenColorView")
+        Logger.uiViewControllerEvents.info("Received touchesBegan from GoogleGreenColorView")
     }
 }
 

@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class ManipulateResponderViewController: UIViewController {
 
@@ -20,10 +21,9 @@ class ManipulateResponderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // TODO: Investigate why self.next gives nil here, shouldn't viewcontroller have a next responder here.
-        print("Default next responder for ManipulateResponderViewController : \(String(describing: self.next))")
-        print("Default next responder for ManipulateResponderViewController's view : \(String(describing: self.view.next))")
-        print("Default next responder for googleChromeView : \(String(describing: googleChromeView.next))")
-        
+        Logger.uiViewControllerEvents.info("Default next responder for ManipulateResponderViewController : \(String(describing: self.next))")
+        Logger.uiViewControllerEvents.info("Default next responder for ManipulateResponderViewController's view : \(String(describing: self.view.next))")
+        Logger.uiViewControllerEvents.info("Default next responder for googleChromeView : \(String(describing: self.googleChromeView.next))")
         /// Alterning the responder chain here by giving `googleChromeView` a next responder. Without
         /// providing any next responder here by default it would have been `googleChromeView's`
         /// superview, but here we explicitly provided that if `googleChromeView` doesn't handles event
@@ -33,6 +33,6 @@ class ManipulateResponderViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("Default next responder for ManipulateResponderViewController in viewWillAppear : \(String(describing: self.next))")
+        Logger.uiViewControllerEvents.info("Default next responder for ManipulateResponderViewController in viewWillAppear : \(String(describing: self.next))")
     }
 }

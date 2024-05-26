@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OSLog
 
 class UIComponentsViewController: UIViewController {
     
@@ -44,6 +45,6 @@ extension UIComponentsViewController: UITableViewDataSource {
 // Table View delegate method implementation
 extension UIComponentsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tableView didDeselectRowAt :: \(indexPath)")
+        Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
     }
 }

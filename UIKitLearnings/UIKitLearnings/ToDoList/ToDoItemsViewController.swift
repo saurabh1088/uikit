@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class ToDoItemsViewController: UIViewController {
     var viewModel: ToDoItemsViewModel?
@@ -54,7 +55,7 @@ extension ToDoItemsViewController: UITableViewDataSource {
 
 extension ToDoItemsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tableView didSelectRowAt :: \(indexPath)")
+        Logger.uiTableViewDelegateCallbacks.info("tableView didSelectRowAt :: \(indexPath)")
     }
 }
 
@@ -67,7 +68,7 @@ extension ToDoItemsViewController {
     }
     
     @IBAction func unwindToToDoItemsViewController(segue: UIStoryboardSegue) {
-        print("Unwind to Root View Controller")
+        Logger.uiViewControllerEvents.info("Unwind to Root View Controller")
         tableView.reloadData()
     }
 }

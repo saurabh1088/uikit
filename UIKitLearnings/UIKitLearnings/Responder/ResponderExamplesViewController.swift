@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class ResponderExamplesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -22,7 +23,7 @@ class ResponderExamplesViewController: UIViewController {
 
 extension ResponderExamplesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tableView didDeselectRowAt :: \(indexPath)")
+        Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
     }
 }
 

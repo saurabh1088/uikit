@@ -65,6 +65,7 @@
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
+		B7E3B5CD2C024886005139E0 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */; };
 		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
 		B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
@@ -150,6 +151,7 @@
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
 		B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPresenterViewController.swift; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				B730386529EC06BA0057A099 /* UIColor+Extension.swift */,
+				B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */,
 				B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */,
 				B730386629EC06BA0057A099 /* UIColor+Extension.swift in Sources */,
+				B7E3B5CD2C024886005139E0 /* Logger+Extension.swift in Sources */,
 				B726A86629ED62B60054767C /* ToDoItemsViewController.swift in Sources */,
 				B7B103A62ACC8F0F00A92296 /* RegisterPresenter.swift in Sources */,
 				B79BB0C02ACAF7DC00871C20 /* User+CoreDataProperties.swift in Sources */,

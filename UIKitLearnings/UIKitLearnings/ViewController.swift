@@ -9,6 +9,7 @@
         
 
 import UIKit
+import OSLog
 
 class ViewController: UIViewController {
 
@@ -47,7 +48,7 @@ extension ViewController: UITableViewDataSource {
 // Table View delegate method implementation
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tableView didDeselectRowAt :: \(indexPath)")
+        Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
         if indexPath.row == 8 {
             let viewController = PresentedViewController(nibName: "PresentedViewController", bundle: nil)
             viewController.modalPresentationStyle = .fullScreen
@@ -67,7 +68,7 @@ extension ViewController {
             let destinationViewController = segue.destination as? WebViewController {
             destinationViewController.url = URL(string: "https://www.swift.org/documentation/")
             destinationViewController.onSuccess = {
-                print("Successfully loaded URL in WKWebView")
+                Logger.uiViewControllerEvents.info("Successfully loaded URL in WKWebView")
             }
         } else if segue.identifier == "showSignInViewController",
                   let destinationViewController = segue.destination as? LoginViewController {

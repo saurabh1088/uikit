@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import OSLog
 
 class AlamofireNetworkingViewController: UIViewController {
 
@@ -30,8 +31,8 @@ class AlamofireNetworkingViewController: UIViewController {
         
         AlamofireViewModel.getAuthorsList { authors in
             self.fetchDataButtonActivityIndicatorAnimate(false)
-            print("Received authors")
-            print(authors)
+            Logger.networkingAlamofire.info("Received authors")
+            Logger.networkingAlamofire.info("\(authors)")
         }
     }
     
@@ -49,8 +50,9 @@ class AlamofireViewModel {
     /// the decoding needs to be handled by the caller.
     static func getAuthors(completion: @escaping () -> ()) {
         AF.request("https://openlibrary.org/authors/OL1A.json").response { response in
-            print("Received Response ::")
-            print("\(String(data: response.data!, encoding: .utf8) as AnyObject)")
+            Logger.networkingAlamofire.info("Received Response ::")
+            let responseString = String(data: response.data!, encoding: .utf8)!
+            Logger.networkingAlamofire.info("\(responseString)")
             completion()
         }
     }
@@ -59,12 +61,12 @@ class AlamofireViewModel {
     /// type provided.
     static func getAuthorsList(completion: @escaping (OpenLibraryAuthors) -> ()) {
         AF.request("https://openlibrary.org/authors/OL1A.json").responseDecodable(of: OpenLibraryAuthors.self) { response in
-            print("Received Response ::")
+            Logger.networkingAlamofire.info("Received Response ::")
             switch response.result {
             case .success(let success):
                 completion(success)
             case .failure(let failure):
-                print("Some error occured :: \(failure)")
+                Logger.networkingAlamofire.error("Some error occured :: \(failure)")
             }
         }
     }

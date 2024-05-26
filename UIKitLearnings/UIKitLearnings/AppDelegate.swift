@@ -9,6 +9,7 @@
 
 import UIKit
 import CoreData
+import OSLog
 
 /**
  `@main`
@@ -71,7 +72,7 @@ import CoreData
  // This is defined in main.m file
  struct MySwiftCommandLineProgram {
    static func main() {
-     print("This is command line program")
+       Logger.appLifeCycle.info("This is command line program")
    }
  }
  
@@ -84,7 +85,7 @@ import CoreData
  @main
  struct MySwiftCommandLineProgram {
    static func main() {
-     print("This is command line program")
+       Logger.appLifeCycle.info("This is command line program")
    }
  }
  ```
@@ -97,6 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Logger.appLifeCycle.info("Application didFinishLaunchingWithOptions")
         return true
     }
 
