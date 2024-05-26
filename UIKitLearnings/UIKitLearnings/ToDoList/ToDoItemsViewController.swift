@@ -68,7 +68,7 @@ extension ToDoItemsViewController {
     }
     
     @IBAction func unwindToToDoItemsViewController(segue: UIStoryboardSegue) {
-        Logger.uiViewControllerEvents.info("Unwind to Root View Controller")
+        Logger.uiViewControllerEvent.info("Unwind to Root View Controller")
         tableView.reloadData()
     }
 }

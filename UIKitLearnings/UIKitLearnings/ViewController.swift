@@ -68,7 +68,7 @@ extension ViewController {
             let destinationViewController = segue.destination as? WebViewController {
             destinationViewController.url = URL(string: "https://www.swift.org/documentation/")
             destinationViewController.onSuccess = {
-                Logger.uiViewControllerEvents.info("Successfully loaded URL in WKWebView")
+                Logger.uiViewControllerEvent.info("Successfully loaded URL in WKWebView")
             }
         } else if segue.identifier == "showSignInViewController",
                   let destinationViewController = segue.destination as? LoginViewController {

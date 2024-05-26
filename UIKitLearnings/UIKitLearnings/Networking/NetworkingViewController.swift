@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OSLog
 
 class NetworkingViewController: UIViewController {
 
@@ -40,5 +41,16 @@ extension NetworkingViewController: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension NetworkingViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let segueIdentifier = segue.identifier else { return }
+        if segueIdentifier == "showAlamofireNetworkingViewController" {
+            if let viewController = segue.destination as? AlamofireNetworkingViewController {
+                Logger.uiStoryboardEvent.info("Preparing for segue with identifier : \(segueIdentifier)")
+            }
+        }
     }
 }

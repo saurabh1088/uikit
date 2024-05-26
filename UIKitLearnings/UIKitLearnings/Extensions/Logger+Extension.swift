@@ -19,10 +19,14 @@ extension Logger {
 
 extension Logger {
     static let uiTableViewDelegateCallbacks = Logger(subsystem: subsystem, category: "UITableViewDelegate callbacks")
-    static let uiViewControllerEvents = Logger(subsystem: subsystem, category: "UIViewController events")
+    static let uiViewControllerEvent = Logger(subsystem: subsystem, category: "UIViewController event")
     static let uiViewEvents = Logger(subsystem: subsystem, category: "UIView events")
 }
 
 extension Logger {
     static let appLifeCycle = Logger(subsystem: subsystem, category: "App Lifecycle")
+}
+
+extension Logger {
+    static let uiStoryboardEvent = Logger(subsystem: subsystem, category: "UIStoryboard event")
 }

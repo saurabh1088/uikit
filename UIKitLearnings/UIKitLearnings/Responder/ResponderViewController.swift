@@ -21,7 +21,7 @@ class ResponderViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        Logger.uiViewControllerEvents.info("Received touchesBegan in ResponderViewController")
+        Logger.uiViewControllerEvent.info("Received touchesBegan in ResponderViewController")
     }
     
 
@@ -61,7 +61,7 @@ class GoogleGreenColorView: UIView {
         return nextViewToRespond
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Logger.uiViewControllerEvents.info("Received touchesBegan from GoogleGreenColorView")
+        Logger.uiViewControllerEvent.info("Received touchesBegan from GoogleGreenColorView")
     }
 }
 
