@@ -30,3 +30,7 @@ extension Logger {
 extension Logger {
     static let uiStoryboardEvent = Logger(subsystem: subsystem, category: "UIStoryboard event")
 }
+
+extension Logger {
+    static let appSceneEvent = Logger(subsystem: subsystem, category: "App scene event")
+}
