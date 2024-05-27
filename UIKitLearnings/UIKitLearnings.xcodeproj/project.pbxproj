@@ -67,6 +67,7 @@
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
 		B7E3B5CD2C024886005139E0 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */; };
 		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
+		B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */; };
 		B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
@@ -153,6 +154,7 @@
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
+		B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewModel.swift; sourceTree = "<group>"; };
 		B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPresenterViewController.swift; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				B7405E6F2B948D1100BFCAED /* OpenLibrary */,
 				B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */,
 				B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */,
+				B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */,
 			);
 			path = AlamofireNetworking;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */,
+				B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */,
 				B79BB0BF2ACAF7DC00871C20 /* User+CoreDataClass.swift in Sources */,
 				B7B103A42ACC8EFA00A92296 /* RegisterInteractor.swift in Sources */,
 				B79340D92AC1F4A500F527CB /* CircularProgressViewModel.swift in Sources */,

@@ -50,6 +50,7 @@ extension NetworkingViewController {
         if segueIdentifier == "showAlamofireNetworkingViewController" {
             if let viewController = segue.destination as? AlamofireNetworkingViewController {
                 Logger.uiStoryboardEvent.info("Preparing for segue with identifier : \(segueIdentifier)")
+                viewController.viewModel = AlamofireNetworkingViewModel()
             }
         }
     }
