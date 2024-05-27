@@ -21,10 +21,11 @@ final class LearningOptionTests: XCTestCase {
         XCTAssertEqual(LearningOption.networking, LearningOption.optionFor(index: 7))
         XCTAssertEqual(LearningOption.present, LearningOption.optionFor(index: 8))
         XCTAssertEqual(LearningOption.push, LearningOption.optionFor(index: 9))
+        XCTAssertEqual(LearningOption.viewController, LearningOption.optionFor(index: 10))
     }
     
     func test_learningOptionIndexes_failure() {
-        XCTAssertNil(LearningOption.optionFor(index: 10))
+        XCTAssertNil(LearningOption.optionFor(index: 11))
     }
     
     func test_cellReUseIdentifiers() {
@@ -38,6 +39,7 @@ final class LearningOptionTests: XCTestCase {
         XCTAssertEqual("networkingTableViewCell", LearningOption.networking.cellReUseIdentifier)
         XCTAssertEqual("presentTableViewCell", LearningOption.present.cellReUseIdentifier)
         XCTAssertEqual("pushTableViewCell", LearningOption.push.cellReUseIdentifier)
+        XCTAssertEqual("viewControllerTableViewCell", LearningOption.viewController.cellReUseIdentifier)
     }
 
     func testPerformanceExample() throws {

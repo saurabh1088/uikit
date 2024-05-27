@@ -21,6 +21,7 @@ enum LearningOption: String, CaseIterable {
     case networking = "Networking"
     case present = "Present"
     case push = "Push"
+    case viewController = "View Controller"
     
     static func optionFor(index: Int) -> LearningOption? {
         switch index {
@@ -34,6 +35,7 @@ enum LearningOption: String, CaseIterable {
         case 7: return .networking
         case 8: return .present
         case 9: return .push
+        case 10: return .viewController
         default: return nil
         }
     }
@@ -50,6 +52,7 @@ enum LearningOption: String, CaseIterable {
         case .networking: "networkingTableViewCell"
         case .present: "presentTableViewCell"
         case .push: "pushTableViewCell"
+        case .viewController: "viewControllerTableViewCell"
         }
     }
 }

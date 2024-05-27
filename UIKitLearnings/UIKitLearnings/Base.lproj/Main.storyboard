@@ -130,6 +130,27 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="paletteRed"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pushTableViewCell" rowHeight="106" id="BIk-vr-LdL">
+                                        <rect key="frame" x="0.0" y="817.00000381469727" width="393" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BIk-vr-LdL" id="LaE-tJ-Rhc">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="viewControllerTableViewCell" rowHeight="106" id="W3S-2i-fgP">
+                                        <rect key="frame" x="0.0" y="923.00000381469727" width="393" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W3S-2i-fgP" id="sXx-BF-NwG">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <connections>
+                                            <segue destination="mkg-bq-Jg2" kind="show" id="dnm-M6-ted"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
@@ -197,7 +218,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq1-Gn-Buh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="452"/>
+            <point key="canvasLocation" x="-310" y="594"/>
         </scene>
         <!--AugmentedRealityStoryboard-->
         <scene sceneID="Hor-TW-iZP">
@@ -207,7 +228,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R40-U6-e7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="594"/>
+            <point key="canvasLocation" x="470" y="594"/>
         </scene>
         <!--AnimationsStoryboard-->
         <scene sceneID="FX7-TT-m6g">
@@ -217,7 +238,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0D-PZ-n56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="666"/>
+            <point key="canvasLocation" x="856" y="594"/>
         </scene>
         <!--SignInStoryboard-->
         <scene sceneID="R3S-S5-ZnO">
@@ -227,7 +248,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFW-5r-HAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="739"/>
+            <point key="canvasLocation" x="1173" y="594"/>
         </scene>
         <!--UIComponentsStoryboard-->
         <scene sceneID="RHO-YV-vzx">
@@ -237,7 +258,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l47-VB-jBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="819"/>
+            <point key="canvasLocation" x="1522" y="594"/>
         </scene>
         <!--NetworkingStoryboard-->
         <scene sceneID="KZo-Zl-ZIO">
@@ -247,7 +268,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mj7-5D-Ur5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1653" y="957"/>
+            <point key="canvasLocation" x="1934" y="594"/>
+        </scene>
+        <!--ViewControllerLearningsStoryboard-->
+        <scene sceneID="WhL-dd-aod">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViewControllerLearningsStoryboard" id="mkg-bq-Jg2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sxS-5y-37r"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0y-0A-92P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2329" y="594"/>
         </scene>
         <!--WebViewStoryboard-->
         <scene sceneID="afy-4e-mcL">
@@ -257,7 +288,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmv-pI-stX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="528"/>
+            <point key="canvasLocation" x="75" y="594"/>
         </scene>
         <!--New To Do List Item View Controller-->
         <scene sceneID="th7-gW-3v9">
