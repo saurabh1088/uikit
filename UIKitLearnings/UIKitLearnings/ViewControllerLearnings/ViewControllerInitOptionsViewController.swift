@@ -46,3 +46,14 @@ extension ViewControllerInitOptionsViewController {
         2
     }
 }
+
+extension ViewControllerInitOptionsViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showStoryboardSegueViewController" {
+            if let viewController = segue.destination as? StoryboardSegueViewController {
+                viewController.message = "This view controller is in storyboard and instantiated and configured using storyboard segue"
+            }
+        }
+    }
+}

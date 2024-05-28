@@ -71,6 +71,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xcb-H9-MT6" kind="show" identifier="showStoryboardSegueViewController" id="Txq-p8-kHN"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="storyboardInstantiatedProgrammaticallyNavigatedTableViewCell" id="fTq-w5-ug5">
                                         <rect key="frame" x="0.0" y="99" width="393" height="43.666667938232422"/>
@@ -100,6 +103,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZ5-4t-mEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="4"/>
+        </scene>
+        <!--Storyboard Segue View Controller-->
+        <scene sceneID="vfk-8k-KDM">
+            <objects>
+                <viewController id="xcb-H9-MT6" customClass="StoryboardSegueViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugO-2r-PSD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6s-tT-0L6">
+                                <rect key="frame" x="16" y="411" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAJ-50-92W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o6s-tT-0L6" firstAttribute="leading" secondItem="bAJ-50-92W" secondAttribute="leading" constant="16" id="7Ah-tV-QE9"/>
+                            <constraint firstItem="bAJ-50-92W" firstAttribute="trailing" secondItem="o6s-tT-0L6" secondAttribute="trailing" constant="16" id="UNl-0H-tOD"/>
+                            <constraint firstItem="o6s-tT-0L6" firstAttribute="centerX" secondItem="ugO-2r-PSD" secondAttribute="centerX" id="f7S-C2-C9k"/>
+                            <constraint firstItem="o6s-tT-0L6" firstAttribute="centerY" secondItem="ugO-2r-PSD" secondAttribute="centerY" id="z6P-Bv-sbA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SHM-uy-I8A"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="o6s-tT-0L6" id="97s-Jf-QJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHa-gL-B8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="4"/>
         </scene>
     </scenes>
     <resources>
