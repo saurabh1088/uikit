@@ -34,9 +34,6 @@ extension ViewControllerInitOptionsViewController {
             return UITableViewCell()
         }
     }
-}
-
-extension ViewControllerInitOptionsViewController {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         1
@@ -44,6 +41,17 @@ extension ViewControllerInitOptionsViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
+    }
+}
+
+extension ViewControllerInitOptionsViewController {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            let storyboard = UIStoryboard(name: "ViewControllerLearningsStoryboard", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "storyboardInstantiatedViewControllerId")
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 
