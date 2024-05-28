@@ -7,9 +7,42 @@
 
 import UIKit
 
-class ViewControllerInitOptionsViewController: UIViewController {
+class ViewControllerInitOptionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+    }
+}
+
+extension ViewControllerInitOptionsViewController {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "storyboardSegueTableViewCell", for: indexPath)
+            cell.textLabel?.text = "Storyboard Segue"
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "storyboardInstantiatedProgrammaticallyNavigatedTableViewCell", for: indexPath)
+            cell.textLabel?.text = "Storyboard Instantiated Programmatically Navigated"
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+}
+
+extension ViewControllerInitOptionsViewController {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
     }
 }
