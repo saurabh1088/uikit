@@ -70,6 +70,7 @@
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
+		B7E379272C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E379262C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift */; };
 		B7E3B5CD2C024886005139E0 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */; };
 		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
 		B7F6FD1B2C0578BA003650B7 /* StoryboardSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */; };
@@ -164,6 +165,7 @@
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		B7E379262C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueWithCustomInitViewController.swift; sourceTree = "<group>"; };
 		B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
 		B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */,
 				B7A17C8D2C06386C00F55088 /* NibInstantiatedViewController.swift */,
 				B7A17C8E2C06386C00F55088 /* NibInstantiatedViewController.xib */,
+				B7E379262C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				B7B103A62ACC8F0F00A92296 /* RegisterPresenter.swift in Sources */,
 				B79BB0C02ACAF7DC00871C20 /* User+CoreDataProperties.swift in Sources */,
 				B7405E742B948F8E00BFCAED /* OpenLibraryAuthors.swift in Sources */,
+				B7E379272C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift in Sources */,
 				B76415C22C04F0A80028F4BB /* ViewControllerInitOptionsViewController.swift in Sources */,
 				B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */,
 				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,

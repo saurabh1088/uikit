@@ -91,6 +91,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="storyboardSegueWithCustomInitTableViewCell" id="hm4-EH-Of1">
+                                        <rect key="frame" x="0.0" y="186.33333587646484" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hm4-EH-Of1" id="QVW-Kg-mLJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rMf-pq-FiE" kind="show" identifier="showStoryboardSegueWithCustomInitViewController" destinationCreationSelector="prepareView:" id="fbz-R7-fd4"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -111,6 +122,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZ5-4t-mEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="4"/>
+        </scene>
+        <!--Storyboard Segue With Custom Init View Controller-->
+        <scene sceneID="MvJ-XQ-SnI">
+            <objects>
+                <viewController id="rMf-pq-FiE" customClass="StoryboardSegueWithCustomInitViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPz-0b-Q2g">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHh-t7-qib">
+                                <rect key="frame" x="16" y="411" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VQg-QM-39V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VQg-QM-39V" firstAttribute="trailing" secondItem="AHh-t7-qib" secondAttribute="trailing" constant="16" id="5kI-uJ-6Lf"/>
+                            <constraint firstItem="AHh-t7-qib" firstAttribute="leading" secondItem="VQg-QM-39V" secondAttribute="leading" constant="16" id="Qpd-K1-FV2"/>
+                            <constraint firstItem="AHh-t7-qib" firstAttribute="centerX" secondItem="IPz-0b-Q2g" secondAttribute="centerX" id="W4V-AL-XFU"/>
+                            <constraint firstItem="AHh-t7-qib" firstAttribute="centerY" secondItem="IPz-0b-Q2g" secondAttribute="centerY" id="qse-WJ-i6A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ODL-3n-Eiq"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="AHh-t7-qib" id="MHC-Tq-v0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMB-j8-Ad8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="799"/>
         </scene>
         <!--Storyboard Segue View Controller-->
         <scene sceneID="vfk-8k-KDM">

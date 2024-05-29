@@ -16,6 +16,13 @@ class ViewControllerInitOptionsViewController: UIViewController, UITableViewData
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
+    
+    @IBSegueAction func prepareView(_ coder: NSCoder) -> StoryboardSegueWithCustomInitViewController? {
+        let message = "This view controller is in storyboard and is pushed via storyboard segue, also it has custom properties which are initialised by an initialiser"
+        return StoryboardSegueWithCustomInitViewController(message: message,
+                                                           coder: coder)
+    }
+    
 }
 
 extension ViewControllerInitOptionsViewController {
@@ -34,6 +41,10 @@ extension ViewControllerInitOptionsViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "nibInstantiatedVCPushedProgrammaticallyTableViewCell", for: indexPath)
             cell.textLabel?.text = "NIB Instantiated Pushed Programmatically"
             return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "storyboardSegueWithCustomInitTableViewCell", for: indexPath)
+            cell.textLabel?.text = "Storyboard Segue With Custom Init"
+            return cell
         default:
             return UITableViewCell()
         }
@@ -44,7 +55,7 @@ extension ViewControllerInitOptionsViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        4
     }
 }
 
