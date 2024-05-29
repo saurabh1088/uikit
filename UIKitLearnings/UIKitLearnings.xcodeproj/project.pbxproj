@@ -46,6 +46,8 @@
 		B79BB0C42ACB367B00871C20 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */; };
 		B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */; };
 		B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79BB0C72ACB36E000871C20 /* LoginRouter.swift */; };
+		B7A17C8F2C06386C00F55088 /* NibInstantiatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A17C8D2C06386C00F55088 /* NibInstantiatedViewController.swift */; };
+		B7A17C902C06386C00F55088 /* NibInstantiatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A17C8E2C06386C00F55088 /* NibInstantiatedViewController.xib */; };
 		B7AFDCD029EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */; };
 		B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */; };
 		B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */; };
@@ -134,6 +136,8 @@
 		B79BB0C32ACB367B00871C20 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		B79BB0C52ACB36AE00871C20 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B79BB0C72ACB36E000871C20 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		B7A17C8D2C06386C00F55088 /* NibInstantiatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiatedViewController.swift; sourceTree = "<group>"; };
+		B7A17C8E2C06386C00F55088 /* NibInstantiatedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibInstantiatedViewController.xib; sourceTree = "<group>"; };
 		B7AFDCCE29EC6FEA00A52695 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7AFDCCF29EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7B1039D2ACC89E600A92296 /* RegisterNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewUserViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +271,17 @@
 			path = AlamofireNetworking;
 			sourceTree = "<group>";
 		};
+		B74CED092C058FD600D9790F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */,
+				B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */,
+				B7A17C8D2C06386C00F55088 /* NibInstantiatedViewController.swift */,
+				B7A17C8E2C06386C00F55088 /* NibInstantiatedViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B74E89802BFCC69B001545BD /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,11 +296,10 @@
 		B76415BC2C04E1100028F4BB /* ViewControllerLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				B74CED092C058FD600D9790F /* ViewControllers */,
 				B76415BD2C04E12D0028F4BB /* ViewControllerLearningsStoryboard.storyboard */,
 				B76415BF2C04E15F0028F4BB /* ViewControllerLearningsViewController.swift */,
 				B76415C12C04F0A80028F4BB /* ViewControllerInitOptionsViewController.swift */,
-				B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */,
-				B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */,
 			);
 			path = ViewControllerLearnings;
 			sourceTree = "<group>";
@@ -585,6 +599,7 @@
 				B74E898C2BFCD85A001545BD /* NavigationTestViewController.xib in Resources */,
 				B7BB2BED29EB13FB005D8FE9 /* LaunchScreen.storyboard in Resources */,
 				B77BB88A2A096151002BE62B /* WebViewStoryboard.storyboard in Resources */,
+				B7A17C902C06386C00F55088 /* NibInstantiatedViewController.xib in Resources */,
 				B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */,
 				B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
@@ -662,6 +677,7 @@
 				B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */,
 				B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */,
 				B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */,
+				B7A17C8F2C06386C00F55088 /* NibInstantiatedViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
 			);

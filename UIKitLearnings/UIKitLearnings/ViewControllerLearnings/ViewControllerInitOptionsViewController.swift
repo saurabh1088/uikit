@@ -30,6 +30,10 @@ extension ViewControllerInitOptionsViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "storyboardInstantiatedProgrammaticallyNavigatedTableViewCell", for: indexPath)
             cell.textLabel?.text = "Storyboard Instantiated Programmatically Navigated"
             return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "nibInstantiatedVCPushedProgrammaticallyTableViewCell", for: indexPath)
+            cell.textLabel?.text = "NIB Instantiated Pushed Programmatically"
+            return cell
         default:
             return UITableViewCell()
         }
@@ -40,7 +44,7 @@ extension ViewControllerInitOptionsViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
 }
 
@@ -49,7 +53,12 @@ extension ViewControllerInitOptionsViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 1 {
             let storyboard = UIStoryboard(name: "ViewControllerLearningsStoryboard", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "storyboardInstantiatedViewControllerId")
+            if let viewController = storyboard.instantiateViewController(withIdentifier: "storyboardInstantiatedViewControllerId") as? StoryboardInstantiatedViewController {
+                viewController.messageText = "This view controller is part of storyboard, but is instantiated and pushed programmatically instead of using storyboard segue"
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        } else if indexPath.row == 2 {
+            let viewController = NibInstantiatedViewController(message: "This view controller is having it's own nib file and is instantiated from that.")
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

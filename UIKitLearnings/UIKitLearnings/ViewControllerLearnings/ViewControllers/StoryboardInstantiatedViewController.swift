@@ -9,7 +9,11 @@ import UIKit
 
 class StoryboardInstantiatedViewController: UIViewController {
 
+    var messageText: String!
+    @IBOutlet weak var message: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        message.text = messageText
     }
 }

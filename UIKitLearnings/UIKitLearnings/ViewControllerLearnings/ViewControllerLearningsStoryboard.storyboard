@@ -83,6 +83,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="nibInstantiatedVCPushedProgrammaticallyTableViewCell" id="qDU-oz-tkT">
+                                        <rect key="frame" x="0.0" y="142.66666793823242" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qDU-oz-tkT" id="UFj-5y-O2A">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -144,9 +152,26 @@
                     <view key="view" contentMode="scaleToFill" id="h3B-Lg-2QT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QR-ow-Umz">
+                                <rect key="frame" x="16" y="416" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5n6-6K-tVz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4QR-ow-Umz" firstAttribute="leading" secondItem="5n6-6K-tVz" secondAttribute="leading" constant="16" id="Lwx-dC-STL"/>
+                            <constraint firstItem="4QR-ow-Umz" firstAttribute="centerY" secondItem="h3B-Lg-2QT" secondAttribute="centerY" id="a3H-DG-YgR"/>
+                            <constraint firstItem="5n6-6K-tVz" firstAttribute="trailing" secondItem="4QR-ow-Umz" secondAttribute="trailing" constant="16" id="piA-Wv-21e"/>
+                            <constraint firstItem="4QR-ow-Umz" firstAttribute="centerX" secondItem="h3B-Lg-2QT" secondAttribute="centerX" id="uDL-DM-vL6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="message" destination="4QR-ow-Umz" id="910-Nb-YOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDX-DU-zJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
