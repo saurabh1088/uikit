@@ -69,6 +69,7 @@
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
 		B7D3FF382C0F0F9E00153AB8 /* AnimationsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3FF372C0F0F9E00153AB8 /* AnimationsOption.swift */; };
 		B7D3FF3A2C0F2B4A00153AB8 /* AnimationPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3FF392C0F2B4A00153AB8 /* AnimationPlayViewController.swift */; };
+		B7D3FF3C2C0F83AF00153AB8 /* AnimationsOptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3FF3B2C0F83AF00153AB8 /* AnimationsOptionTests.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
@@ -165,6 +166,7 @@
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		B7D3FF372C0F0F9E00153AB8 /* AnimationsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsOption.swift; sourceTree = "<group>"; };
 		B7D3FF392C0F2B4A00153AB8 /* AnimationPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPlayViewController.swift; sourceTree = "<group>"; };
+		B7D3FF3B2C0F83AF00153AB8 /* AnimationsOptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsOptionTests.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		B7BB2BD129EB13F6005D8FE9 = {
 			isa = PBXGroup;
 			children = (
+				B7D3FF3B2C0F83AF00153AB8 /* AnimationsOptionTests.swift */,
 				B7BB2BDC29EB13F7005D8FE9 /* UIKitLearnings */,
 				B7BB2BF629EB13FC005D8FE9 /* UIKitLearningsTests */,
 				B7BB2C0029EB13FC005D8FE9 /* UIKitLearningsUITests */,
@@ -695,6 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D3FF3C2C0F83AF00153AB8 /* AnimationsOptionTests.swift in Sources */,
 				B70304A42C0225FA00F4A483 /* LearningOptionTests.swift in Sources */,
 				B7BB2BF829EB13FC005D8FE9 /* UIKitLearningsTests.swift in Sources */,
 			);

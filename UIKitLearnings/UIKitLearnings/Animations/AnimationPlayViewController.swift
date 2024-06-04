@@ -36,8 +36,9 @@ class AnimationPlayViewController: UIViewController {
 extension AnimationPlayViewController {
 
     func setUpCircularProgressView() -> UIView {
+        let frame = CGRect(x: 100, y: 200, width: 200, height: 200)
         let circularProgressAnimationView = CircularProgressView(viewModel: createCircularProgressViewModel(),
-                                                                 frame: CGRect(x: 100, y: 200, width: 200, height: 200))
+                                                                 frame: frame)
         let viewModel = createCircularProgressViewModel()
         circularProgressAnimationView.viewModel = viewModel
         circularProgressAnimationView.createCircularBezierPath()
@@ -61,7 +62,8 @@ extension AnimationPlayViewController {
     func setUpAnimatingImageView() -> UIView {
         /// NOTE: Tint color for image works with renderingMode set to alwaysOriginal, if renderingMode is
         /// set to alwaysTemplate then there is no effect of the tint color passed here.
-        let imageAnimationView = UIImageView(frame: CGRect(x: 100, y: 200, width: 200, height: 200))
+        let frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+        let imageAnimationView = UIImageView(frame: frame)
         imageAnimationView.image = UIImage(systemName: "smiley")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
         view.addSubview(imageAnimationView)
         UIView.animate(withDuration: 2) {
