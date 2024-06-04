@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,84 +17,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-TV-cmy" customClass="CircularProgressView" customModule="UIKitLearnings" customModuleProvider="target">
-                                <rect key="frame" x="96.666666666666686" y="75" width="200" height="200"/>
-                                <color key="backgroundColor" name="googleRed"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="py1-Cy-7xw"/>
-                                    <constraint firstAttribute="height" constant="200" id="y5V-bq-mwH"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SMl-jB-9GI">
-                                <rect key="frame" x="96.666666666666686" y="291" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="CFr-3O-Xsl"/>
-                                    <constraint firstAttribute="height" constant="200" id="Or5-gn-obs"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxT-co-za2" customClass="RectangularView" customModule="UIKitLearnings" customModuleProvider="target">
-                                <rect key="frame" x="96.666666666666686" y="507" width="200" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="kTY-Dn-9Bt"/>
-                                    <constraint firstAttribute="width" constant="200" id="mhS-Ll-Vpd"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="rectangleBaseColor">
-                                        <color key="value" systemColor="systemYellowColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cxp-V0-dMD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" name="googleChrome"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="circularProgressAnimationTableViewCell" id="vxA-v9-lPJ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxA-v9-lPJ" id="Cjw-XK-MrF">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageAnimationTableViewCell" id="1YD-ec-zio">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1YD-ec-zio" id="AgC-5Y-xsB">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rectangularAnimationTableViewCell" id="UeC-wz-x1p">
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UeC-wz-x1p" id="vVJ-3R-6iI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="paletteRed"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="paletteDarkRed"/>
                         <constraints>
-                            <constraint firstItem="SMl-jB-9GI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2YL-zL-cZv"/>
-                            <constraint firstItem="HJ5-TV-cmy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BRL-fe-O0b"/>
-                            <constraint firstItem="jxT-co-za2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="L39-ug-Xos"/>
-                            <constraint firstItem="jxT-co-za2" firstAttribute="top" secondItem="SMl-jB-9GI" secondAttribute="bottom" constant="16" id="NQB-Wg-JfG"/>
-                            <constraint firstItem="HJ5-TV-cmy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="h9t-Va-fSX"/>
-                            <constraint firstItem="SMl-jB-9GI" firstAttribute="top" secondItem="HJ5-TV-cmy" secondAttribute="bottom" constant="16" id="mcJ-WQ-D3A"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cxp-V0-dMD" secondAttribute="trailing" id="3aT-uY-o34"/>
+                            <constraint firstItem="cxp-V0-dMD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ATe-lj-tIo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cxp-V0-dMD" secondAttribute="bottom" id="IDX-J4-ZbC"/>
+                            <constraint firstItem="cxp-V0-dMD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ymb-4z-PpY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="circularProgressAnimationView" destination="HJ5-TV-cmy" id="hUk-Ts-XZd"/>
-                        <outlet property="imageAnimationView" destination="SMl-jB-9GI" id="gqb-Tw-0AN"/>
-                        <outlet property="rectangularAnimationView" destination="jxT-co-za2" id="czK-cx-Maz"/>
+                        <outlet property="tableView" destination="cxp-V0-dMD" id="uEg-FS-7qC"/>
+                        <segue destination="3fo-Kv-MpM" kind="show" identifier="showAnimationPlayViewController" id="xOJ-At-qQt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="5cp-6x-d0L">
+        <!--Animation Play View Controller-->
+        <scene sceneID="lui-DF-sIt">
             <objects>
-                <viewController id="UtR-In-nYX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-6q-rMQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="3fo-Kv-MpM" customClass="AnimationPlayViewController" customModule="UIKitLearnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6E-RQ-uwc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="EZZ-Qn-emj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZY5-H7-s4a"/>
+                        <color key="backgroundColor" name="paletteDarkRed"/>
                     </view>
+                    <navigationItem key="navigationItem" id="err-H2-WXX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="owr-4v-h1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyW-Gg-WFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="5"/>
+            <point key="canvasLocation" x="1108" y="4"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="googleRed">
-            <color red="0.83899998664855957" green="0.17599999904632568" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="googleChrome">
+            <color red="1" green="0.65499997138977051" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteDarkRed">
             <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="paletteRed">
+            <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
