@@ -67,6 +67,8 @@
 		B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */; };
 		B7BEA1C22AD0875900CBC92C /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */; };
 		B7C48DBC2A8FDD0300F392CB /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */; };
+		B7D3FF382C0F0F9E00153AB8 /* AnimationsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3FF372C0F0F9E00153AB8 /* AnimationsOption.swift */; };
+		B7D3FF3A2C0F2B4A00153AB8 /* AnimationPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3FF392C0F2B4A00153AB8 /* AnimationPlayViewController.swift */; };
 		B7D501DA29FED9F000DFA063 /* ResponderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D501D929FED9F000DFA063 /* ResponderViewController.swift */; };
 		B7DF87A62AC4972000601EDB /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF87A52AC4972000601EDB /* RectangularView.swift */; };
 		B7E00D062AC9BF2D0050C75D /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */; };
@@ -76,7 +78,6 @@
 		B7F6FD1B2C0578BA003650B7 /* StoryboardSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */; };
 		B7F6FD1D2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */; };
 		B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */; };
-		B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */; };
 		B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */; };
 		B7F931F02ABF44D60049CC0B /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,8 @@
 		B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponentsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsViewController.swift; sourceTree = "<group>"; };
 		B7C48DBB2A8FDD0300F392CB /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
+		B7D3FF372C0F0F9E00153AB8 /* AnimationsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsOption.swift; sourceTree = "<group>"; };
+		B7D3FF392C0F2B4A00153AB8 /* AnimationPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPlayViewController.swift; sourceTree = "<group>"; };
 		B7D501D929FED9F000DFA063 /* ResponderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderViewController.swift; sourceTree = "<group>"; };
 		B7DF87A52AC4972000601EDB /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		B7E00D052AC9BF2D0050C75D /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
@@ -171,7 +174,6 @@
 		B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueViewController.swift; sourceTree = "<group>"; };
 		B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatedViewController.swift; sourceTree = "<group>"; };
 		B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewModel.swift; sourceTree = "<group>"; };
-		B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPresenterViewController.swift; sourceTree = "<group>"; };
 		B7F931ED2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationsStoryboard.storyboard; sourceTree = "<group>"; };
 		B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -480,7 +482,8 @@
 				B7F931EF2ABF44D60049CC0B /* AnimationsViewController.swift */,
 				B79340D62AC0307800F527CB /* CircularProgressView.swift */,
 				B79340D82AC1F4A500F527CB /* CircularProgressViewModel.swift */,
-				B7F911322BB034F100D65EB2 /* AnimationPresenterViewController.swift */,
+				B7D3FF372C0F0F9E00153AB8 /* AnimationsOption.swift */,
+				B7D3FF392C0F2B4A00153AB8 /* AnimationPlayViewController.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -646,7 +649,6 @@
 				B7B1039E2ACC89E600A92296 /* RegisterNewUserViewController.swift in Sources */,
 				B79AFF1929EDBDFA00A947E6 /* ToDoItemsViewModel.swift in Sources */,
 				B79BB0C62ACB36AE00871C20 /* LoginPresenter.swift in Sources */,
-				B7F911332BB034F100D65EB2 /* AnimationPresenterViewController.swift in Sources */,
 				B7AFDCD129EC6FEA00A52695 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */,
 				B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */,
@@ -661,6 +663,7 @@
 				B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */,
 				B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */,
 				B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */,
+				B7D3FF3A2C0F2B4A00153AB8 /* AnimationPlayViewController.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,
 				B726A86D29ED9B210054767C /* NewToDoListItemViewController.swift in Sources */,
 				B73CB7DD2AD12D1C0007CFE4 /* CollectionViewController.swift in Sources */,
@@ -684,6 +687,7 @@
 				B7A17C8F2C06386C00F55088 /* NibInstantiatedViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
+				B7D3FF382C0F0F9E00153AB8 /* AnimationsOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
