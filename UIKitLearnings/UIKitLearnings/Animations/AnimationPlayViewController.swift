@@ -11,10 +11,12 @@ class AnimationPlayViewController: UIViewController {
 
     var animationOption: AnimationsOption!
     
+    @IBOutlet weak var animatingView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let animatingView = getAnimationView() {
-            self.view.addSubview(animatingView)
+            self.animatingView.addSubview(animatingView)
         }
     }
     
@@ -37,14 +39,14 @@ class AnimationPlayViewController: UIViewController {
 extension AnimationPlayViewController {
 
     func setUpCircularProgressView() -> UIView {
-        // TODO: Remove and align properly in parent view
-        let frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+        // TODO: Fix issue with alignment.
+        let frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         let circularProgressAnimationView = CircularProgressView(viewModel: createCircularProgressViewModel(),
                                                                  frame: frame)
         let viewModel = createCircularProgressViewModel()
         circularProgressAnimationView.viewModel = viewModel
         circularProgressAnimationView.createCircularBezierPath()
-        circularProgressAnimationView.center = view.center
+        circularProgressAnimationView.center = self.animatingView.center
         circularProgressAnimationView.progressAnimation(duration: 2)
         return circularProgressAnimationView
     }
@@ -64,8 +66,7 @@ extension AnimationPlayViewController {
     func setUpAnimatingImageView() -> UIView {
         /// NOTE: Tint color for image works with renderingMode set to alwaysOriginal, if renderingMode is
         /// set to alwaysTemplate then there is no effect of the tint color passed here.
-        // TODO: Remove and align properly in parent view
-        let frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+        let frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         let imageAnimationView = UIImageView(frame: frame)
         imageAnimationView.image = UIImage(systemName: "smiley")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
         view.addSubview(imageAnimationView)
@@ -79,7 +80,6 @@ extension AnimationPlayViewController {
 extension AnimationPlayViewController {
     
     func setUpRectangularAnimatingView() -> UIView {
-        // TODO: Remove and align properly in parent view
-        return RectangularView(frame: CGRect(x: 100, y: 200, width: 200, height: 200))
+        return RectangularView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
     }
 }
