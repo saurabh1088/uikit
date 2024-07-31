@@ -47,7 +47,9 @@ extension AnimationsViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Logger.uiTableViewDelegateCallbacks.info("AnimationsViewController tableView didSelectRowAt \(indexPath)")
         selectedAnimationOption = AnimationsOption.optionFor(index: indexPath.row)
-        self.performSegue(withIdentifier: "showAnimationPlayViewController", sender: self)
+        if selectedAnimationOption != .coreAnimation {
+            self.performSegue(withIdentifier: "showAnimationPlayViewController", sender: self)
+        }
     }
 }
 

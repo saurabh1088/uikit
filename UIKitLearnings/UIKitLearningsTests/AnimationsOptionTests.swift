@@ -11,16 +11,18 @@ import XCTest
 final class AnimationsOptionTests: XCTestCase {
 
     func test_animationsOptionsIndexes_success() {
-        XCTAssertEqual(AnimationsOption.circularProgressView, AnimationsOption.optionFor(index: 0))
-        XCTAssertEqual(AnimationsOption.imageView, AnimationsOption.optionFor(index: 1))
-        XCTAssertEqual(AnimationsOption.rectangularView, AnimationsOption.optionFor(index: 2))
+        XCTAssertEqual(AnimationsOption.coreAnimation, AnimationsOption.optionFor(index: 0))
+        XCTAssertEqual(AnimationsOption.circularProgressView, AnimationsOption.optionFor(index: 1))
+        XCTAssertEqual(AnimationsOption.imageView, AnimationsOption.optionFor(index: 2))
+        XCTAssertEqual(AnimationsOption.rectangularView, AnimationsOption.optionFor(index: 3))
     }
     
     func test_animationsOptionsIndexes_failure() {
-        XCTAssertNil(AnimationsOption.optionFor(index: 3))
+        XCTAssertNil(AnimationsOption.optionFor(index: 4))
     }
     
     func test_cellReUseIdentifiers() {
+        XCTAssertEqual("coreAnimationAnimationTableViewCell", AnimationsOption.coreAnimation.cellReUseIdentifier)
         XCTAssertEqual("circularProgressAnimationTableViewCell", AnimationsOption.circularProgressView.cellReUseIdentifier)
         XCTAssertEqual("imageAnimationTableViewCell", AnimationsOption.imageView.cellReUseIdentifier)
         XCTAssertEqual("rectangularAnimationTableViewCell", AnimationsOption.rectangularView.cellReUseIdentifier)
