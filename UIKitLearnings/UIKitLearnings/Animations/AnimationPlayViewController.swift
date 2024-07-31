@@ -24,6 +24,8 @@ class AnimationPlayViewController: UIViewController {
     func getAnimationView() -> UIView? {
         if let animationOption = animationOption {
             switch animationOption {
+            case .coreAnimation:
+                return setUpCoreAnimationView()
             case .circularProgressView:
                 return setUpCircularProgressView()
             case .imageView:
@@ -81,5 +83,12 @@ extension AnimationPlayViewController {
     
     func setUpRectangularAnimatingView() -> UIView {
         return RectangularView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    }
+}
+
+extension AnimationPlayViewController {
+    
+    func setUpCoreAnimationView() -> UIView {
+        return UIView()
     }
 }
