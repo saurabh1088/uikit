@@ -47,6 +47,8 @@ class CoreAnimationScenariosViewController: UIPageViewController,
             pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+        
+        pageControl.addTarget(self, action: #selector(pageControlDotsTapped(_:)), for: .valueChanged)
     }
 }
 
@@ -78,3 +80,13 @@ extension CoreAnimationScenariosViewController {
     }
 }
 
+extension CoreAnimationScenariosViewController {
+    
+    @objc func pageControlDotsTapped(_ sender: UIPageControl) {
+        if let viewcontroller = viewControllers?[pageControl.currentPage] {
+            setViewControllers([viewcontroller],
+                               direction: .forward,
+                               animated: true)
+        }
+    }
+}
