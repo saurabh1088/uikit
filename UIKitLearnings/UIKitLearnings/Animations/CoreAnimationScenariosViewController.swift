@@ -7,7 +7,9 @@
 
 import UIKit
 
-class CoreAnimationScenariosViewController: UIPageViewController, UIPageViewControllerDataSource {
+class CoreAnimationScenariosViewController: UIPageViewController,
+                                            UIPageViewControllerDataSource,
+                                            UIPageViewControllerDelegate {
 
     override var viewControllers: [UIViewController]? {
         return [backgroundColorViewController, fadeInOutViewController]
@@ -21,14 +23,32 @@ class CoreAnimationScenariosViewController: UIPageViewController, UIPageViewCont
         CoreAnimationFadeInOutViewController(nibName: "CoreAnimationFadeInOutViewController", bundle: nil)
     }()
     
+    private var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
+        delegate = self
         if let firstViewController = viewControllers?.first {
             setViewControllers([firstViewController],
                                direction: .forward,
                                animated: true)
         }
+        
+        pageControl = UIPageControl()
+        pageControl.numberOfPages = viewControllers?.count ?? 0
+        pageControl.tintColor = .black
+        pageControl.pageIndicatorTintColor = .lightGray
+        pageControl.currentPageIndicatorTintColor = .black
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(pageControl)
+        
+        NSLayoutConstraint.activate([
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        pageControl.addTarget(self, action: #selector(pageControlDotsTapped(_:)), for: .valueChanged)
     }
 }
 
@@ -48,3 +68,25 @@ extension CoreAnimationScenariosViewController {
     }
 }
 
+// MARK: Conformance for UIPageViewControllerDelegate
+extension CoreAnimationScenariosViewController {
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        let nextIndex = viewControllers?.firstIndex(of: pendingViewControllers.first!)
+        if let index = nextIndex { pageControl.currentPage = index }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        // TODO: Complete this implementation
+    }
+}
+
+extension CoreAnimationScenariosViewController {
+    
+    @objc func pageControlDotsTapped(_ sender: UIPageControl) {
+        if let viewcontroller = viewControllers?[pageControl.currentPage] {
+            setViewControllers([viewcontroller],
+                               direction: .forward,
+                               animated: true)
+        }
+    }
+}
