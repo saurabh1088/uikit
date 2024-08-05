@@ -39,6 +39,11 @@ class CoreAnimationFadeInOutViewController: UIViewController {
             animation.toValue = 1.0
             animation.duration = 2.0
             animatableView.layer.add(animation, forKey: "fade-in")
+            /// Even though animation is set with a fromValue and toValue, this animation is an explicit animation
+            /// which doesn't modify the data in the layer tree. Explicit animation will only produce the animation
+            /// and at the end Core Animation will remove animation object from layer and redraw layer
+            /// using its current data values, hence if one wants that the animation to be permanent, layer's
+            /// value should be updated as below to final desired value.
             animatableView.layer.opacity = 1.0
             
             // Update the selected option to keep record of current selection
@@ -56,6 +61,11 @@ class CoreAnimationFadeInOutViewController: UIViewController {
             animation.toValue = 0.0
             animation.duration = 2.0
             animatableView.layer.add(animation, forKey: "fade-out")
+            /// Even though animation is set with a fromValue and toValue, this animation is an explicit animation
+            /// which doesn't modify the data in the layer tree. Explicit animation will only produce the animation
+            /// and at the end Core Animation will remove animation object from layer and redraw layer
+            /// using its current data values, hence if one wants that the animation to be permanent, layer's
+            /// value should be updated as below to final desired value.
             animatableView.layer.opacity = 0.0
             
             // Update the selected option to keep record of current selection
