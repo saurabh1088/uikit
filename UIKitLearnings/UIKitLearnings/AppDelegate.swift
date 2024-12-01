@@ -41,17 +41,22 @@ import OSLog
  
  Now so usually all main.m used to need was what's the application's principal class and the delegate class.
  There is hardly any rare reasons for subclassing UIApplication so even most of the time it's only delegate class
- which is required to be setup. So main.m qualifies to ba a boilerplate code which is mostly the same and can be used
- without much customisation in most of the cases.
- So to do away with implementing main.m always some attributes were introduced :
+ which is required to be setup. So main.m qualifies to be a boilerplate code which is mostly the same and can be
+ used without much customisation in most of the cases.
+ 
+ So to do away with implementing main.m, some attributes were introduced :
+
  `@UIApplicationMain`
  `@NSApplicationMain`
+ 
  These used to mark the entry point for iOS or macOS applications.
  Later on with Swift 5.3 a new attribute `@main` was introduced which became a general purpose way of adding
  attribute and marking entry point.
- When @main attribute is used on a struct, class or enum then that struct, class or enum is expected to provide
+ 
+ When `@main` attribute is used on a struct, class or enum then that struct, class or enum is expected to provide
  a maintype function having no arguments and returning void.
- No usually application delegate is marked with @main attribute as we can see in class declaration for `AppDelegate`
+ 
+ Now usually application delegate is marked with `@main` attribute as we can see in class declaration for `AppDelegate`
  but there is no `main()` method defined anywhere. This is because a default implementation of `main()`
  method is provided in an extension to protocol `UIApplicationDelegate` causing any aaplication delegate
  we define for our application to receive this default implementation and mostly it's what all is required.
