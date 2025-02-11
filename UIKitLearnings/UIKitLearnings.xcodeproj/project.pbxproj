@@ -610,6 +610,7 @@
 			mainGroup = B7BB2BD129EB13F6005D8FE9;
 			packageReferences = (
 				B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B74761072D5B728A00B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */,
 			);
 			productRefGroup = B7BB2BDB29EB13F7005D8FE9 /* Products */;
 			projectDirPath = "";
@@ -1074,6 +1075,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.8.1;
+			};
+		};
+		B74761072D5B728A00B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

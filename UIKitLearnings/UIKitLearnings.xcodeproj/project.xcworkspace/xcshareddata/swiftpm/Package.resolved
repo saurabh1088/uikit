@@ -1,4 +1,5 @@
 {
+  "originHash" : "34b8b732fb6fbad395b01b3f79c493c4b63b8e57b47c9617af7ac4fdaa0f749e",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,7 +9,16 @@
         "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
         "version" : "5.8.1"
       }
+    },
+    {
+      "identity" : "swift-uikit-lib",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4bacb6eada2e57f9e7e3a47db4788e12de38a7fb"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
