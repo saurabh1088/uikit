@@ -25,6 +25,7 @@
 		B7405E742B948F8E00BFCAED /* OpenLibraryAuthors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7405E732B948F8E00BFCAED /* OpenLibraryAuthors.swift */; };
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
+		B74761062D5B1E2900B2375C /* TableViewCellExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */; };
 		B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */; };
 		B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */; };
 		B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E89852BFCC916001545BD /* PresentedViewController.swift */; };
@@ -123,6 +124,7 @@
 		B7405E732B948F8E00BFCAED /* OpenLibraryAuthors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryAuthors.swift; sourceTree = "<group>"; };
 		B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResponderStoryboard.storyboard; sourceTree = "<group>"; };
 		B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AugmentedRealityStoryboard.storyboard; sourceTree = "<group>"; };
+		B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExamplesViewController.swift; sourceTree = "<group>"; };
 		B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlamofireNetworkingStoryboard.storyboard; sourceTree = "<group>"; };
 		B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewController.swift; sourceTree = "<group>"; };
 		B74E89852BFCC916001545BD /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 				B7BEA1BF2AD0866500CBC92C /* UIComponentsStoryboard.storyboard */,
 				B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */,
 				B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */,
+				B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				B79BB0C82ACB36E000871C20 /* LoginRouter.swift in Sources */,
 				B73837F42C5A3562009DBE37 /* CoreAnimationFadeInOutViewController.swift in Sources */,
 				B776326B2B9050A000DBB0F5 /* NetworkingViewController.swift in Sources */,
+				B74761062D5B1E2900B2375C /* TableViewCellExamplesViewController.swift in Sources */,
 				B79BB0C22ACB0B8A00871C20 /* LoginViewController.swift in Sources */,
 				B7D3FF3A2C0F2B4A00153AB8 /* AnimationPlayViewController.swift in Sources */,
 				B7BB2BE029EB13F7005D8FE9 /* SceneDelegate.swift in Sources */,

@@ -19,12 +19,10 @@ class UIComponentsViewController: UIViewController {
     }
 }
 
-
-
 // Table View data source methods implementation
 extension UIComponentsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,6 +30,15 @@ extension UIComponentsViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentCollectionViewCell")!
             // TODO: textLabel will be deprecated in future, look for alternative.
             cell.textLabel?.text = "Collection View"
+            cell.textLabel?.textColor = UIColor.white
+            // By default selected cell will be highlighted with a color greyish. To turn
+            // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentTableViewCell")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
+            cell.textLabel?.text = "Table View Cells"
             cell.textLabel?.textColor = UIColor.white
             // By default selected cell will be highlighted with a color greyish. To turn
             // this behaviour OFF, set selectionStyle as none
