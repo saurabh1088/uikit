@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUIKitLib
 
 class TableViewCellExamplesViewController: UIViewController {
     
@@ -14,6 +15,15 @@ class TableViewCellExamplesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        
+        /// packageBundleSwiftUIKitLib is required to fix below issue which comes if Bundle.module is used instead
+        /// 'module' is inaccessible due to 'internal' protection level
+        /// Also not as XIB is part of package, here nil can't be passed
+        let bundle = Bundle.packageBundleSwiftUIKitLib
+        
+        /// Passing nil for bundle here will give below runtime error as SingleDetailTableViewCell nib is part of package dependency
+        /// Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Could not load NIB in bundle: 'NSBundle
+        tableView.register(UINib(nibName: "SingleDetailTableViewCell", bundle: bundle), forCellReuseIdentifier: "singleDetailTableViewCellId")
     }
 }
 
@@ -23,6 +33,10 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell {
+            cell.configureDetailLabel(text: "Single Detail Table View Cell")
+            return cell
+        }
+        return UITableViewCell()
     }
 }
