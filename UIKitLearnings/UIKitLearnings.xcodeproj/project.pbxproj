@@ -26,6 +26,7 @@
 		B7433A8D29FEA76800CEF78F /* ResponderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7433A8C29FEA76800CEF78F /* ResponderStoryboard.storyboard */; };
 		B7438FAB2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7438FAA2A8E90F300EE6B6A /* AugmentedRealityStoryboard.storyboard */; };
 		B74761062D5B1E2900B2375C /* TableViewCellExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */; };
+		B747610A2D5CBEE600B2375C /* SwiftUIKitLib in Frameworks */ = {isa = PBXBuildFile; productRef = B74761092D5CBEE600B2375C /* SwiftUIKitLib */; };
 		B74BB4772B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74BB4762B92440200F0EEB3 /* AlamofireNetworkingStoryboard.storyboard */; };
 		B74BB4792B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74BB4782B9244D000F0EEB3 /* AlamofireNetworkingViewController.swift */; };
 		B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E89852BFCC916001545BD /* PresentedViewController.swift */; };
@@ -200,6 +201,7 @@
 				B71A21092B9010760060E361 /* Alamofire in Frameworks */,
 				B70FCA992A90DC1900492A75 /* ARKit.framework in Frameworks */,
 				B77BB88F2A096704002BE62B /* WebKit.framework in Frameworks */,
+				B747610A2D5CBEE600B2375C /* SwiftUIKitLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +537,7 @@
 			name = UIKitLearnings;
 			packageProductDependencies = (
 				B71A21082B9010760060E361 /* Alamofire */,
+				B74761092D5CBEE600B2375C /* SwiftUIKitLib */,
 			);
 			productName = UIKitLearnings;
 			productReference = B7BB2BDA29EB13F7005D8FE9 /* UIKitLearnings.app */;
@@ -610,7 +613,7 @@
 			mainGroup = B7BB2BD129EB13F6005D8FE9;
 			packageReferences = (
 				B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				B74761072D5B728A00B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */,
+				B74761082D5CBEE600B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */,
 			);
 			productRefGroup = B7BB2BDB29EB13F7005D8FE9 /* Products */;
 			projectDirPath = "";
@@ -1077,7 +1080,7 @@
 				minimumVersion = 5.8.1;
 			};
 		};
-		B74761072D5B728A00B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */ = {
+		B74761082D5CBEE600B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
 			requirement = {
@@ -1092,6 +1095,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B71A21072B9010760060E361 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		B74761092D5CBEE600B2375C /* SwiftUIKitLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74761082D5CBEE600B2375C /* XCRemoteSwiftPackageReference "swift-uikit-lib" */;
+			productName = SwiftUIKitLib;
 		};
 /* End XCSwiftPackageProductDependency section */
 
