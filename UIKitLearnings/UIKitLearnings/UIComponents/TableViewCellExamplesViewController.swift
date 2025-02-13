@@ -15,6 +15,7 @@ class TableViewCellExamplesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         
         /// packageBundleSwiftUIKitLib is required to fix below issue which comes if Bundle.module is used instead
         /// 'module' is inaccessible due to 'internal' protection level
@@ -34,7 +35,6 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell {
-            cell.configureDetailLabel(text: "Single Detail Table View Cell")
             cell.configureDetailLabel(text: "Single Detail Table View Cell",
                                       font: .systemFont(ofSize: 18, weight: .bold),
                                       textColor: .blue,
@@ -42,5 +42,11 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension TableViewCellExamplesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        88.0
     }
 }
