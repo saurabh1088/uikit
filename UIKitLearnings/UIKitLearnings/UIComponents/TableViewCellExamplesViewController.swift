@@ -35,6 +35,10 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell {
             cell.configureDetailLabel(text: "Single Detail Table View Cell")
+            cell.configureDetailLabel(text: "Single Detail Table View Cell",
+                                      font: .systemFont(ofSize: 18, weight: .bold),
+                                      textColor: .blue,
+                                      backgroundColor: .darkGray)
             return cell
         }
         return UITableViewCell()
