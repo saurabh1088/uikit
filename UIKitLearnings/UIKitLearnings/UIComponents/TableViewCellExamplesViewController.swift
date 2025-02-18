@@ -31,7 +31,7 @@ class TableViewCellExamplesViewController: UIViewController {
 
 extension TableViewCellExamplesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,8 +60,17 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
                 print("User tapped the action button")
             }
             return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell else {
+                    fatalError("The dequeued cell is not an instance of SingleDetailTableViewCell.")
+            }
+            cell.configureDetailLabel(text: "Single Detail Table View Cell",
+                                      font: .systemFont(ofSize: 18, weight: .bold),
+                                      textColor: .blue,
+                                      backgroundColor: .darkGray)
+            return cell
+            
         }
-        return UITableViewCell()
     }
 }
 
@@ -81,7 +90,7 @@ extension TableViewCellExamplesViewController {
         alertController.addAction(yesAction)
         
         let noAction = UIAlertAction(title: "No", style: .cancel, handler: { [self] _ in
-            performOption1(sender: sender)
+            performOption2(sender: sender)
         })
         alertController.addAction(noAction)
         
