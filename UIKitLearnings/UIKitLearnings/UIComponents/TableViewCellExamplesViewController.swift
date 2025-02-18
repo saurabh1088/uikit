@@ -80,22 +80,40 @@ extension TableViewCellExamplesViewController {
         }
         alertController.addAction(yesAction)
         
-        let noAction = UIAlertAction(title: "No", style: .cancel, handler: { _ in
-            DispatchQueue.main.async { [weak self] in
-                self?.tableView.isAccessibilityElement = false
-                self?.navigationController?.navigationBar.isAccessibilityElement = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                    UIAccessibility.post(notification: .layoutChanged, argument: sender)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                        self?.tableView.isAccessibilityElement = true
-                        self?.navigationController?.navigationBar.isAccessibilityElement = true 
-                    })
-                })
-            }
-            
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: { [self] _ in
+            performOption1(sender: sender)
         })
         alertController.addAction(noAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+    
+    // Option 1: Delayed accessibility notification
+    private func performOption1(sender: Any?) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            UIAccessibility.post(notification: .layoutChanged, argument: sender)
+        })
+    }
+
+    // Option 2: Immediate accessibility notification
+    private func performOption2(sender: Any?) {
+        DispatchQueue.main.async {
+            UIAccessibility.post(notification: .layoutChanged, argument: sender)
+        }
+    }
+
+    // Option 3: Complex accessibility setup with delays
+    private func performOption3(sender: Any?) {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.isAccessibilityElement = false
+            self?.navigationController?.navigationBar.isAccessibilityElement = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                UIAccessibility.post(notification: .layoutChanged, argument: sender)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    self?.tableView.isAccessibilityElement = true
+                    self?.navigationController?.navigationBar.isAccessibilityElement = true
+                })
+            })
+        }
     }
 }
