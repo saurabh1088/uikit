@@ -29,6 +29,7 @@ class TableViewCellExamplesViewController: UIViewController {
     }
 }
 
+// MARK: Extension UITableViewDataSource conformance
 extension TableViewCellExamplesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         4
@@ -74,12 +75,14 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
     }
 }
 
+// MARK: Extension UITableViewDelegate conformance
 extension TableViewCellExamplesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         88.0
     }
 }
 
+// MARK: Extension DismissableTitleMessageTableViewCell alert
 extension TableViewCellExamplesViewController {
     private func showDismissConfirmation(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Confirm Dismiss", message: "Are you sure you want to dismiss this item?", preferredStyle: .alert)
