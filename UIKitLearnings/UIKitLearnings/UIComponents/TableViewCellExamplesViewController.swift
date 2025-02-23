@@ -24,8 +24,18 @@ class TableViewCellExamplesViewController: UIViewController {
         
         /// Passing nil for bundle here will give below runtime error as SingleDetailTableViewCell nib is part of package dependency
         /// Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Could not load NIB in bundle: 'NSBundle
-        tableView.register(UINib(nibName: "SingleDetailTableViewCell", bundle: bundle), forCellReuseIdentifier: "singleDetailTableViewCellId")
-        tableView.register(UINib(nibName: "DismissableTitleMessageTableViewCell", bundle: bundle), forCellReuseIdentifier: "dismissableTitleMessageTableViewCellId")
+        tableView.register(UINib(nibName: "SingleDetailTableViewCell", bundle: bundle), forCellReuseIdentifier: "SingleDetailTableViewCell")
+        tableView.register(UINib(nibName: "DismissableTitleMessageTableViewCell", bundle: bundle), forCellReuseIdentifier: "DismissableTitleMessageTableViewCell")
+        
+        // TODO: This doesn't works and lead to a crash as IBOutlets aren't initialised
+        /*
+         Error while using this code :
+         - SwiftUIKitLib/SingleDetailTableViewCell.swift:38: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+         
+        tableView.register(SingleDetailTableViewCell.self)
+        tableView.register(DismissableTitleMessageTableViewCell.self)
+        */
+
     }
 }
 
@@ -36,41 +46,22 @@ extension TableViewCellExamplesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell else {
-                    fatalError("The dequeued cell is not an instance of SingleDetailTableViewCell.")
-            }
-            cell.configureDetailLabel(text: "Single Detail Table View Cell",
-                                      font: .systemFont(ofSize: 18, weight: .bold),
-                                      textColor: .blue,
-                                      backgroundColor: .darkGray)
-            return cell
-            
-        } else if indexPath.row == 1 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "dismissableTitleMessageTableViewCellId", for: indexPath) as? DismissableTitleMessageTableViewCell else {
-                    fatalError("The dequeued cell is not an instance of DismissableTitleMessageTableViewCell.")
-            }
-            let title = "Title"
-            let message = "Detailed message"
-            let image = UIImage(systemName: "exclamationmark.triangle")
-            cell.configure(with: title, message: message, icon: image) { [weak self] in
-                // Dismiss action
-                self?.showDismissConfirmation(cell.dismissButtonControl)
-            } actionButtonAction: {
-                // Action button action
-                print("User tapped the action button")
-            }
-            return cell
-        } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "singleDetailTableViewCellId", for: indexPath) as? SingleDetailTableViewCell else {
-                    fatalError("The dequeued cell is not an instance of SingleDetailTableViewCell.")
-            }
-            cell.configureDetailLabel(text: "Single Detail Table View Cell",
-                                      font: .systemFont(ofSize: 18, weight: .bold),
-                                      textColor: .blue,
-                                      backgroundColor: .darkGray)
-            return cell
-            
+        switch indexPath.row {
+            case 0, 2, 3:
+                return configureSingleDetailCell(for: indexPath)
+            case 1:
+            let cell: DismissableTitleMessageTableViewCell = tableView.dequeueReusableCell(DismissableTitleMessageTableViewCell.self, for: indexPath)
+                let title = "Title"
+                let message = "Detailed message"
+                let image = UIImage(systemName: "exclamationmark.triangle")
+                cell.configure(with: title, message: message, icon: image) { [weak self] in
+                    self?.showDismissConfirmation(cell.dismissButtonControl)
+                } actionButtonAction: {
+                    print("User tapped the action button")
+                }
+                return cell
+            default:
+                fatalError("Unexpected indexPath.row: \(indexPath.row)")
         }
     }
 }
@@ -127,5 +118,17 @@ extension TableViewCellExamplesViewController {
                 })
             })
         }
+    }
+}
+
+// MARK: Tableview helper methods for creating tableview cells
+extension TableViewCellExamplesViewController {
+    func configureSingleDetailCell(for indexPath: IndexPath) -> SingleDetailTableViewCell {
+        let cell = tableView.dequeueReusableCell(SingleDetailTableViewCell.self, for: indexPath)
+        cell.configureDetailLabel(text: "Single Detail Table View Cell",
+                                      font: .systemFont(ofSize: 18, weight: .bold),
+                                      textColor: .blue,
+                                      backgroundColor: .darkGray)
+        return cell
     }
 }
