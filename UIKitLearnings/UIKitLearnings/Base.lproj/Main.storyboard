@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Mc-ZN-yzO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Mc-ZN-yzO">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,10 +20,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-ZC-Jwt">
                                 <rect key="frame" x="0.0" y="119" width="393" height="699"/>
-                                <color key="backgroundColor" name="paletteYellow"/>
-                                <color key="separatorColor" name="paletteDarkYellow"/>
+                                <color key="backgroundColor" name="defaultBackground"/>
+                                <color key="separatorColor" name="defaultBackground"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" name="paletteDarkYellow"/>
+                                <color key="sectionIndexBackgroundColor" name="defaultBackground"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notesTableViewCell" id="wCK-8B-BKW">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -32,7 +32,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="1rh-Sz-N3Q" kind="show" identifier="segueShowToDoItems" id="uEx-JX-FMd"/>
                                         </connections>
@@ -44,7 +44,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="KwE-gc-XQX" kind="show" identifier="showResponderViewController" id="41G-GG-yVz"/>
                                         </connections>
@@ -56,7 +56,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="KFx-82-TK4" kind="show" identifier="showWebViewController" id="BHi-Pe-f0d"/>
                                         </connections>
@@ -68,7 +68,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="h7q-y4-jNY" kind="show" id="gUK-qG-88u"/>
                                         </connections>
@@ -80,7 +80,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="lNQ-ex-8hq" kind="show" id="Mjb-CW-k5Q"/>
                                         </connections>
@@ -92,7 +92,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="lgI-hv-K2i" kind="show" identifier="showSignInViewController" id="rpL-It-RRH"/>
                                         </connections>
@@ -104,7 +104,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="iJn-9M-xWP" kind="show" id="sJe-jw-CE7"/>
                                         </connections>
@@ -116,7 +116,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="MRy-ha-T7A" kind="show" id="TYY-fP-Llo"/>
                                         </connections>
@@ -128,7 +128,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pushTableViewCell" rowHeight="106" id="BIk-vr-LdL">
                                         <rect key="frame" x="0.0" y="817.00000381469727" width="393" height="106"/>
@@ -137,7 +137,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="viewControllerTableViewCell" rowHeight="106" id="W3S-2i-fgP">
                                         <rect key="frame" x="0.0" y="923.00000381469727" width="393" height="106"/>
@@ -146,7 +146,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="mkg-bq-Jg2" kind="show" id="dnm-M6-ted"/>
                                         </connections>
@@ -156,7 +156,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="tgf-ZC-Jwt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="97K-Wc-Ona"/>
                             <constraint firstItem="tgf-ZC-Jwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W2t-97-R3U"/>
@@ -187,7 +187,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="US6-Eh-VjI"/>
-                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="vRm-TN-9gC" firstAttribute="trailing" secondItem="US6-Eh-VjI" secondAttribute="trailing" id="7Hl-rM-9kv"/>
                             <constraint firstItem="vRm-TN-9gC" firstAttribute="bottom" secondItem="US6-Eh-VjI" secondAttribute="bottom" id="PGu-Yo-48b"/>
@@ -320,7 +320,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZaE-CT-Koz"/>
-                        <color key="backgroundColor" name="paletteDarkYellow"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="ZaE-CT-Koz" firstAttribute="bottom" secondItem="6A5-jj-zNt" secondAttribute="bottom" constant="48" id="4Wl-7D-S6P"/>
                             <constraint firstItem="6A5-jj-zNt" firstAttribute="leading" secondItem="ZaE-CT-Koz" secondAttribute="leading" constant="16" id="A5V-a2-CNr"/>
@@ -344,9 +344,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ihN-DT-kOO">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" name="paletteSeaDarkBlue"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -363,14 +363,17 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="paletteDarkRed">
-            <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="paletteDarkYellow">
-            <color red="0.82700002193450928" green="0.65100002288818359" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteRed">
             <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paletteSeaBlue">
+            <color red="0.44313725490196076" green="0.73333333333333328" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paletteSeaDarkBlue">
+            <color red="0.15294117647058825" green="0.26666666666666666" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteYellow">
             <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
