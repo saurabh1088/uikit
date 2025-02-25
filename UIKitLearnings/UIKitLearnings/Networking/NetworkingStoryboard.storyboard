@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cgx-dj-j3x">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" name="paletteDarkRed"/>
+                                <color key="backgroundColor" name="defaultBackground"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="networkingURLSessionTableViewCell" id="QLc-ML-1vX">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
@@ -28,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="networkingAlamofireTableViewCell" id="ayE-0d-F0K">
                                         <rect key="frame" x="0.0" y="99" width="393" height="43.666667938232422"/>
@@ -37,7 +37,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaBlue"/>
                                         <connections>
                                             <segue destination="hhq-Y2-Ksq" kind="show" identifier="showAlamofireNetworkingViewController" id="xSl-2E-cX9"/>
                                         </connections>
@@ -47,7 +47,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="cgx-dj-j3x" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aNZ-5L-oSu"/>
                             <constraint firstItem="cgx-dj-j3x" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="eqh-aT-B1v"/>
@@ -75,11 +75,11 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="paletteDarkRed">
-            <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="paletteRed">
-            <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="paletteSeaBlue">
+            <color red="0.44313725490196076" green="0.73333333333333328" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

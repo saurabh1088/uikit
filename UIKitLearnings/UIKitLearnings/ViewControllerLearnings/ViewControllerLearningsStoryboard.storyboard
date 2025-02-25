@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,7 +37,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="QBc-Zf-5I0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jbk-eb-fK7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QBc-Zf-5I0" secondAttribute="trailing" id="MKF-EI-AFC"/>
@@ -106,7 +107,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mex-g2-eV5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="mex-g2-eV5" firstAttribute="bottom" secondItem="Sx9-za-cwC" secondAttribute="bottom" id="Pxe-i0-axu"/>
                             <constraint firstItem="mex-g2-eV5" firstAttribute="trailing" secondItem="Sx9-za-cwC" secondAttribute="trailing" id="ZWA-s5-qVD"/>
@@ -139,7 +140,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VQg-QM-39V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="VQg-QM-39V" firstAttribute="trailing" secondItem="AHh-t7-qib" secondAttribute="trailing" constant="16" id="5kI-uJ-6Lf"/>
                             <constraint firstItem="AHh-t7-qib" firstAttribute="leading" secondItem="VQg-QM-39V" secondAttribute="leading" constant="16" id="Qpd-K1-FV2"/>
@@ -172,7 +173,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bAJ-50-92W"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="o6s-tT-0L6" firstAttribute="leading" secondItem="bAJ-50-92W" secondAttribute="leading" constant="16" id="7Ah-tV-QE9"/>
                             <constraint firstItem="bAJ-50-92W" firstAttribute="trailing" secondItem="o6s-tT-0L6" secondAttribute="trailing" constant="16" id="UNl-0H-tOD"/>
@@ -205,7 +206,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5n6-6K-tVz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="4QR-ow-Umz" firstAttribute="leading" secondItem="5n6-6K-tVz" secondAttribute="leading" constant="16" id="Lwx-dC-STL"/>
                             <constraint firstItem="4QR-ow-Umz" firstAttribute="centerY" secondItem="h3B-Lg-2QT" secondAttribute="centerY" id="a3H-DG-YgR"/>
@@ -223,6 +224,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
