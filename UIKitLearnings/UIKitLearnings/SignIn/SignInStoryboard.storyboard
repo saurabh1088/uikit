@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -95,7 +95,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="paletteYellow"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="c1p-uB-39z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4aw-of-MRL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c1p-uB-39z" secondAttribute="trailing" constant="16" id="5PY-Yn-WhY"/>
@@ -158,7 +158,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TEy-bc-yRV"/>
-                        <color key="backgroundColor" name="paletteYellow"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="rQd-ik-RKx" firstAttribute="centerY" secondItem="SvJ-4W-uop" secondAttribute="centerY" id="4SS-p7-dJJ"/>
                             <constraint firstItem="TEy-bc-yRV" firstAttribute="trailing" secondItem="rQd-ik-RKx" secondAttribute="trailing" constant="40" id="WoY-ie-BNw"/>
@@ -178,11 +178,11 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="paletteDarkRed">
             <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="paletteYellow">
-            <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
