@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -43,7 +43,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="paletteDarkRed"/>
+            <color key="backgroundColor" name="defaultBackground"/>
             <constraints>
                 <constraint firstItem="77u-MN-2Ji" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5yt-VQ-fhG"/>
                 <constraint firstItem="6s8-Zi-Clg" firstAttribute="top" secondItem="77u-MN-2Ji" secondAttribute="bottom" constant="16" id="ENA-xV-UY4"/>
@@ -55,8 +55,8 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="paletteDarkRed">
-            <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="paletteYellow">
             <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
