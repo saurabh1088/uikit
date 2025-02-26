@@ -21,7 +21,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-lB-a9n">
                                 <rect key="frame" x="0.0" y="107" width="393" height="711"/>
-                                <color key="backgroundColor" name="paletteYellow"/>
+                                <color key="backgroundColor" name="defaultBackground"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="uiComponentCollectionViewCell" textLabel="88G-fA-70i" style="IBUITableViewCellStyleDefault" id="2TS-0N-mlH">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
@@ -39,7 +39,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaGreen"/>
                                         <connections>
                                             <segue destination="Y6W-OH-hqX" kind="show" id="HGo-SC-ITa"/>
                                         </connections>
@@ -60,7 +60,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="paletteRed"/>
+                                        <color key="backgroundColor" name="paletteSeaGreen"/>
                                         <connections>
                                             <segue destination="POK-kk-zgq" kind="show" id="Uwg-Jt-Ihp"/>
                                         </connections>
@@ -69,7 +69,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pRl-Tr-pTO"/>
-                        <color key="backgroundColor" name="paletteDarkRed"/>
+                        <color key="backgroundColor" name="defaultBackground"/>
                         <constraints>
                             <constraint firstItem="4jC-lB-a9n" firstAttribute="leading" secondItem="pRl-Tr-pTO" secondAttribute="leading" id="Nwr-Dh-aSq"/>
                             <constraint firstItem="4jC-lB-a9n" firstAttribute="bottom" secondItem="pRl-Tr-pTO" secondAttribute="bottom" id="a1R-IF-XnU"/>
@@ -194,6 +194,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="defaultBackground">
+            <color red="0.93725490196078431" green="0.9137254901960784" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="googleBlue">
             <color red="0.0" green="0.34099999070167542" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -206,14 +209,8 @@
         <namedColor name="googleRed">
             <color red="0.83899998664855957" green="0.17599999904632568" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="paletteDarkRed">
-            <color red="0.45500001311302185" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="paletteRed">
-            <color red="0.68199998140335083" green="0.0" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="paletteYellow">
-            <color red="0.93300002813339233" green="0.72899997234344482" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="paletteSeaGreen">
+            <color red="0.28627450980392155" green="0.49019607843137253" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
