@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import SwiftUIKitLib
 
 class ButtonExamplesViewController: UIViewController {
 
+    @IBOutlet weak var buttonExampleOne: CustomizableButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonExampleOne.setupWith(title: "Test title",
+                                   font: UIFont.systemFont(ofSize: 17),
+                                   textColor: .red)
     }
 }
