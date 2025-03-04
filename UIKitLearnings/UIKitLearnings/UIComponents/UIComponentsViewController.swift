@@ -62,5 +62,10 @@ extension UIComponentsViewController: UITableViewDataSource {
 extension UIComponentsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
+        if indexPath.row == 2 {
+            // TODO: There is a UI glitch, need to find root cause and fix it.
+            let buttonExamplesViewController = ButtonExamplesViewController()
+            self.navigationController?.pushViewController(buttonExamplesViewController, animated: true)
+        }
     }
 }

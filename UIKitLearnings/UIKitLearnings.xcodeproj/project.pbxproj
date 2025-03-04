@@ -83,6 +83,8 @@
 		B7E379272C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E379262C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift */; };
 		B7E3B5CD2C024886005139E0 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */; };
 		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
+		B7EFB4382D777B5C00C6667A /* ButtonExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */; };
+		B7EFB4392D777B5C00C6667A /* ButtonExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */; };
 		B7F6FD1B2C0578BA003650B7 /* StoryboardSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */; };
 		B7F6FD1D2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */; };
 		B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */; };
@@ -186,6 +188,8 @@
 		B7E379262C06B43A002177B4 /* StoryboardSegueWithCustomInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueWithCustomInitViewController.swift; sourceTree = "<group>"; };
 		B7E3B5CC2C024886005139E0 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
+		B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExamplesViewController.swift; sourceTree = "<group>"; };
+		B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonExamplesViewController.xib; sourceTree = "<group>"; };
 		B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueViewController.swift; sourceTree = "<group>"; };
 		B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatedViewController.swift; sourceTree = "<group>"; };
 		B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewModel.swift; sourceTree = "<group>"; };
@@ -473,6 +477,8 @@
 				B7BEA1C12AD0875900CBC92C /* UIComponentsViewController.swift */,
 				B73CB7DC2AD12D1C0007CFE4 /* CollectionViewController.swift */,
 				B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */,
+				B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */,
+				B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -645,6 +651,7 @@
 				B7BEA1C02AD0866500CBC92C /* UIComponentsStoryboard.storyboard in Resources */,
 				B730386329EC05860057A099 /* Colors.xcassets in Resources */,
 				B7BB2BEA29EB13FB005D8FE9 /* Assets.xcassets in Resources */,
+				B7EFB4392D777B5C00C6667A /* ButtonExamplesViewController.xib in Resources */,
 				B726A86B29ED80320054767C /* ToDoListItemTableViewCell.xib in Resources */,
 				B7F931EE2ABF42FE0049CC0B /* AnimationsStoryboard.storyboard in Resources */,
 				B7BB2BE529EB13F7005D8FE9 /* Main.storyboard in Resources */,
@@ -725,6 +732,7 @@
 				B74E89872BFCC916001545BD /* PresentedViewController.swift in Sources */,
 				B7A17C8F2C06386C00F55088 /* NibInstantiatedViewController.swift in Sources */,
 				B78819762A0031610046E39E /* ManipulateResponderViewController.swift in Sources */,
+				B7EFB4382D777B5C00C6667A /* ButtonExamplesViewController.swift in Sources */,
 				B77BB88C2A096394002BE62B /* WebViewController.swift in Sources */,
 				B7D3FF382C0F0F9E00153AB8 /* AnimationsOption.swift in Sources */,
 			);
