@@ -17,6 +17,7 @@ class ButtonExamplesViewController: UIViewController {
         buttonExampleOne.setupWith(title: "Test title",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        buttonExampleOne.applyBackgroundColor(.yellow)
+        // TODO: Fix issue as this button background image isn't visible.
+        buttonExampleOne.applyBackgroundColor(.image(UIImage(systemName: "seal.fill")!))
     }
 }
