@@ -1092,7 +1092,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
 			requirement = {
-				branch = "add-ui-component-customizable-button";
+				branch = main;
 				kind = branch;
 			};
 		};

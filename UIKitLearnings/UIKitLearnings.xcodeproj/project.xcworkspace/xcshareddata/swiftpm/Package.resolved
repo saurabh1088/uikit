@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "add-ui-component-customizable-button",
-        "revision" : "6ad868a25420ad3777252ad8ef9d0d8776e5d62c"
+        "branch" : "main",
+        "revision" : "fade65a3e254e7e4aad72acfe6f3bb7c4fca42a1"
       }
     }
   ],
