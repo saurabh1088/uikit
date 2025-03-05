@@ -14,6 +14,9 @@ class ButtonExamplesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         buttonExampleOne.setupWith(title: "Test title",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)

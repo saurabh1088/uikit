@@ -64,7 +64,7 @@ extension UIComponentsViewController: UITableViewDelegate {
         Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
         if indexPath.row == 2 {
             // TODO: There is a UI glitch, need to find root cause and fix it.
-            let buttonExamplesViewController = ButtonExamplesViewController()
+            let buttonExamplesViewController = ButtonExamplesViewController(nibName: "ButtonExamplesViewController", bundle: nil)
             self.navigationController?.pushViewController(buttonExamplesViewController, animated: true)
         }
     }
