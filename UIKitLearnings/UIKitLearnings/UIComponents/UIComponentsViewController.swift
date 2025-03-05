@@ -22,7 +22,7 @@ class UIComponentsViewController: UIViewController {
 // Table View data source methods implementation
 extension UIComponentsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,6 +44,15 @@ extension UIComponentsViewController: UITableViewDataSource {
             // this behaviour OFF, set selectionStyle as none
             cell.selectionStyle = .none
             return cell
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "uiComponentButtons")!
+            // TODO: textLabel will be deprecated in future, look for alternative.
+            cell.textLabel?.text = "Buttons"
+            cell.textLabel?.textColor = UIColor.white
+            // By default selected cell will be highlighted with a color greyish. To turn
+            // this behaviour OFF, set selectionStyle as none
+            cell.selectionStyle = .none
+            return cell
         }
         return UITableViewCell()
     }
@@ -53,5 +62,10 @@ extension UIComponentsViewController: UITableViewDataSource {
 extension UIComponentsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Logger.uiTableViewDelegateCallbacks.info("tableView didDeselectRowAt :: \(indexPath)")
+        if indexPath.row == 2 {
+            // TODO: There is a UI glitch, need to find root cause and fix it.
+            let buttonExamplesViewController = ButtonExamplesViewController(nibName: "ButtonExamplesViewController", bundle: nil)
+            self.navigationController?.pushViewController(buttonExamplesViewController, animated: true)
+        }
     }
 }
