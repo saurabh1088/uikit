@@ -17,5 +17,6 @@ class ButtonExamplesViewController: UIViewController {
         buttonExampleOne.setupWith(title: "Test title",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
+        buttonExampleOne.applyBackgroundColor(.yellow)
     }
 }
