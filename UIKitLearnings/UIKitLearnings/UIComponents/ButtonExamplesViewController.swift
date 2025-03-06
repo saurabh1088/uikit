@@ -11,13 +11,18 @@ import SwiftUIKitLib
 class ButtonExamplesViewController: UIViewController {
 
     @IBOutlet weak var buttonExampleOne: CustomizableButton!
-    
+    @IBOutlet weak var buttonExampleTwo: CustomizableButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonExampleOne.setupWith(title: "Test title",
+        buttonExampleOne.setupWith(title: "Button Example One",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        // TODO: Fix issue as this button background image isn't visible.
         buttonExampleOne.applyBackground(.image(UIImage(named: "folder")!))
+        
+        buttonExampleTwo.setupWith(title: "Button Example Two",
+                                   font: UIFont.systemFont(ofSize: 17),
+                                   textColor: .red)
+        buttonExampleTwo.applyBackground(.image(UIImage(systemName: "seal.fill")!))
     }
 }
