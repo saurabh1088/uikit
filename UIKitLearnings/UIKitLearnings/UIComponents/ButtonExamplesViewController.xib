@@ -21,21 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-8X-JU6" customClass="CustomizableButton" customModule="SwiftUIKitLib">
-                    <rect key="frame" x="159" y="409" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-8X-JU6" customClass="CustomizableButton" customModule="SwiftUIKitLib">
+                    <rect key="frame" x="8" y="67" width="377" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db1-mA-hfa" customClass="CustomizableButton" customModule="SwiftUIKitLib">
-                    <rect key="frame" x="159" y="483" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db1-mA-hfa" customClass="CustomizableButton" customModule="SwiftUIKitLib">
+                    <rect key="frame" x="8" y="110" width="377" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="db1-mA-hfa" firstAttribute="top" secondItem="bdF-8X-JU6" secondAttribute="bottom" constant="8" id="1t4-FT-Q6Z"/>
+                <constraint firstItem="bdF-8X-JU6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="LYa-ea-J1m"/>
+                <constraint firstItem="db1-mA-hfa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Mc4-UT-HGR"/>
+                <constraint firstItem="bdF-8X-JU6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="VJD-e9-HJO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bdF-8X-JU6" secondAttribute="trailing" constant="8" id="fxY-W7-dQ2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="db1-mA-hfa" secondAttribute="trailing" constant="8" id="s0I-F0-7nz"/>
+            </constraints>
             <point key="canvasLocation" x="-57" y="20"/>
         </view>
     </objects>

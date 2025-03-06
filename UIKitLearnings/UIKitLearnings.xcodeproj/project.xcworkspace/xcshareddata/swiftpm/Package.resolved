@@ -15,7 +15,7 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "main",
+        "branch" : "add-option-to-provide-frame-for-customisable-button",
         "revision" : "93dede595645d89dea4162fe328e18c43334d3dc"
       }
     }
