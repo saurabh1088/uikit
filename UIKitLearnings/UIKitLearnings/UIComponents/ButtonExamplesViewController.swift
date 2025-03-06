@@ -18,6 +18,6 @@ class ButtonExamplesViewController: UIViewController {
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
         // TODO: Fix issue as this button background image isn't visible.
-        buttonExampleOne.applyBackgroundColor(.image(UIImage(systemName: "seal.fill")!))
+        buttonExampleOne.applyBackground(.image(UIImage(named: "folder")!))
     }
 }
