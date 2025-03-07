@@ -25,10 +25,11 @@ class ButtonExamplesViewController: UIViewController {
                                    textColor: .red)
         buttonExampleTwo.applyBackground(.color(.yellow))
         
-        let buttonExampleThree = CustomizableButton(frame: .init(x: 8, y: 300, width: 200, height: 50))
-        buttonExampleThree.setupWith(title: "Button Example Three",
-                                     font: UIFont.systemFont(ofSize: 17),
-                                     textColor: .red)
+        let buttonFrame = CGRect(x: 8, y: 300, width: 200, height: 50)
+        let buttonExampleThree = CustomizableButton(frame: buttonFrame,
+                                                    title: "Button Example Three",
+                                                    font: UIFont.systemFont(ofSize: 17),
+                                                    textColor: .red)
         buttonExampleThree.applyBackground(.color(.yellow))
         self.view.addSubview(buttonExampleThree)
     }
