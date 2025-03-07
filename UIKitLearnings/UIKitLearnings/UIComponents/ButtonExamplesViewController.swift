@@ -18,11 +18,19 @@ class ButtonExamplesViewController: UIViewController {
         buttonExampleOne.setupWith(title: "Button Example One",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        buttonExampleOne.applyBackground(.image(UIImage(named: "folder")!))
+        buttonExampleOne.applyBackground(.color(.yellow))
         
         buttonExampleTwo.setupWith(title: "Button Example Two",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        buttonExampleTwo.applyBackground(.image(UIImage(systemName: "seal.fill")!))
+        buttonExampleTwo.applyBackground(.color(.yellow))
+        
+        let buttonFrame = CGRect(x: 8, y: 300, width: 200, height: 50)
+        let buttonExampleThree = CustomizableButton(frame: buttonFrame,
+                                                    title: "Button Example Three",
+                                                    font: UIFont.systemFont(ofSize: 17),
+                                                    textColor: .red)
+        buttonExampleThree.applyBackground(.color(.yellow))
+        self.view.addSubview(buttonExampleThree)
     }
 }
