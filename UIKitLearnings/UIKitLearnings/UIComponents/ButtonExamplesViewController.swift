@@ -22,6 +22,7 @@ class ButtonExamplesViewController: UIViewController {
         super.viewDidLoad()
         setupXIBButtons()
         setupProgrammaticButtons()
+        addConstraintsForButtonThree()
     }
     
     private func setupXIBButtons() {
@@ -42,11 +43,12 @@ class ButtonExamplesViewController: UIViewController {
     }
     
     private func createButtonThree() {
-        let buttonFrame = CGRect(x: 8, y: 300, width: 200, height: 50)
-        btnExampleThree = CustomizableButton(frame: buttonFrame,
-                                                title: "Button Example Three",
-                                                font: UIFont.systemFont(ofSize: 17),
-                                                textColor: .red)
+        // Constraints are being set for this button in func addConstraintsForButtonThree
+        // hence frame here can be anything.
+        btnExampleThree = CustomizableButton(frame: CGRect(),
+                                             title: "Button Example Three",
+                                             font: UIFont.systemFont(ofSize: 17),
+                                             textColor: .red)
         guard let btnExampleThree else { return }
         btnExampleThree.applyBackground(.color(.yellow))
         self.view.addSubview(btnExampleThree)
@@ -55,6 +57,11 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonThree() {
         guard let button = btnExampleThree else { return }
         button.translatesAutoresizingMaskIntoConstraints = false
-        
+        NSLayoutConstraint.activate([
+            button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            button.topAnchor.constraint(equalTo: self.btnExampleTwo.bottomAnchor, constant: 8),
+            button.widthAnchor.constraint(equalToConstant: 300),
+            button.heightAnchor.constraint(equalToConstant: 50)
+        ])
     }
 }
