@@ -24,10 +24,11 @@ class ButtonExamplesViewController: UIViewController {
     private lazy var btnExampleThree: CustomizableButton = {
         // Constraints are being set for this button in func addConstraintsForButtonThree
         // hence frame here can be anything.
+        let btnConfigThree = ButtonsExample.three
         let button = CustomizableButton(frame: .zero,
-                                       title: "Button Example Three",
-                                       font: .systemFont(ofSize: 17),
-                                       textColor: .red)
+                                        title: btnConfigThree.title,
+                                        font: btnConfigThree.font,
+                                        textColor: btnConfigThree.textColor)
         button.applyBackground(.color(.yellow))
         return button
     }()
