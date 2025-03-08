@@ -47,7 +47,14 @@ enum ButtonsExample {
         case .one: ButtonBackgroundType.color(.yellow)
         case .two: ButtonBackgroundType.color(.yellow)
         case .three: ButtonBackgroundType.color(.yellow)
-        case .four: ButtonBackgroundType.color(.white)
+        case .four: ButtonBackgroundType.color(.clear)
+        }
+    }
+    
+    var gradientColors: [UIColor]? {
+        switch self {
+        case .four: [.red, .blue, .green]
+        default : nil
         }
     }
 }

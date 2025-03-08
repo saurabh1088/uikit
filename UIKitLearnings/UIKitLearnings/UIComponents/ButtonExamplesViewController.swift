@@ -42,6 +42,8 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigFour.font,
                                         textColor: btnConfigFour.textColor)
         button.applyBackground(btnConfigFour.backgroundType)
+        // TODO: Move this to proper location.
+        button.applyGradient(colors: btnConfigFour.gradientColors ?? [.red, .green, .blue])
         return button
     }()
 
