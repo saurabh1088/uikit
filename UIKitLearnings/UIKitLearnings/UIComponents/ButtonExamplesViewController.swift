@@ -19,23 +19,33 @@ class ButtonExamplesViewController: UIViewController {
     @IBOutlet weak var btnExampleTwo: CustomizableButton!
     
     // MARK: - Private Properties
-    /// A programmatically created button, initialized with a frame and configured with Auto Layout constraints.
-    private var btnExampleThree: CustomizableButton?
+    /// A lazily initialized programmatically created button to optimize initial load, initialized with a frame and configured with Auto Layout constraints.
+    /// Lazy Initialization: Defer the creation of `btnExampleThree` until it’s needed (e.g., in viewWillAppear) to optimize initial load time
+    private lazy var btnExampleThree: CustomizableButton = {
+        // Constraints are being set for this button in func addConstraintsForButtonThree
+        // hence frame here can be anything.
+        let button = CustomizableButton(frame: .zero,
+                                       title: "Button Example Three",
+                                       font: .systemFont(ofSize: 17),
+                                       textColor: .red)
+        button.applyBackground(.color(.yellow))
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupXIBButtons()
-        setupProgrammaticButtons()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.addSubview(btnExampleThree) // Add programmatic button when view appears
         addConstraintsForButtonThree()
     }
     
     private func setupXIBButtons() {
         configure(button: btnExampleOne, forExample: .one)
         configure(button: btnExampleTwo, forExample: .two)
-    }
-    
-    private func setupProgrammaticButtons() {
-        createButtonThree()
     }
     
     /// Configures a given button with a specified example style.
@@ -50,30 +60,15 @@ class ButtonExamplesViewController: UIViewController {
         button.applyBackground(example.backgroundType)
     }
     
-    /// Creates and initializes the third example button programmatically.
-    /// - Note: The frame is set to an empty CGRect since constraints will define the layout in `addConstraintsForButtonThree`.
-    private func createButtonThree() {
-        // Constraints are being set for this button in func addConstraintsForButtonThree
-        // hence frame here can be anything.
-        btnExampleThree = CustomizableButton(frame: CGRect(),
-                                             title: "Button Example Three",
-                                             font: UIFont.systemFont(ofSize: 17),
-                                             textColor: .red)
-        guard let btnExampleThree else { return }
-        btnExampleThree.applyBackground(.color(.yellow))
-        self.view.addSubview(btnExampleThree)
-    }
-    
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonThree() {
-        guard let button = btnExampleThree else { return }
-        button.translatesAutoresizingMaskIntoConstraints = false
+        btnExampleThree.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
-            button.topAnchor.constraint(equalTo: self.btnExampleTwo.bottomAnchor, constant: 8),
-            button.widthAnchor.constraint(equalToConstant: 300),
-            button.heightAnchor.constraint(equalToConstant: 50)
+            btnExampleThree.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleThree.topAnchor.constraint(equalTo: btnExampleTwo.bottomAnchor, constant: 8),
+            btnExampleThree.widthAnchor.constraint(equalToConstant: 300),
+            btnExampleThree.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
