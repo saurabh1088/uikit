@@ -29,7 +29,19 @@ class ButtonExamplesViewController: UIViewController {
                                         title: btnConfigThree.title,
                                         font: btnConfigThree.font,
                                         textColor: btnConfigThree.textColor)
-        button.applyBackground(.color(.yellow))
+        button.applyBackground(btnConfigThree.backgroundType)
+        return button
+    }()
+    
+    private lazy var btnExampleFour: CustomizableButton = {
+        // Constraints are being set for this button in func addConstraintsForButtonFour
+        // hence frame here can be anything.
+        let btnConfigFour = ButtonsExample.four
+        let button = CustomizableButton(frame: .zero,
+                                        title: btnConfigFour.title,
+                                        font: btnConfigFour.font,
+                                        textColor: btnConfigFour.textColor)
+        button.applyBackground(btnConfigFour.backgroundType)
         return button
     }()
 
@@ -41,7 +53,9 @@ class ButtonExamplesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.addSubview(btnExampleThree) // Add programmatic button when view appears
+        view.addSubview(btnExampleFour) // Add programmatic button when view appears
         addConstraintsForButtonThree()
+        addConstraintsForButtonFour()
     }
     
     private func setupXIBButtons() {
@@ -70,6 +84,18 @@ class ButtonExamplesViewController: UIViewController {
             btnExampleThree.topAnchor.constraint(equalTo: btnExampleTwo.bottomAnchor, constant: 8),
             btnExampleThree.widthAnchor.constraint(equalToConstant: 300),
             btnExampleThree.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
+    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
+    private func addConstraintsForButtonFour() {
+        btnExampleFour.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            btnExampleFour.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleFour.topAnchor.constraint(equalTo: btnExampleThree.bottomAnchor, constant: 8),
+            btnExampleFour.widthAnchor.constraint(equalToConstant: 300),
+            btnExampleFour.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
