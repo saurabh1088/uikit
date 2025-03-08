@@ -8,14 +8,18 @@
 import UIKit
 import SwiftUIKitLib
 
-/// This view controller demonstrates various uses of CustomizableButton.
+/// A view controller that demonstrates various use cases of the `CustomizableButton` class from the
+/// SwiftUIKitLib framework.
+/// This class showcases both storyboard/XIB-based buttons and a programmatically created button with Auto Layout constraints.
 class ButtonExamplesViewController: UIViewController {
     
     // MARK: - Outlets
+    /// The example buttons, configured via a storyboard or XIB outlet.
     @IBOutlet weak var btnExampleOne: CustomizableButton!
     @IBOutlet weak var btnExampleTwo: CustomizableButton!
     
     // MARK: - Private Properties
+    /// A programmatically created button, initialized with a frame and configured with Auto Layout constraints.
     private var btnExampleThree: CustomizableButton?
 
     override func viewDidLoad() {
@@ -34,6 +38,10 @@ class ButtonExamplesViewController: UIViewController {
         createButtonThree()
     }
     
+    /// Configures a given button with a specified example style.
+    /// - Parameters:
+    ///   - button: The `CustomizableButton` instance to configure. If nil, the method exits early.
+    ///   - example: The `ButtonsExample` enum value defining the button's style (e.g., .one, .two).
     private func configure(button: CustomizableButton?, forExample example: ButtonsExample) {
         guard let button else { return }
         button.setupWith(title: example.title,
@@ -42,6 +50,8 @@ class ButtonExamplesViewController: UIViewController {
         button.applyBackground(example.backgroundType)
     }
     
+    /// Creates and initializes the third example button programmatically.
+    /// - Note: The frame is set to an empty CGRect since constraints will define the layout in `addConstraintsForButtonThree`.
     private func createButtonThree() {
         // Constraints are being set for this button in func addConstraintsForButtonThree
         // hence frame here can be anything.
@@ -54,6 +64,8 @@ class ButtonExamplesViewController: UIViewController {
         self.view.addSubview(btnExampleThree)
     }
     
+    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
+    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonThree() {
         guard let button = btnExampleThree else { return }
         button.translatesAutoresizingMaskIntoConstraints = false
