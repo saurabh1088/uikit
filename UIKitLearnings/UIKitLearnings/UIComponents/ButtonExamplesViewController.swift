@@ -21,7 +21,27 @@ class ButtonExamplesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupXIBButtons()
-            
+        setupProgrammaticButtons()
+    }
+    
+    private func setupXIBButtons() {
+        configure(button: btnExampleOne, forExample: .one)
+        configure(button: btnExampleTwo, forExample: .two)
+    }
+    
+    private func setupProgrammaticButtons() {
+        createButtonThree()
+    }
+    
+    private func configure(button: CustomizableButton?, forExample example: ButtonsExample) {
+        guard let button else { return }
+        button.setupWith(title: example.title,
+                         font: example.font,
+                         textColor: example.textColor)
+        button.applyBackground(example.backgroundType)
+    }
+    
+    private func createButtonThree() {
         let buttonFrame = CGRect(x: 8, y: 300, width: 200, height: 50)
         btnExampleThree = CustomizableButton(frame: buttonFrame,
                                                 title: "Button Example Three",
@@ -32,16 +52,9 @@ class ButtonExamplesViewController: UIViewController {
         self.view.addSubview(btnExampleThree)
     }
     
-    private func setupXIBButtons() {
-        configure(button: btnExampleOne, forExample: .one)
-        configure(button: btnExampleTwo, forExample: .two)
-    }
-    
-    private func configure(button: CustomizableButton?, forExample example: ButtonsExample) {
-        guard let button else { return }
-        button.setupWith(title: example.title,
-                         font: example.font,
-                         textColor: example.textColor)
-        button.applyBackground(example.backgroundType)
+    private func addConstraintsForButtonThree() {
+        guard let button = btnExampleThree else { return }
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
     }
 }
