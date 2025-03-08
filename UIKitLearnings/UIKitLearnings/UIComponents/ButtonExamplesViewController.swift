@@ -12,31 +12,31 @@ import SwiftUIKitLib
 class ButtonExamplesViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var buttonExampleOne: CustomizableButton!
-    @IBOutlet weak var buttonExampleTwo: CustomizableButton!
+    @IBOutlet weak var btnExampleOne: CustomizableButton!
+    @IBOutlet weak var btnExampleTwo: CustomizableButton!
     
     // MARK: - Private Properties
-    private var buttonExampleThree: CustomizableButton?
+    private var btnExampleThree: CustomizableButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonExampleOne.setupWith(title: "Button Example One",
+        btnExampleOne.setupWith(title: "Button Example One",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        buttonExampleOne.applyBackground(.color(.yellow))
+        btnExampleOne.applyBackground(.color(.yellow))
         
-        buttonExampleTwo.setupWith(title: "Button Example Two",
+        btnExampleTwo.setupWith(title: "Button Example Two",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .red)
-        buttonExampleTwo.applyBackground(.color(.yellow))
+        btnExampleTwo.applyBackground(.color(.yellow))
         
         let buttonFrame = CGRect(x: 8, y: 300, width: 200, height: 50)
-        buttonExampleThree = CustomizableButton(frame: buttonFrame,
+        btnExampleThree = CustomizableButton(frame: buttonFrame,
                                                 title: "Button Example Three",
                                                 font: UIFont.systemFont(ofSize: 17),
                                                 textColor: .red)
-        guard let buttonExampleThree else { return }
-        buttonExampleThree.applyBackground(.color(.yellow))
-        self.view.addSubview(buttonExampleThree)
+        guard let btnExampleThree else { return }
+        btnExampleThree.applyBackground(.color(.yellow))
+        self.view.addSubview(btnExampleThree)
     }
 }

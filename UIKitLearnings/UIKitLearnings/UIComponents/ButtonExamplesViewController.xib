@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonExamplesViewController" customModule="UIKitLearnings" customModuleProvider="target">
             <connections>
-                <outlet property="buttonExampleOne" destination="bdF-8X-JU6" id="jee-Ax-fgj"/>
-                <outlet property="buttonExampleTwo" destination="db1-mA-hfa" id="rvA-df-9c4"/>
+                <outlet property="btnExampleOne" destination="bdF-8X-JU6" id="CIm-Hi-jRC"/>
+                <outlet property="btnExampleTwo" destination="db1-mA-hfa" id="9sD-EC-2J2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
