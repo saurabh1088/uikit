@@ -85,6 +85,7 @@
 		B7E499502BFF11B800FA97CF /* LearningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */; };
 		B7EFB4382D777B5C00C6667A /* ButtonExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */; };
 		B7EFB4392D777B5C00C6667A /* ButtonExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */; };
+		B7EFB43B2D7C480F00C6667A /* ButtonsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFB43A2D7C480F00C6667A /* ButtonsExample.swift */; };
 		B7F6FD1B2C0578BA003650B7 /* StoryboardSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */; };
 		B7F6FD1D2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */; };
 		B7F6FFC42C0414570028FBC4 /* AlamofireNetworkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */; };
@@ -190,6 +191,7 @@
 		B7E4994F2BFF11B800FA97CF /* LearningOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOptions.swift; sourceTree = "<group>"; };
 		B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExamplesViewController.swift; sourceTree = "<group>"; };
 		B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonExamplesViewController.xib; sourceTree = "<group>"; };
+		B7EFB43A2D7C480F00C6667A /* ButtonsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsExample.swift; sourceTree = "<group>"; };
 		B7F6FD1A2C0578BA003650B7 /* StoryboardSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueViewController.swift; sourceTree = "<group>"; };
 		B7F6FD1C2C057DA1003650B7 /* StoryboardInstantiatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatedViewController.swift; sourceTree = "<group>"; };
 		B7F6FFC32C0414570028FBC4 /* AlamofireNetworkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingViewModel.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				B74761052D5B1E2900B2375C /* TableViewCellExamplesViewController.swift */,
 				B7EFB4362D777B5C00C6667A /* ButtonExamplesViewController.swift */,
 				B7EFB4372D777B5C00C6667A /* ButtonExamplesViewController.xib */,
+				B7EFB43A2D7C480F00C6667A /* ButtonsExample.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 			files = (
 				B78819742A002A110046E39E /* ResponderExamplesViewController.swift in Sources */,
 				B7BB2BE829EB13F7005D8FE9 /* UIKitLearnings.xcdatamodeld in Sources */,
+				B7EFB43B2D7C480F00C6667A /* ButtonsExample.swift in Sources */,
 				B73837E92C59FB46009DBE37 /* CoreAnimationScenariosViewController.swift in Sources */,
 				B79340D72AC0307800F527CB /* CircularProgressView.swift in Sources */,
 				B73837F02C5A071D009DBE37 /* CoreAnimationBackgroundColorViewController.swift in Sources */,
