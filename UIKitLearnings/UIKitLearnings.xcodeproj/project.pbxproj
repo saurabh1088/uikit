@@ -1096,7 +1096,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
 			requirement = {
-				branch = "add-capability-to-add-border-to-customisable-button";
+				branch = main;
 				kind = branch;
 			};
 		};
