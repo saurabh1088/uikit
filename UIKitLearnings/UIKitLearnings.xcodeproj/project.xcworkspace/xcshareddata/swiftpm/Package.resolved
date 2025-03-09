@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "add-support-to-add-gradient-to-customisable-button",
-        "revision" : "f7e0291e8b9ab4a1c6a64fb8d073f1bcdb240ee0"
+        "branch" : "main",
+        "revision" : "aef5e6914f9586c593b6bfbc6296796bc92a116f"
       }
     }
   ],
