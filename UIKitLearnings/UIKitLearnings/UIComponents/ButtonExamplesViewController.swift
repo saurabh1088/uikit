@@ -29,7 +29,7 @@ class ButtonExamplesViewController: UIViewController {
                                         title: btnConfigThree.title,
                                         font: btnConfigThree.font,
                                         textColor: btnConfigThree.textColor)
-        button.applyBackground(btnConfigThree.backgroundType)
+        button.setBackground(to: btnConfigThree.backgroundType)
         return button
     }()
     
@@ -41,9 +41,7 @@ class ButtonExamplesViewController: UIViewController {
                                         title: btnConfigFour.title,
                                         font: btnConfigFour.font,
                                         textColor: btnConfigFour.textColor)
-        button.applyBackground(btnConfigFour.backgroundType)
-        // TODO: Move this to proper location.
-        button.applyGradient(colors: btnConfigFour.gradientColors ?? [.red, .green, .blue])
+        button.setBackground(to: btnConfigFour.backgroundType)
         return button
     }()
 
@@ -74,7 +72,7 @@ class ButtonExamplesViewController: UIViewController {
         button.setupWith(title: example.title,
                          font: example.font,
                          textColor: example.textColor)
-        button.applyBackground(example.backgroundType)
+        button.setBackground(to: example.backgroundType)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
