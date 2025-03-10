@@ -46,7 +46,7 @@ class ButtonExamplesViewController: UIViewController {
     }()
     
     private lazy var btnExampleFive: CustomizableButton = {
-        // Constraints are being set for this button in func addConstraintsForButtonFour
+        // Constraints are being set for this button in func addConstraintsForButtonFive
         // hence frame here can be anything.
         let btnConfigFive = ButtonsExample.five
         let button = CustomizableButton(frame: .zero,
@@ -54,6 +54,19 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigFive.font,
                                         textColor: btnConfigFive.textColor)
         button.setBackground(to: btnConfigFive.backgroundType)
+        return button
+    }()
+    
+    private lazy var btnExampleSix: CustomizableButton = {
+        // Constraints are being set for this button in func addConstraintsForButtonSix
+        // hence frame here can be anything.
+        let btnConfigSix = ButtonsExample.six
+        let button = CustomizableButton(frame: .zero,
+                                        title: btnConfigSix.title,
+                                        font: btnConfigSix.font,
+                                        textColor: btnConfigSix.textColor)
+        button.setBackground(to: btnConfigSix.backgroundType)
+        button.applyBorder(width: 5, color: .black, cornerRadius: 5)
         return button
     }()
 
@@ -67,9 +80,11 @@ class ButtonExamplesViewController: UIViewController {
         view.addSubview(btnExampleThree) // Add programmatic button when view appears
         view.addSubview(btnExampleFour) // Add programmatic button when view appears
         view.addSubview(btnExampleFive) // Add programmatic button when view appears
+        view.addSubview(btnExampleSix) // Add programmatic button when view appears
         addConstraintsForButtonThree()
         addConstraintsForButtonFour()
         addConstraintsForButtonFive()
+        addConstraintsForButtonSix()
     }
     
     private func setupXIBButtons() {
@@ -122,6 +137,18 @@ class ButtonExamplesViewController: UIViewController {
             btnExampleFive.topAnchor.constraint(equalTo: btnExampleFour.bottomAnchor, constant: 8),
             btnExampleFive.widthAnchor.constraint(equalToConstant: 300),
             btnExampleFive.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSix).
+    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
+    private func addConstraintsForButtonSix() {
+        btnExampleSix.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            btnExampleSix.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleSix.topAnchor.constraint(equalTo: btnExampleFive.bottomAnchor, constant: 8),
+            btnExampleSix.widthAnchor.constraint(equalToConstant: 300),
+            btnExampleSix.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
