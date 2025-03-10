@@ -77,10 +77,13 @@ class ButtonExamplesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.addSubview(btnExampleThree) // Add programmatic button when view appears
-        view.addSubview(btnExampleFour) // Add programmatic button when view appears
-        view.addSubview(btnExampleFive) // Add programmatic button when view appears
-        view.addSubview(btnExampleSix) // Add programmatic button when view appears
+        // Add programmatic buttons when view appears
+        view.addSubview(btnExampleThree)
+        view.addSubview(btnExampleFour)
+        view.addSubview(btnExampleFive)
+        view.addSubview(btnExampleSix)
+        
+        // Add constrains for programmatically added buttons
         addConstraintsForButtonThree()
         addConstraintsForButtonFour()
         addConstraintsForButtonFive()
