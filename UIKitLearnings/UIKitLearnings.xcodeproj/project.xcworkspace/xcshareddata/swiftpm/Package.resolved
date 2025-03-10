@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "aef5e6914f9586c593b6bfbc6296796bc92a116f"
+        "branch" : "add-capability-to-add-border-to-customisable-button",
+        "revision" : "ddc20c5d2d8e7a177582dd500307fd58f70cee0f"
       }
     }
   ],
