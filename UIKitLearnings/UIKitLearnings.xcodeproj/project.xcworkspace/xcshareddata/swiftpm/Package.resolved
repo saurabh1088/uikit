@@ -16,7 +16,7 @@
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
         "branch" : "refactor-API-for-CustomizableButton",
-        "revision" : "3fd8cf306b03289b1e61795852233fa3d8531732"
+        "revision" : "73ddd43ccc16eccaafc9d1ec368c0052a2385c6c"
       }
     }
   ],
