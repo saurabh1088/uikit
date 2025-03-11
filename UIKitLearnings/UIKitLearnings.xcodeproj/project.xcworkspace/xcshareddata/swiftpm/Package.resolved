@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "77964edf5dec9da71aaa0be0719543481ee2cfbb"
+        "branch" : "refactor-API-for-CustomizableButton",
+        "revision" : "2f7ced0ba1ded7d1443ee5ee2cf1f630ffc84040"
       }
     }
   ],
