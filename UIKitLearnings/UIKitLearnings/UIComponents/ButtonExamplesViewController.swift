@@ -66,8 +66,8 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigSix.font,
                                         textColor: btnConfigSix.textColor)
         button.setBackground(to: btnConfigSix.backgroundType)
-        button.applyBorder(width: 10, color: .black)
-        button.applyCornerRadius(10)
+        button.setBorder(with: 10, color: .black)
+        button.setCornerRadius(10)
         return button
     }()
 
