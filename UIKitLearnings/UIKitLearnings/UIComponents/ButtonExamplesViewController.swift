@@ -70,6 +70,24 @@ class ButtonExamplesViewController: UIViewController {
         button.setCornerRadius(10)
         return button
     }()
+    
+    private lazy var btnExampleSeven: CustomizableButton = {
+        // Constraints are being set for this button in func addConstraintsForButtonSeven
+        // hence frame here can be anything.
+        let btnConfigSeven = ButtonsExample.seven
+        let button = CustomizableButton(frame: .zero,
+                                        title: btnConfigSeven.title,
+                                        font: btnConfigSeven.font,
+                                        textColor: btnConfigSeven.textColor)
+        button.setBackground(to: btnConfigSeven.backgroundType)
+        button.setBorder(with: 10, color: .black)
+        button.setCornerRadius(10)
+        button.setShadow(offset: CGSize(width: 5.0, height: 5.0),
+                         radius: 5.0,
+                         opacity: 0.5,
+                         color: .green)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,12 +101,14 @@ class ButtonExamplesViewController: UIViewController {
         view.addSubview(btnExampleFour)
         view.addSubview(btnExampleFive)
         view.addSubview(btnExampleSix)
+        view.addSubview(btnExampleSeven)
         
         // Add constrains for programmatically added buttons
         addConstraintsForButtonThree()
         addConstraintsForButtonFour()
         addConstraintsForButtonFive()
         addConstraintsForButtonSix()
+        addConstraintsForButtonSeven()
     }
     
     private func setupXIBButtons() {
@@ -153,6 +173,18 @@ class ButtonExamplesViewController: UIViewController {
             btnExampleSix.topAnchor.constraint(equalTo: btnExampleFive.bottomAnchor, constant: 8),
             btnExampleSix.widthAnchor.constraint(equalToConstant: 300),
             btnExampleSix.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSeven).
+    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
+    private func addConstraintsForButtonSeven() {
+        btnExampleSeven.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            btnExampleSeven.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleSeven.topAnchor.constraint(equalTo: btnExampleSix.bottomAnchor, constant: 8),
+            btnExampleSeven.widthAnchor.constraint(equalToConstant: 300),
+            btnExampleSeven.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
