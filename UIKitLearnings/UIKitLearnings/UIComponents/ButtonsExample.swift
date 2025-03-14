@@ -50,7 +50,7 @@ enum ButtonsExample {
         case .four: .gray
         case .five: .white
         case .six: .black
-        case .seven: .black
+        case .seven: .white
         }
     }
     
@@ -62,7 +62,7 @@ enum ButtonsExample {
         case .four: ButtonBackgroundType.gradient([.red, .blue, .green])
         case .five: ButtonBackgroundType.gradient([.red, .white])
         case .six: ButtonBackgroundType.color(.white)
-        case .seven: ButtonBackgroundType.color(.white)
+        case .seven: ButtonBackgroundType.color(.blue)
         }
     }
 }
