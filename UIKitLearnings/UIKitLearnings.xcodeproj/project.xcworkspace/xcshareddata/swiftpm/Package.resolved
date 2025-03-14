@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "implement-option-for-shadow-effects-for-customisable-button",
-        "revision" : "879b7829a5c45100b2236cd04136d67447e9a6da"
+        "branch" : "main",
+        "revision" : "532b9911df11d7381bc0707668dc0ac031ab1c05"
       }
     }
   ],

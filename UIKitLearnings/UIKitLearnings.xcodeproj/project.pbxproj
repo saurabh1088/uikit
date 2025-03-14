@@ -1096,7 +1096,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
 			requirement = {
-				branch = "implement-option-for-shadow-effects-for-customisable-button";
+				branch = main;
 				kind = branch;
 			};
 		};
