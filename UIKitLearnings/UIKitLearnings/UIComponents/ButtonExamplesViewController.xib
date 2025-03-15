@@ -26,7 +26,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
-                        <action selector="btnExampleOne:" destination="-1" eventType="touchUpInside" id="CIq-Hj-qKy"/>
+                        <action selector="btnExampleOneTapped:" destination="-1" eventType="touchUpInside" id="mqq-iW-0ri"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db1-mA-hfa" customClass="CustomizableButton" customModule="SwiftUIKitLib">
@@ -34,7 +34,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
-                        <action selector="btnExampleTwo:" destination="-1" eventType="touchUpInside" id="Rvk-wf-RYz"/>
+                        <action selector="btnExampleTwoTapped:" destination="-1" eventType="touchUpInside" id="dme-nf-a0V"/>
                     </connections>
                 </button>
             </subviews>

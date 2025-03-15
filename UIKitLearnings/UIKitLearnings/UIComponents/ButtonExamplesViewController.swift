@@ -187,12 +187,12 @@ class ButtonExamplesViewController: UIViewController {
         ])
     }
     
-    @IBAction func btnExampleOne(_ sender: Any) {
+    @IBAction func btnExampleOneTapped(_ sender: Any) {
         showAlertWithTitle("Button Example One",
                            message: "Action on button example one triggered")
     }
     
-    @IBAction func btnExampleTwo(_ sender: Any) {
+    @IBAction func btnExampleTwoTapped(_ sender: Any) {
         showAlertWithTitle("Button Example Two",
                            message: "Action on button example two triggered")
     }
