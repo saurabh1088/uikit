@@ -30,6 +30,7 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigThree.font,
                                         textColor: btnConfigThree.textColor)
         button.setBackground(to: btnConfigThree.backgroundType)
+        button.addTarget(self, action: #selector(btnExampleThreeTapped), for: .touchUpInside)
         return button
     }()
     
@@ -195,6 +196,11 @@ class ButtonExamplesViewController: UIViewController {
     @IBAction func btnExampleTwoTapped(_ sender: Any) {
         showAlertWithTitle("Button Example Two",
                            message: "Action on button example two triggered")
+    }
+    
+    @objc func btnExampleThreeTapped(_ sender: Any) {
+        showAlertWithTitle("Button Example Three",
+                           message: "Action on button example three triggered")
     }
 }
 
