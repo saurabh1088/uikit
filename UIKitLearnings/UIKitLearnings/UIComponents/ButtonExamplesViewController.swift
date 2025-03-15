@@ -43,6 +43,9 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigFour.font,
                                         textColor: btnConfigFour.textColor)
         button.setBackground(to: btnConfigFour.backgroundType)
+        button.setTapAction { [weak self] in
+            self?.btnExampleFourTapped()
+        }
         return button
     }()
     
@@ -201,6 +204,11 @@ class ButtonExamplesViewController: UIViewController {
     @objc func btnExampleThreeTapped(_ sender: Any) {
         showAlertWithTitle("Button Example Three",
                            message: "Action on button example three triggered")
+    }
+    
+    func btnExampleFourTapped() {
+        showAlertWithTitle("Button Example Four",
+                           message: "Action on button example four triggered")
     }
 }
 
