@@ -25,11 +25,17 @@
                     <rect key="frame" x="8" y="67" width="377" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="btnExampleOneTapped:" destination="-1" eventType="touchUpInside" id="mqq-iW-0ri"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db1-mA-hfa" customClass="CustomizableButton" customModule="SwiftUIKitLib">
                     <rect key="frame" x="8" y="110" width="377" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="btnExampleTwoTapped:" destination="-1" eventType="touchUpInside" id="dme-nf-a0V"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

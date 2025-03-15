@@ -30,6 +30,7 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigThree.font,
                                         textColor: btnConfigThree.textColor)
         button.setBackground(to: btnConfigThree.backgroundType)
+        button.addTarget(self, action: #selector(btnExampleThreeTapped), for: .touchUpInside)
         return button
     }()
     
@@ -42,6 +43,9 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigFour.font,
                                         textColor: btnConfigFour.textColor)
         button.setBackground(to: btnConfigFour.backgroundType)
+        button.setTapAction { [weak self] in
+            self?.btnExampleFourTapped()
+        }
         return button
     }()
     
@@ -185,5 +189,34 @@ class ButtonExamplesViewController: UIViewController {
             btnExampleSeven.widthAnchor.constraint(equalToConstant: 300),
             btnExampleSeven.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    @IBAction func btnExampleOneTapped(_ sender: Any) {
+        showAlertWithTitle("Button Example One",
+                           message: "Action on button example one triggered")
+    }
+    
+    @IBAction func btnExampleTwoTapped(_ sender: Any) {
+        showAlertWithTitle("Button Example Two",
+                           message: "Action on button example two triggered")
+    }
+    
+    @objc func btnExampleThreeTapped(_ sender: Any) {
+        showAlertWithTitle("Button Example Three",
+                           message: "Action on button example three triggered")
+    }
+    
+    func btnExampleFourTapped() {
+        showAlertWithTitle("Button Example Four",
+                           message: "Action on button example four triggered")
+    }
+}
+
+extension ButtonExamplesViewController {
+    private func showAlertWithTitle(_ title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(action)
+        present(alertController, animated: true)
     }
 }
