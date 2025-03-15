@@ -191,6 +191,11 @@ class ButtonExamplesViewController: UIViewController {
         showAlertWithTitle("Button Example One",
                            message: "Action on button example one triggered")
     }
+    
+    @IBAction func btnExampleTwo(_ sender: Any) {
+        showAlertWithTitle("Button Example Two",
+                           message: "Action on button example two triggered")
+    }
 }
 
 extension ButtonExamplesViewController {
