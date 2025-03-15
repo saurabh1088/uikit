@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "6d3c113f972b75d671d806d1966ab14c9d565dc8"
+        "branch" : "add-activity-indicator-option-for-configurable-button",
+        "revision" : "3ad846466c6fad894b6dbe7df789dfa525f6137d"
       }
     }
   ],
