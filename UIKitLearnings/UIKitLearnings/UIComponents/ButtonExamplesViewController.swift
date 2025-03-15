@@ -186,4 +186,20 @@ class ButtonExamplesViewController: UIViewController {
             btnExampleSeven.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+    
+    @IBAction func btnExampleOne(_ sender: Any) {
+        let alertController = UIAlertController(title: "Alert",
+                                                message: "This is an example alert.",
+                                                preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(okAction)
+        
+        if let viewController = sender as? UIViewController {
+            viewController.present(alertController, animated: true, completion: nil)
+        } else {
+            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
