@@ -1096,7 +1096,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:saurabh1088/swift-uikit-lib.git";
 			requirement = {
-				branch = "add-option-top-provide-action-for-button";
+				branch = main;
 				kind = branch;
 			};
 		};

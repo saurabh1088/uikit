@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "add-option-top-provide-action-for-button",
-        "revision" : "a0443f3bf48564570e9a434837f1dad462f3f00a"
+        "branch" : "main",
+        "revision" : "6d3c113f972b75d671d806d1966ab14c9d565dc8"
       }
     }
   ],
