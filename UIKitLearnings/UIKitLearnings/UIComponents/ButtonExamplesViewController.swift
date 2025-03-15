@@ -188,18 +188,16 @@ class ButtonExamplesViewController: UIViewController {
     }
     
     @IBAction func btnExampleOne(_ sender: Any) {
-        let alertController = UIAlertController(title: "Alert",
-                                                message: "This is an example alert.",
-                                                preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
-        alertController.addAction(okAction)
-        
-        if let viewController = sender as? UIViewController {
-            viewController.present(alertController, animated: true, completion: nil)
-        } else {
-            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
-        }
+        showAlertWithTitle("Button Example One",
+                           message: "Action on button example one triggered")
+    }
+}
+
+extension ButtonExamplesViewController {
+    private func showAlertWithTitle(_ title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(action)
+        present(alertController, animated: true)
     }
 }
