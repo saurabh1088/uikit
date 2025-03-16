@@ -18,6 +18,7 @@ enum ButtonsExample {
     case six
     case seven
     case eight
+    case nine
     
     var title: String {
         switch self {
@@ -29,6 +30,7 @@ enum ButtonsExample {
         case .six: return "Button Example Six"
         case .seven: return "Button Example Seven"
         case .eight: return "Button Example Eight"
+        case .nine: return "Button Example Nine"
         }
     }
     
@@ -42,6 +44,7 @@ enum ButtonsExample {
         case .six: UIFont.systemFont(ofSize: 20)
         case .seven: UIFont.systemFont(ofSize: 21)
         case .eight: UIFont.systemFont(ofSize: 22)
+        case .nine: UIFont.systemFont(ofSize: 23)
         }
     }
     
@@ -55,6 +58,7 @@ enum ButtonsExample {
         case .six: .black
         case .seven: .white
         case .eight: .black
+        case .nine: .black
         }
     }
     
@@ -68,6 +72,7 @@ enum ButtonsExample {
         case .six: ButtonBackgroundType.color(.white)
         case .seven: ButtonBackgroundType.color(.blue)
         case .eight: ButtonBackgroundType.color(.white)
+        case .nine: ButtonBackgroundType.color(.white)
         }
     }
 }
