@@ -16,7 +16,7 @@
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
         "branch" : "update-stack-view-to-adjust-based-on-activity-indicator-shows-or-hides",
-        "revision" : "73cd55ba67f7d6abc431fe957e535c933c768614"
+        "revision" : "6bb824b7f4ca5bf265440cd40fb009601072eef0"
       }
     }
   ],
