@@ -116,11 +116,15 @@ class ButtonExamplesViewController: UIViewController {
                                                 font: btnConfigNine.font,
                                                 textColor: btnConfigNine.textColor)
         button.setBackground(to: btnConfigNine.backgroundType)
-        button.setTapAction {
-            button.showLoadingIndicator()
+        button.setTapAction { [weak self] in
+            guard let self = self else { return }
+            self.isBtnExampleNineLoading ? button.hideLoadingIndicator(with: String()) : button.showLoadingIndicator()
+            self.isBtnExampleNineLoading.toggle()
         }
         return button
     }()
+    
+    private var isBtnExampleNineLoading = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
