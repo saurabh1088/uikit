@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "create-activity-indicator-next-to-label",
-        "revision" : "0ac967df53e91bae4b2fac4708f49fe25a221cd6"
+        "branch" : "main",
+        "revision" : "73cd55ba67f7d6abc431fe957e535c933c768614"
       }
     }
   ],
