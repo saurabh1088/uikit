@@ -70,7 +70,7 @@ class ButtonExamplesViewController: UIViewController {
                                         font: btnConfigSix.font,
                                         textColor: btnConfigSix.textColor)
         button.setBackground(to: btnConfigSix.backgroundType)
-        button.setBorder(with: 10, color: .black)
+        button.setBorder(with: 5, color: .paletteSeaDarkBlue)
         button.setCornerRadius(10)
         return button
     }()
@@ -87,8 +87,8 @@ class ButtonExamplesViewController: UIViewController {
         button.setCornerRadius(10)
         button.setShadow(offset: CGSize(width: 5.0, height: 5.0),
                          radius: 10.0,
-                         opacity: 0.5,
-                         color: .blue)
+                         opacity: 0.8,
+                         color: .paletteSeaDarkBlue)
         return button
     }()
     
