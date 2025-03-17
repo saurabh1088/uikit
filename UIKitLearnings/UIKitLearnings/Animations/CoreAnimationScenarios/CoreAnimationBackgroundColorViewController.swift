@@ -24,6 +24,6 @@ class CoreAnimationBackgroundColorViewController: UIViewController {
     /// There is however no difference in either approaches, unless proven otherwise it appears that
     /// the view's backgroundColor property eventually is a wrapper for underlying layer's one.
     @IBAction func updateBackgroundColor(_ sender: Any) {
-        targetView.layer.backgroundColor = UIColor.paletteYellow?.cgColor
+        targetView.layer.backgroundColor = UIColor.paletteYellow.cgColor
     }
 }

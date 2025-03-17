@@ -48,31 +48,19 @@ enum ButtonsExample {
         }
     }
     
-    var textColor: UIColor {
-        switch self {
-        case .one: .black
-        case .two: .blue
-        case .three: .red
-        case .four: .gray
-        case .five: .white
-        case .six: .black
-        case .seven: .white
-        case .eight: .black
-        case .nine: .black
-        }
-    }
+    var textColor: UIColor { .white }
     
     var backgroundType: ButtonBackgroundType {
         switch self {
-        case .one: ButtonBackgroundType.color(.yellow)
-        case .two: ButtonBackgroundType.color(.yellow)
-        case .three: ButtonBackgroundType.color(.yellow)
-        case .four: ButtonBackgroundType.gradient([.red, .blue, .green])
-        case .five: ButtonBackgroundType.gradient([.red, .white])
-        case .six: ButtonBackgroundType.color(.white)
-        case .seven: ButtonBackgroundType.color(.blue)
-        case .eight: ButtonBackgroundType.color(.white)
-        case .nine: ButtonBackgroundType.color(.white)
+        case .one: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .two: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .three: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .four: ButtonBackgroundType.gradient([.googleRed, .googleBlue, .googleRed])
+        case .five: ButtonBackgroundType.gradient([.paletteSeaDarkBlue, .paletteYellow])
+        case .six: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .seven: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .eight: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .nine: ButtonBackgroundType.color(.paletteSeaGreen)
         }
     }
 }
