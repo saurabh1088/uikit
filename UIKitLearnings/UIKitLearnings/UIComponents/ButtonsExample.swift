@@ -48,31 +48,19 @@ enum ButtonsExample {
         }
     }
     
-    var textColor: UIColor {
-        switch self {
-        case .one: .black
-        case .two: .blue
-        case .three: .red
-        case .four: .gray
-        case .five: .white
-        case .six: .black
-        case .seven: .white
-        case .eight: .black
-        case .nine: .black
-        }
-    }
+    var textColor: UIColor { .white }
     
     var backgroundType: ButtonBackgroundType {
         switch self {
-        case .one: ButtonBackgroundType.color(.yellow)
-        case .two: ButtonBackgroundType.color(.yellow)
-        case .three: ButtonBackgroundType.color(.yellow)
+        case .one: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .two: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .three: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
         case .four: ButtonBackgroundType.gradient([.red, .blue, .green])
         case .five: ButtonBackgroundType.gradient([.red, .white])
-        case .six: ButtonBackgroundType.color(.white)
-        case .seven: ButtonBackgroundType.color(.blue)
-        case .eight: ButtonBackgroundType.color(.white)
-        case .nine: ButtonBackgroundType.color(.white)
+        case .six: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .seven: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .eight: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .nine: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
         }
     }
 }
