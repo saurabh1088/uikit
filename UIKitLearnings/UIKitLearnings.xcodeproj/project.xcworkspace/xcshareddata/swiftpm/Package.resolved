@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:saurabh1088/swift-uikit-lib.git",
       "state" : {
-        "branch" : "update-stack-view-to-adjust-based-on-activity-indicator-shows-or-hides",
-        "revision" : "5dc655b95991136dcb609d646c5552d0a1922707"
+        "branch" : "main",
+        "revision" : "127e29959be3ba72287991a204f87803346613c6"
       }
     }
   ],
