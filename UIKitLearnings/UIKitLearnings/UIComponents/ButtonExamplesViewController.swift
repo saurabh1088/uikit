@@ -174,7 +174,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonThree() {
         btnExampleThree.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleThree.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleThree.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleThree.topAnchor.constraint(equalTo: btnExampleTwo.bottomAnchor, constant: 8),
             btnExampleThree.widthAnchor.constraint(equalToConstant: 300),
             btnExampleThree.heightAnchor.constraint(equalToConstant: 50)
@@ -186,7 +186,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonFour() {
         btnExampleFour.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleFour.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleFour.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleFour.topAnchor.constraint(equalTo: btnExampleThree.bottomAnchor, constant: 8),
             btnExampleFour.widthAnchor.constraint(equalToConstant: 300),
             btnExampleFour.heightAnchor.constraint(equalToConstant: 50)
@@ -198,7 +198,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonFive() {
         btnExampleFive.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleFive.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleFive.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleFive.topAnchor.constraint(equalTo: btnExampleFour.bottomAnchor, constant: 8),
             btnExampleFive.widthAnchor.constraint(equalToConstant: 300),
             btnExampleFive.heightAnchor.constraint(equalToConstant: 50)
@@ -210,7 +210,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonSix() {
         btnExampleSix.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleSix.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleSix.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleSix.topAnchor.constraint(equalTo: btnExampleFive.bottomAnchor, constant: 8),
             btnExampleSix.widthAnchor.constraint(equalToConstant: 300),
             btnExampleSix.heightAnchor.constraint(equalToConstant: 50)
@@ -222,7 +222,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonSeven() {
         btnExampleSeven.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleSeven.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleSeven.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleSeven.topAnchor.constraint(equalTo: btnExampleSix.bottomAnchor, constant: 8),
             btnExampleSeven.widthAnchor.constraint(equalToConstant: 300),
             btnExampleSeven.heightAnchor.constraint(equalToConstant: 50)
@@ -234,7 +234,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonEight() {
         btnExampleEight.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleEight.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleEight.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleEight.topAnchor.constraint(equalTo: btnExampleSeven.bottomAnchor, constant: 8),
             btnExampleEight.widthAnchor.constraint(equalToConstant: 300),
             btnExampleEight.heightAnchor.constraint(equalToConstant: 50)
@@ -246,7 +246,7 @@ class ButtonExamplesViewController: UIViewController {
     private func addConstraintsForButtonNine() {
         btnExampleNine.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            btnExampleNine.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8),
+            btnExampleNine.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             btnExampleNine.topAnchor.constraint(equalTo: btnExampleEight.bottomAnchor, constant: 8),
             btnExampleNine.widthAnchor.constraint(equalToConstant: 300),
             btnExampleNine.heightAnchor.constraint(equalToConstant: 50)
