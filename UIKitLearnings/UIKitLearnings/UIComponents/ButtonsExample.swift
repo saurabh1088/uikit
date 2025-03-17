@@ -52,15 +52,15 @@ enum ButtonsExample {
     
     var backgroundType: ButtonBackgroundType {
         switch self {
-        case .one: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .two: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .three: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .four: ButtonBackgroundType.gradient([.red, .blue, .green])
-        case .five: ButtonBackgroundType.gradient([.red, .white])
-        case .six: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .seven: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .eight: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
-        case .nine: ButtonBackgroundType.color(.paletteSeaGreen ?? .white)
+        case .one: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .two: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .three: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .four: ButtonBackgroundType.gradient([.googleRed, .googleBlue, .googleRed])
+        case .five: ButtonBackgroundType.gradient([.paletteSeaDarkBlue, .paletteYellow])
+        case .six: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .seven: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .eight: ButtonBackgroundType.color(.paletteSeaGreen)
+        case .nine: ButtonBackgroundType.color(.paletteSeaGreen)
         }
     }
 }
