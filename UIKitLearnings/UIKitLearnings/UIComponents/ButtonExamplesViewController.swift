@@ -172,85 +172,43 @@ class ButtonExamplesViewController: UIViewController {
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonThree() {
-        btnExampleThree.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleThree.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleThree.topAnchor.constraint(equalTo: btnExampleTwo.bottomAnchor, constant: 8),
-            btnExampleThree.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleThree.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleThree, below: btnExampleTwo)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleFour).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonFour() {
-        btnExampleFour.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleFour.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleFour.topAnchor.constraint(equalTo: btnExampleThree.bottomAnchor, constant: 8),
-            btnExampleFour.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleFour.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleFour, below: btnExampleThree)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleFive).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonFive() {
-        btnExampleFive.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleFive.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleFive.topAnchor.constraint(equalTo: btnExampleFour.bottomAnchor, constant: 8),
-            btnExampleFive.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleFive.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleFive, below: btnExampleFour)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSix).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonSix() {
-        btnExampleSix.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleSix.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleSix.topAnchor.constraint(equalTo: btnExampleFive.bottomAnchor, constant: 8),
-            btnExampleSix.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleSix.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleSix, below: btnExampleFive)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSeven).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonSeven() {
-        btnExampleSeven.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleSeven.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleSeven.topAnchor.constraint(equalTo: btnExampleSix.bottomAnchor, constant: 8),
-            btnExampleSeven.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleSeven.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleSeven, below: btnExampleSix)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleEight).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonEight() {
-        btnExampleEight.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleEight.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleEight.topAnchor.constraint(equalTo: btnExampleSeven.bottomAnchor, constant: 8),
-            btnExampleEight.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleEight.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleEight, below: btnExampleSeven)
     }
     
     /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleNine).
     /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
     private func addConstraintsForButtonNine() {
-        btnExampleNine.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            btnExampleNine.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            btnExampleNine.topAnchor.constraint(equalTo: btnExampleEight.bottomAnchor, constant: 8),
-            btnExampleNine.widthAnchor.constraint(equalToConstant: 300),
-            btnExampleNine.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        constraintButton(btnExampleNine, below: btnExampleEight)
     }
     
     @IBAction func btnExampleOneTapped(_ sender: Any) {
@@ -280,5 +238,17 @@ extension ButtonExamplesViewController {
         let action = UIAlertAction(title: "OK", style: .default)
         alertController.addAction(action)
         present(alertController, animated: true)
+    }
+}
+
+extension ButtonExamplesViewController {
+    private func constraintButton(_ buttonOne: CustomizableButton, below buttonTwo: CustomizableButton) {
+        buttonOne.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            buttonOne.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            buttonOne.topAnchor.constraint(equalTo: buttonTwo.bottomAnchor, constant: 8),
+            buttonOne.widthAnchor.constraint(equalToConstant: 300),
+            buttonOne.heightAnchor.constraint(equalToConstant: 50)
+        ])
     }
 }
