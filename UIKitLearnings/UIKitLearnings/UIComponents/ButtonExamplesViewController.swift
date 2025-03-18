@@ -143,13 +143,7 @@ class ButtonExamplesViewController: UIViewController {
         view.addSubview(btnExampleNine)
         
         // Add constrains for programmatically added buttons
-        addConstraintsForButtonThree()
-        addConstraintsForButtonFour()
-        addConstraintsForButtonFive()
-        addConstraintsForButtonSix()
-        addConstraintsForButtonSeven()
-        addConstraintsForButtonEight()
-        addConstraintsForButtonNine()
+        setUpConstraintsForButtons()
     }
     
     private func setupXIBButtons() {
@@ -169,48 +163,16 @@ class ButtonExamplesViewController: UIViewController {
         button.setBackground(to: example.backgroundType)
     }
     
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleThree).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonThree() {
+    private func setUpConstraintsForButtons() {
         constraintButton(btnExampleThree, below: btnExampleTwo)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleFour).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonFour() {
         constraintButton(btnExampleFour, below: btnExampleThree)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleFive).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonFive() {
         constraintButton(btnExampleFive, below: btnExampleFour)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSix).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonSix() {
         constraintButton(btnExampleSix, below: btnExampleFive)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleSeven).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonSeven() {
         constraintButton(btnExampleSeven, below: btnExampleSix)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleEight).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonEight() {
         constraintButton(btnExampleEight, below: btnExampleSeven)
-    }
-    
-    /// Adds Auto Layout constraints to position and size the programmatically created button (btnExampleNine).
-    /// - Note: Constraints are relative to the view and btnExampleTwo for vertical stacking.
-    private func addConstraintsForButtonNine() {
         constraintButton(btnExampleNine, below: btnExampleEight)
     }
-    
+        
     @IBAction func btnExampleOneTapped(_ sender: Any) {
         showAlertWithTitle("Button Example One",
                            message: "Action on button example one triggered")
